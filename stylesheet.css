@@ -7,6 +7,17 @@
   unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F, U+2B740-2B81F, U+2B820-2CEAF, U+F900-FAFF, U+2F800-2FA1F;
 } */
 
+/* 放在你的 CSS 顶部 */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+/* 应用到标题的英文名 <span class="name"> */
+.name {
+  font-family: 'Caveat', 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 50px;      /* 可改成 36–48px */
+  letter-spacing: 0.3px;
+}
+
 /* chinese */
 @font-face {
   font-family: 'STXingkai';
