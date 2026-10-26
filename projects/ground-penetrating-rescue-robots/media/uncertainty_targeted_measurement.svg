@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1488" height="550" viewBox="0 0 744 275" role="img" aria-labelledby="title desc">
+<title id="title">Belief-driven targeted sensing</title><desc id="desc">An orange sensing path ends at a candidate scan position above an unresolved, blue-highlighted void region. A dashed vertical line indicates the intended boundary measurement.</desc>
+<rect x="0" y="0" width="744" height="275" fill="#050505"/>
+<g id="collapsed-rubble" transform="translate(0,0)"><path d="M60 60 L182 8 L311 70 L455 20 L695 66 L671 254 L90 254 Z" fill="#1d1f20" stroke="#454849" stroke-width="2"/>
+<g fill="none" stroke="#444748" stroke-width="6" opacity="0.82"><path d="M86 96 l47 28 -39 44 51 28" /><path d="M178 96 l47 28 -39 44 51 28" /><path d="M269 96 l47 28 -39 44 51 28" /><path d="M359 96 l47 28 -39 44 51 28" /><path d="M450 96 l47 28 -39 44 51 28" /><path d="M544 96 l47 28 -39 44 51 28" /><path d="M635 96 l47 28 -39 44 51 28" /></g>
+<path d="M407 137 C401 113 439 101 478 97 C525 89 565 111 581 149 C595 183 580 209 540 223 C500 235 453 230 426 202 C417 187 411 160 407 137Z" fill="#2d7997" fill-opacity=".57" stroke="#42a6d1" stroke-width="4" stroke-dasharray="8 7"/>
+</g><path d="M88 47 C169 67 257 75 310 76 C371 76 438 73 499 67" fill="none" stroke="#e49e4b" stroke-width="6" stroke-dasharray="15 10" />
+<line x1="499" y1="88" x2="499" y2="191" stroke="#43a9d8" stroke-width="4" stroke-dasharray="7 7"/>
+<circle cx="499" cy="151" r="50" fill="none" stroke="#43a9d8" stroke-width="4" stroke-dasharray="8 7"/>
+<circle cx="499" cy="67" r="20" fill="#e49e4b" />
+<path d="M481 46 L499 31 L516 47" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="square"/>
+<line x1="480" y1="67" x2="517" y2="67" stroke="#fff" stroke-width="4"/>
+</svg>

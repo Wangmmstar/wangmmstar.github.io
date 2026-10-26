@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1488" height="550" viewBox="0 0 744 275" role="img" aria-labelledby="title desc">
+<title id="title">Two plausible hidden interior hypotheses</title><desc id="desc">Two repeated silhouettes depict the same surface debris. On the left, two unconnected blue cavities; on the right, a blue corridor connects them.</desc>
+<rect x="0" y="0" width="744" height="275" fill="#050505"/>
+<text x="10" y="18" font-family="Arial, sans-serif" font-size="12" fill="#f1f1f1">Hypothesis A</text>
+<text x="385" y="18" font-family="Arial, sans-serif" font-size="12" fill="#f1f1f1">Hypothesis B</text>
+<path d="M28 80 L94 54 L171 81 L232 49 L337 78 L333 207 L29 207 Z" fill="#3b4042" />
+<g fill="none" stroke="#686f71" stroke-width="4" opacity=".65"><path d="M43 84 l-15 44 28 30 -16 44"/><path d="M75 84 l-15 44 28 30 -16 44"/><path d="M107 84 l-15 44 28 30 -16 44"/><path d="M139 84 l-15 44 28 30 -16 44"/><path d="M171 84 l-15 44 28 30 -16 44"/><path d="M203 84 l-15 44 28 30 -16 44"/><path d="M235 84 l-15 44 28 30 -16 44"/><path d="M267 84 l-15 44 28 30 -16 44"/><path d="M299 84 l-15 44 28 30 -16 44"/><path d="M331 84 l-15 44 28 30 -16 44"/></g>
+<path d="M403 80 L469 54 L546 81 L607 49 L712 78 L708 207 L404 207 Z" fill="#3b4042" />
+<g fill="none" stroke="#686f71" stroke-width="4" opacity=".65"><path d="M418 84 l-15 44 28 30 -16 44"/><path d="M450 84 l-15 44 28 30 -16 44"/><path d="M482 84 l-15 44 28 30 -16 44"/><path d="M514 84 l-15 44 28 30 -16 44"/><path d="M546 84 l-15 44 28 30 -16 44"/><path d="M578 84 l-15 44 28 30 -16 44"/><path d="M610 84 l-15 44 28 30 -16 44"/><path d="M642 84 l-15 44 28 30 -16 44"/><path d="M674 84 l-15 44 28 30 -16 44"/><path d="M706 84 l-15 44 28 30 -16 44"/></g>
+<path d="M70 150 C78 122 110 115 135 116 C170 114 191 140 188 161 C185 178 164 187 131 189 C94 191 68 175 70 150Z" fill="#3c9ec3" fill-opacity=".76" stroke="#46acd1" stroke-width="4"/>
+<path d="M217 149 C222 125 248 117 268 119 C297 120 316 142 313 163 C308 179 288 185 262 185 C238 188 220 176 217 149Z" fill="#3c9ec3" fill-opacity=".76" stroke="#46acd1" stroke-width="4"/>
+<path d="M445 149 C453 122 483 116 509 116 C533 114 552 124 562 142 L594 142 C605 126 622 118 648 120 C675 121 689 142 688 161 C686 178 659 185 640 185 L507 189 C470 191 443 176 445 149Z" fill="#3c9ec3" fill-opacity=".76" stroke="#46acd1" stroke-width="4"/>
+<text x="10" y="261" font-family="Arial, sans-serif" font-size="11.5" fill="#bcbcbc">Two disconnected cavities</text>
+<text x="385" y="261" font-family="Arial, sans-serif" font-size="11.5" fill="#bcbcbc">Connected cavities</text>
+</svg>
