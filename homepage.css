@@ -64,11 +64,19 @@ section { margin-top: 30px; }
 .research-entry p { margin: 0 0 4px; }
 .research-entry .research-overview { margin: 10px 0 8px; }
 .research-links { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.collaborative-research .research-list { margin-top: 18px; }
+.collaborative-research .research-entry { gap: 24px; margin-bottom: 20px; }
+.collaborative-research .participation { font-size: 14px; margin: 5px 0; }
+.related-lab-research { font-size: 14px; margin-top: 24px; }
+.related-lab-research h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.related-lab-research p { margin-bottom: 4px; }
+.related-project-link { white-space: nowrap; }
 @media (max-width: 600px) {
   main { padding: 24px 18px 36px; }
   h1 { font-size: 34px; }
   .profile { flex-direction: column; align-items: flex-start; gap: 18px; }
   .portrait { flex: none; width: 180px; }
   .research-entry { grid-template-columns: minmax(0, 1fr); gap: 12px; margin-bottom: 28px; }
+  .collaborative-research .research-entry { gap: 10px; margin-bottom: 22px; }
   .research-links a, .profile-links a { padding: 4px 0; }
 }
