@@ -117,3 +117,69 @@ provides keyboard-accessible fit, zoom and close controls for small annotations.
 Each modal initially fits the entire selected region; panning is available only
 when the reader explicitly zooms. The inline mobile page has no horizontal
 carousel, scrolling image track, oversized image width or clipping container.
+
+## Research showcase redesign — 2026-10-31
+
+This update supersedes the earlier *page-placement* notes above. The original
+scientific images and documented mobile panels remain unchanged. The page now
+uses `real.png` in the sensing/inversion section, `aboveground.jpg` in the
+site-referencing section, and `inversion_results.png` in expandable validation
+details. At narrower widths their existing complete source panels appear instead
+of the desktop composites. The rupture photograph, `hero_visual.png`, and
+`hero_utility_map.png` remain archived public assets but are no longer rendered
+by this page.
+
+The supplied Subsurface Intelligence Agent Kit is preserved in full at
+`source-media/subsurface/Subsurface_Intelligence_Agent_Kit/`, outside the build
+output and outside the public asset tree. Its manifest identifies the hero,
+above/below-ground fusion, and excavation illustrations as original AI-generated
+concepts and the hero animation as an original concept animation, cleared for
+use with conceptual labels. All receive visible concept captions on the page.
+
+Production `concepts/` contains WebP derivatives of the three original PNGs,
+the unchanged original hero MP4, and the supplied authored SVG explainer. PNG to
+WebP conversion preserves the full 1672 × 941 frame. The SVG motion was converted
+from SMIL to CSS to honor reduced-motion preferences directly in the asset.
+No concept illustration is represented as measured research evidence.
+
+The PPT-extracted reference video with unverified rights and its reference
+screenshot are preserved only in the nonpublic kit, never copied to production.
+See `docs/subsurface-redesign/implementation.md` for the complete audit and
+reviewed responsive screenshots.
+
+## Targeted revision — 2026-10-31, round 2
+
+The user explicitly confirmed in this chat that the InfraSono PPT animation's
+rights are cleared for public website use. This supersedes the earlier
+rights-unverified classification for that supplied clip. The source
+`assets/optional_reference/scan_animation_FROM_PPT_check_rights.mp4` in the
+preserved kit is copied byte-for-byte to
+`video/gpr-sensing-principle.mp4`. It is shown as a **principle illustration** in
+the engineering problem / GPR sensing section, with muted inline playback,
+native playback controls, and an English explanatory caption track. It is not
+labeled as an experimental radargram. `video/gpr-sensing-poster.jpg` is an
+unaltered frame extracted at 6.5 seconds; `gpr-sensing-en.vtt` describes the
+illustrated sequence. The separate 4-second generated hero animation remains
+in the hero only.
+
+The real-data comparison now uses a discrete three-stage scrubber and the
+existing complete `real-*.png` source columns, all from the single original
+`real.png`. No time/depth pixel alignment or before/after wipe is implied.
+
+The main field-study narrative uses three exact, unscaled JPEG-pixel crops,
+encoded losslessly as PNG by `scripts/export-subsurface-story-panels.py`:
+
+- `field-story/camera.png`: source rectangle (145, 30, 665, 365), the published
+  ZED-camera localization diagram, including its original position/pose label.
+- `field-story/point-cloud.png`: source rectangle (1720, 35, 2126, 539), both
+  point-cloud views, GPR trajectory, and all associated original labels/arrows.
+- `field-story/detected-utility.png`: source rectangle (1200, 580, 1480, 850),
+  one complete field-study predicted depth-permittivity map, with original
+  detection box, depth and distance axes, units, and color scale.
+
+The field-study crop is a different example from `real.png`; it is explicitly
+identified as field-study evidence, not one of the scrubber stages. No camera
+image is relabeled as a point cloud. The original annotated `aboveground.jpg`
+and `real.png` are retained together in an expandable Technical details panel.
+Future research now uses large editorial images with one research question and
+one short sentence, all labeled as concept illustrations.

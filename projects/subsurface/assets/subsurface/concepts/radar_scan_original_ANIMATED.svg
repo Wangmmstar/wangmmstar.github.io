@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-label="Concept diagram: radar scans the ground and produces indirect reflections from a buried pipe">
+<style>
+  .scanline { animation: radar-sweep 7s ease-in-out infinite; }
+  .scan-halo { animation: radar-glow 4s ease-in-out infinite; }
+  @keyframes radar-sweep { 0%,100% { transform: translateX(30px); } 50% { transform: translateX(1450px); } }
+  @keyframes radar-glow { 0%,100% { opacity: .35; } 50% { opacity: .8; } }
+  @media (prefers-reduced-motion: reduce) { .scanline, .scan-halo { animation: none; } }
+  :root[data-paused] .scanline, :root[data-paused] .scan-halo { animation-play-state: paused; }
+</style>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dbe9ea"/><stop offset="1" stop-color="#eaf1ec"/></linearGradient>
+  <linearGradient id="soil" x2="0" y2="1"><stop stop-color="#ad8060"/><stop offset="0.55" stop-color="#6a5142"/><stop offset="1" stop-color="#253e42"/></linearGradient>
+  <linearGradient id="pipe" x2="0" y2="1"><stop stop-color="#80aeb0"/><stop offset=".4" stop-color="#426c70"/><stop offset="1" stop-color="#142d34"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#8df2e1" stop-opacity=".46"/><stop offset="1" stop-color="#8df2e1" stop-opacity="0"/></radialGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7"/></filter>
+  <pattern id="grain" width="43" height="46" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="4" fill="#e7ccad" opacity=".2"/><circle cx="25" cy="28" r="6" fill="#2d302c" opacity=".2"/><circle cx="38" cy="7" r="2" fill="#e7ccad" opacity=".4"/></pattern>
+</defs>
+<rect width="1600" height="720" fill="url(#sky)"/><path d="M0 243 Q340 227 700 243 T1600 238 L1600 720 H0Z" fill="url(#soil)"/><path d="M0 243 Q400 233 800 244 T1600 236 L1600 269 Q500 267 0 270Z" fill="#577751"/><rect y="268" width="1600" height="452" fill="url(#grain)"/>
+<g fill="#527b43"><path d="M0 235 Q100 214 220 236T450 232T700 237T990 236T1300 233T1600 239V252H0Z"/><path d="M0 236 Q400 215 790 239 T1600 229" fill="none" stroke="#8fa664" stroke-width="8"/></g>
+<g opacity=".78"><path d="M0 415Q800 382 1600 425" stroke="#b99870" stroke-width="9" fill="none"/><path d="M0 557Q750 535 1600 559" stroke="#163039" stroke-width="6" fill="none"/></g>
+<path d="M-40 451 L1510 451" stroke="#133640" stroke-width="95" stroke-linecap="round"/><path d="M-40 451 L1510 451" stroke="url(#pipe)" stroke-width="74" stroke-linecap="round"/><path d="M-40 435 L1510 435" stroke="#91b5b5" opacity=".56" stroke-width="6" stroke-linecap="round"/>
+<g><path d="M0 488L1600 488" stroke="#e7be55" stroke-width="8"/><path d="M0 507L1600 507" stroke="#c9904c" stroke-width="6"/></g>
+<g><rect x="0" y="0" width="1600" height="105" fill="#0e292c" opacity=".9"/><text x="64" y="68" font-family="Arial, sans-serif" font-size="37" font-weight="bold" fill="#fff">What can radar reveal beneath the surface?</text><text x="1480" y="65" font-family="Arial, sans-serif" font-size="20" fill="#a4e2d6" text-anchor="end">CONCEPT ILLUSTRATION</text></g>
+<g id="scanner">
+  <rect x="0" y="233" width="1600" height="5" fill="#a9f0e2" opacity=".16"/>
+  <rect id="scanline" class="scanline" x="50" y="228" width="6" height="460" fill="#82ecd8" opacity=".6"></rect>
+  <g fill="none" stroke="#83e6d5" stroke-width="4" opacity=".75"><path d="M790 244 Q920 333 790 423 Q660 333 790 244"/><path d="M790 244 Q1030 383 790 560 Q550 383 790 244" opacity=".45"/></g>
+  <ellipse class="scan-halo" cx="790" cy="438" rx="310" ry="144" fill="url(#halo)"></ellipse>
+</g>
+<text x="90" y="650" font-family="Arial" font-size="24" fill="#f3fbf8">Radar emits waves and measures returning signals.</text><text x="90" y="684" font-family="Arial" font-size="18" fill="#b2cfca">Illustrative sensing principle — not a measured radargram or reconstructed geometry.</text>
+</svg>
