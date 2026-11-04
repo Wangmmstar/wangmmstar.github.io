@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="A compact laser projection system and BIM-to-workface pipeline for materializing model-defined installation targets directly on the physical workface."
+      content="Project BIM installation layouts onto real surfaces."
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content="Astro v6.3.5" />
@@ -17,10 +17,10 @@
       rel="canonical"
       href="https://wangmmstar.github.io/projects/bim-laser/"
     />
-    <meta property="og:title" content="Put the Design Where the Work Happens" />
+    <meta property="og:title" content="Project BIM installation layouts onto real surfaces." />
     <meta
       property="og:description"
-      content="A compact laser projection system and BIM-to-workface pipeline for materializing model-defined installation targets directly on the physical workface."
+      content="Project BIM installation layouts onto real surfaces."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -41,7 +41,7 @@
       type="font/woff2"
       crossorigin
     />
-    <title>Put the Design Where the Work Happens</title>
+    <title>Project BIM installation layouts onto real surfaces.</title>
     <link
       rel="stylesheet"
       href="/projects/bim-laser/_astro/index.CvaH5bFe.css"
@@ -78,7 +78,7 @@
           data-astro-cid-3ef6ksr2
         >
           <h1 class="my-0 text-5xl font-medium" data-astro-cid-3ef6ksr2>
-            Put the Design Where the Work Happens
+            Project BIM installation layouts onto real surfaces.
           </h1>
           <div class="text-xl" data-astro-cid-3ef6ksr2>
             BIM-driven laser spatial augmented reality for in-situ layout and
@@ -192,25 +192,27 @@
         >
           <h2 id="overview">Overview</h2>
           <p>
-            This work combines a custom laser projection platform with a
-            BIM-to-workface pipeline to materialize selected installation
-            targets as full-scale spatial references where construction work
-            happens.
+            We developed a workflow that converts BIM geometry into laser
+            projection paths, together with a low-cost, open-source laser
+            projector that displays installation layouts at full scale. The
+            system was evaluated for projection accuracy and pattern
+            stability and demonstrated on construction and assembly tasks.
           </p>
         </div>
       </div>
       <h2 id="the-design-is-digital-the-work-is-physical">
-        The design is digital. The work is physical.
+        Why measure and mark what BIM already defines?
       </h2>
       <p>
-        BIM may already define what should be installed and where it belongs. At
-        the workface, however, that information still has to be interpreted,
-        located, measured, and marked before installation can begin.
+        A BIM model can specify the dimensions and intended locations of
+        windows, HVAC components, and other building elements. On site,
+        workers still need to locate those positions, transfer dimensions
+        from drawings, and mark the installation surface before placing the
+        components.
       </p>
       <p>
-        A tablet changes how the design is displayed, but it does not remove the
-        spatial translation between the digital model and the physical place
-        where the work happens.
+        Displaying the design on a screen does not eliminate this manual
+        layout process.
       </p>
       <div
         class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-100rem)/2)-var(--actual-inline-margin))]"
@@ -329,15 +331,17 @@
         >
       </div>
       <p>
-        The worker no longer has to reconstruct the target on the workface from
-        a separate representation.
+        Laser projection displays the installation layout directly on the
+        physical surface.
       </p>
       <h2 id="from-digital-design-to-the-physical-workface">
-        From digital design to the physical workface.
+        Convert BIM geometry into laser paths.
       </h2>
       <p>
-        A selected BIM object is converted into a projection-ready laser pattern
-        and reproduced at full scale on the physical workface.
+        The workflow extracts selected component geometry and placement
+        information from BIM, converts it into laser-compatible vector
+        paths, and projects the corresponding outlines onto the installation
+        surface.
       </p>
       <div
         class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-100rem)/2)-var(--actual-inline-margin))]"
@@ -349,14 +353,14 @@
         />
       </div>
       <h2 id="a-physical-interface-for-digital-design">
-        A physical interface for digital design.
+        A low-cost laser projector for construction layout.
       </h2>
       <p>
-        Moving design intent to the workface requires more than a digital
-        representation. We designed and built a compact laser projection
-        platform that reproduces vector geometry directly on physical surfaces.
-        An integrated camera supports spatial registration between the
-        projection unit and the workface.
+        We built a galvanometer-based laser projector that traces vector
+        patterns on physical surfaces. An integrated camera supports
+        registration between the projection unit and the installation
+        surface, allowing BIM-derived patterns to be displayed at the
+        intended locations.
       </p>
       <div class="flex w-full flex-wrap items-stretch gap-4">
         <div
@@ -378,40 +382,35 @@
         >
           <h3 id="laser-vector-projection">Laser vector projection</h3>
           <p>
-            The system reproduces projection-ready vector geometry directly on
-            the physical workface.
+            Galvanometer mirrors steer the laser beam to trace the required
+            geometric patterns.
           </p>
-          <h3 id="integrated-camera">Integrated camera</h3>
+          <h3 id="integrated-camera">Camera-based registration</h3>
           <p>
-            The camera supports registration between the projection unit and the
-            physical surface.
+            The integrated camera observes reference markers to establish
+            the projector's position relative to the work surface.
           </p>
-          <h3 id="compact-projection-unit">Compact projection unit</h3>
+          <h3 id="compact-projection-unit">Compact projection hardware</h3>
           <p>
-            The projection hardware is implemented as a compact unit rather than
-            being intrinsic to a single fixed site configuration.
+            The prototype combines the laser projection components and
+            camera in a compact unit used in the tested tripod-mounted
+            setup.
           </p>
         </div>
       </div>
-      <h2 id="move-the-translation-upstream">Move the translation upstream.</h2>
+      <h2 id="move-the-translation-upstream">Prepare the layout digitally. Project it on site.</h2>
       <p>
-        Conventional layout repeats the same spatial translation at execution
-        time: understand the design, locate the physical surface, transfer
-        dimensions, measure, and mark.
+        Before installation, a user selects a BIM component and generates
+        its corresponding laser pattern from the model geometry and
+        placement information.
       </p>
       <p>
-        We instead prepare a
-        <strong>workface-referenced installation target</strong> before field
-        execution. A user selects the BIM object, and its geometry, pose, and
-        supporting workface are prepared as a reusable target pattern. During
-        field execution, the system registers the physical workface and
-        retrieves the corresponding target.
+        On site, the system registers the physical installation surface,
+        retrieves the prepared pattern, and projects the layout at full
+        scale.
       </p>
       <p>
-        <strong
-          >Prepare the spatial target once. Reuse it where the work
-          happens.</strong
-        >
+        <strong>From BIM selection to on-site laser projection.</strong>
       </p>
       <div
         class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-100rem)/2)-var(--actual-inline-margin))]"
@@ -438,18 +437,17 @@
         </picture>
       </div>
       <h2 id="if-projection-replaces-layout-it-must-preserve-layout-accuracy">
-        If projection replaces layout, it must preserve layout accuracy.
+        How accurate are the projected layouts?
       </h2>
       <p>
-        Physical layout exists to establish where work should happen. A
-        projected reference is only useful if it can preserve that spatial
-        relationship.
+        We evaluated whether the laser patterns appeared at the intended
+        positions and maintained their geometry across projection distances
+        and target shapes.
       </p>
       <p>
-        We therefore evaluated the projection system itself, including
-        <strong>center-position accuracy</strong> and
-        <strong>shape stability</strong> across projection distances and target
-        geometries.
+        The experiments demonstrated sub-centimeter projection accuracy and
+        stable projected patterns, supporting the feasibility of laser-based
+        installation layout.
       </p>
       <picture>
         <source
@@ -473,18 +471,19 @@
       </picture>
 
       <h2 id="one-projection-interface-different-carriers">
-        One projection interface, different carriers.
+        A tripod-mounted prototype, with potential for robotic deployment.
       </h2>
       <p>
-        The evaluated prototype used a tripod-mounted, marker-localized
-        configuration. The projection unit itself is a separable module, leaving
-        room for future integration with other positioning platforms.
+        The system was evaluated using a tripod-mounted projector with
+        camera- and marker-based localization. Because the projection
+        hardware is a separate module, future implementations could mount it
+        on robotic positioning platforms.
       </p>
       <div class="flex w-full flex-wrap items-stretch gap-4">
         <div
           class="min-w-[16rem] flex-1 [&>:first-child]:mt-0 [&>:last-child]:mb-0"
         >
-          <h3 id="evaluated-setup">Evaluated setup</h3>
+          <h3 id="evaluated-setup">Tested configuration</h3>
           <div
             class="[&amp;_img]:aspect-[4/3] [&amp;_img]:h-auto [&amp;_img]:w-full"
           >
@@ -510,14 +509,14 @@
             </picture>
           </div>
           <p>
-            Tripod-mounted projection system with camera/marker-based workface
-            localization.
+            Tripod-mounted laser projector with camera- and marker-based
+            work-surface localization.
           </p>
         </div>
         <div
           class="min-w-[16rem] flex-1 [&>:first-child]:mt-0 [&>:last-child]:mb-0"
         >
-          <h3 id="potential-deployment">Potential deployment</h3>
+          <h3 id="potential-deployment">Potential robotic configuration</h3>
           <div
             class="[&amp;_img]:aspect-[4/3] [&amp;_img]:h-auto [&amp;_img]:w-full"
           >
@@ -543,15 +542,17 @@
             </picture>
           </div>
           <p>
-            The same projection interface can be integrated with other
-            positioning carriers, such as a robotic platform.
+            Conceptual integration of the laser projector with a robotic
+            platform. This configuration was not part of the reported
+            evaluation.
           </p>
         </div>
       </div>
-      <h2 id="beyond-simple-geometry">Beyond simple geometry.</h2>
+      <h2 id="beyond-simple-geometry">From building layouts to assembly patterns.</h2>
       <p>
-        The workflow was demonstrated across geometric targets, BIM-derived
-        building components, and manufacturing assembly patterns.
+        The system was demonstrated using full-scale dimensional layouts,
+        BIM-derived building component outlines, and manufacturing assembly
+        patterns.
       </p>
       <div class="carousel-wrapper" data-astro-cid-wfe7xcno>
         <div
@@ -668,7 +669,7 @@
                     </picture>
                   </div>
                   <figcaption class="text-center">
-                    Full-scale dimensional target
+                    Full-scale dimensional layout
                   </figcaption>
                 </figure>
               </div>
@@ -702,7 +703,7 @@
                     </picture>
                   </div>
                   <figcaption class="text-center">
-                    BIM-derived building component
+                    BIM-derived component outline
                   </figcaption>
                 </figure>
               </div>
@@ -752,19 +753,16 @@
           class="mx-[var(--actual-inline-margin)] [&>:first-child]:mt-0 [&>:last-child]:mb-0"
         >
           <h2 id="from-digital-intent-to-physical-action">
-            From digital intent to physical action.
+            From BIM geometry to on-site layout.
           </h2>
           <p>
-            This work establishes a physical design-to-workface interface:
-            selected installation intent is prepared digitally and materialized
-            as a spatial reference at the place of execution.
+            This work demonstrates how BIM-defined installation geometry can
+            be converted into accurate, full-scale laser patterns on
+            physical surfaces. The next step is to investigate how workers
+            and robots can use these projected targets during installation
+            and assembly.
           </p>
-          <p>
-            <strong
-              >Once the target exists on the workface, the next question is
-              who—or what—can act on it.</strong
-            >
-          </p>
+
         </div>
       </div>
     </main>

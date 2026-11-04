@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Move the target out of the robot and into the workface. A BIM-to-workface interface lets a robot locally observe a spatial reference and physically align a construction component."
+      content="Align construction components with projected BIM targets."
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content="Astro v6.3.5" />
@@ -23,7 +23,7 @@
     />
     <meta
       property="og:description"
-      content="Move the target out of the robot and into the workface. A BIM-to-workface interface lets a robot locally observe a spatial reference and physically align a construction component."
+      content="Align construction components with projected BIM targets."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -68,7 +68,7 @@
           <div class="hero-copy" data-astro-cid-3ef6ksr2>
             <div class="hero-heading" data-astro-cid-3ef6ksr2>
               <h1 class="my-0 text-5xl font-medium" data-astro-cid-3ef6ksr2>
-                Move the target out of the robot<br />and into the workface.
+                Align construction components<br />with projected BIM targets.
               </h1>
             </div>
             <div
@@ -207,22 +207,25 @@
         id="problem"
         aria-labelledby="problem-title"
       >
-        <h2 id="problem-title">Robotic targets are still robot-specific.</h2>
+        <h2 id="problem-title">A BIM target is not a robot command.</h2>
         <p>
-          BIM can define where a construction component should be installed. For
-          robotic execution, that target is typically transformed into an
-          absolute pose for a particular robot and workcell.
+          BIM specifies where a construction component should be installed,
+          but a robot cannot directly execute a pose defined in model
+          coordinates. Conventional robotic installation requires
+          registering the design to the physical workcell and transforming
+          the target into the robot's coordinate frame.
         </p>
         <p>
-          This works—but the project-specific target must be re-expressed for
-          each execution system.
+          This study explores a different approach: can the robot align a
+          component using a target projected directly onto the installation
+          surface?
         </p>
         <div
           class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-80rem)/2)-var(--actual-inline-margin))]"
         >
           <div class="comparison-labels">
-            <div><strong>Robot-specific target delivery</strong></div>
-            <div><strong>Workface spatial interface</strong></div>
+            <div><strong>Absolute target pose delivered to the robot</strong></div>
+            <div><strong>Projected target observed by the robot</strong></div>
           </div>
           <div class="comparison-media">
             <style>
@@ -346,17 +349,15 @@
         aria-labelledby="core-idea-title"
       >
         <h2 id="core-idea-title">
-          Put the target at the <span class="workface-cue">workface.</span>
+          Project the installation target onto the <span class="workface-cue">wall.</span>
         </h2>
         <p>
-          Instead of bringing the project target into each robot’s coordinate
-          representation, we materialize it directly at the physical workface as
-          an observable spatial reference.
+          The bracket's intended installation position is extracted from BIM
+          and projected onto the physical surface. The robot can observe
+          this target alongside the component it is holding, allowing
+          alignment to be controlled using their relative positions.
         </p>
-        <p class="emphasis-line">
-          The workface becomes the interface between design intent and
-          execution.
-        </p>
+
       </section>
       <section
         class="story-section"
@@ -364,7 +365,7 @@
         aria-labelledby="bim-to-workface-title"
       >
         <h2 id="bim-to-workface-title">
-          From BIM target to workface reference
+          From BIM geometry to a visible target.
         </h2>
         <div
           class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-80rem)/2)-var(--actual-inline-margin))]"
@@ -391,12 +392,12 @@
           </picture>
         </div>
         <p>
-          The BIM-defined installation target is converted into a
-          projection-ready spatial cue and materialized at the point of work.
+          The system converts the BIM-defined bracket placement into a
+          projection pattern and displays it at the installation location.
         </p>
         <p class="project-link">
           <a href="https://wangmmstar.github.io/projects/bim-laser/"
-            >How the BIM-to-workface interface is built →</a
+            >How the BIM target is projected</a
           >
         </p>
       </section>
@@ -406,7 +407,7 @@
         aria-labelledby="robot-controller-title"
       >
         <h2 id="robot-controller-title">
-          Align to what you see, not to a BIM pose.
+          Use camera feedback to correct alignment.
         </h2>
         <div
           class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-80rem)/2)-var(--actual-inline-margin))]"
@@ -433,8 +434,10 @@
           </picture>
         </div>
         <p>
-          The robot observes the held component and the projected target locally
-          and generates incremental corrective motion.
+          The robot observes the projected target and the bracket held by
+          its gripper. A learned control policy uses these observations to
+          generate incremental corrective motions, gradually reducing the
+          alignment error.
         </p>
         <p class="emphasis-line">
           The controller does not receive the BIM-defined installation target as
@@ -447,11 +450,13 @@
         aria-labelledby="alignment-demo-title"
       >
         <h2 id="alignment-demo-title">
-          The same interface across different workface appearances.
+          Robotic alignment on three wall backgrounds.
         </h2>
         <p>
-          Watch the robot align to the projected workface cue from two
-          viewpoints.
+          Watch the robot align a bracket to the projected target against
+          white, concrete-patterned, and wood-patterned backgrounds.
+          Synchronized wrist-camera and side-camera views show the alignment
+          process.
         </p>
         <div
           class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-80rem)/2)-var(--actual-inline-margin))]"
@@ -665,8 +670,11 @@
         aria-labelledby="results-title"
       >
         <h2 id="results-title">
-          How reliably does the robot align through the interface?
+          How accurately does the robot align?
         </h2>
+        <p>
+          We evaluated the alignment policy in 135 trials across nine target poses, including targets represented during training and held-out target poses.
+        </p>
         <div class="success-statistics not-prose">
           <div class="overall-success">
             <p class="stat-value">80.7<span>%</span></p>
@@ -692,7 +700,7 @@
           trained policy seeds
         </p>
         <section class="terminal-residuals" aria-labelledby="residuals-title">
-          <h3 id="residuals-title">Terminal alignment residuals</h3>
+          <h3 id="residuals-title">Final alignment errors</h3>
           <dl class="residual-strip not-prose">
             <div>
               <dt>In-plane translation</dt>
@@ -722,11 +730,14 @@
         aria-labelledby="implications-title"
       >
         <h2 id="implications-title">
-          A target that lives at the <span class="workface-cue">workface.</span>
+          Robotic alignment without an absolute <span class="workface-cue">BIM-derived goal pose.</span>
         </h2>
         <p class="vision-line">
-          Toward spatial interfaces that different executors can observe and act
-          upon.
+          The experiments demonstrate that a robot can align construction
+          brackets using projected installation targets and local visual
+          feedback. The approach provides an alternative way to specify the
+          final alignment target without sending the BIM-derived absolute
+          goal pose directly to the robot controller.
         </p>
       </section>
     </main>
