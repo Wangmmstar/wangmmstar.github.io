@@ -1,0 +1,100 @@
+/* Project-local styles; retain the template's Noto Sans font and academic metadata. */
+html[data-project="lunar-construction"] { background: #fff; }
+html[data-project="lunar-construction"] body { margin: 0; padding: 0; color: #1d2a2e; background: #fff; font-family: var(--font-noto-sans), sans-serif; }
+html[data-project="lunar-construction"] main { width: 100%; max-width: none; margin: 0; }
+.lunar-page { --lunar-ink: #1d2a2e; --lunar-muted: #526469; --lunar-teal: #1b5660; font-size: 17px; line-height: 1.7; }
+.lunar-page *, .lunar-page *::before, .lunar-page *::after { box-sizing: border-box; }
+.lunar-page :is(h1,h2,h3,p,figure,dl,dd) { margin: 0; }
+.lunar-page [hidden] { display: none !important; }
+.lunar-wrap { width: min(100% - 96px, 1120px); margin-inline: auto; }
+.lunar-page h2 { color: var(--lunar-ink); font-size: clamp(32px, 3.4vw, 46px); line-height: 1.17; letter-spacing: -.04em; font-weight: 720; text-wrap: balance; }
+.lunar-page a { color: inherit; text-underline-offset: 3px; }
+.lunar-page :is(a,button):focus-visible { outline: 2px solid #287079; outline-offset: 5px; }
+.lunar-hero { color: #fff; background: #102326; }
+.lunar-hero-composition { position: relative; display: flow-root; padding-top: 34px; padding-bottom: 46px; }
+.lunar-identity { font-size: 11px; letter-spacing: .13em; font-weight: 650; color: #c9d7d7; }
+.lunar-page .lunar-hero h1 { position: relative; z-index: 2; color: #fff; padding-top: 52px; max-width: 1090px; font-size: clamp(58px, 6.7vw, 94px); line-height: 1.035; letter-spacing: -.055em; font-weight: 750; }
+.lunar-page .lunar-subtitle { position: relative; z-index: 2; max-width: 290px; margin-top: 30px; color: #d1dcdc; font-size: 18px; line-height: 1.65; }
+.lunar-page .lunar-hero-scene { position: relative; z-index: 1; display: block; width: 76%; max-width: none; height: auto; margin-top: -216px; margin-left: 27%; object-fit: contain; }
+.lunar-paper { text-align: center; padding-block: 54px 64px; }
+.lunar-page .lunar-paper h2 { max-width: 800px; margin-inline: auto; font-size: 23px; font-weight: 680; line-height: 1.5; letter-spacing: -.02em; text-wrap: initial; }
+.lunar-paper .lunar-authors { margin-top: 20px; font-size: 16px; }
+.lunar-paper .lunar-journal { margin-top: 10px; color: var(--lunar-muted); font-size: 14px; }
+.lunar-affiliations { margin-top: 16px; color: var(--lunar-muted); font-size: 13px; line-height: 1.8; }
+.lunar-story { padding-bottom: 50px; }
+.lunar-story > section { padding-block: 62px; border-top: 1px solid #e1e6e5; }
+.lunar-copy { max-width: 820px; }
+.lunar-copy h2 { margin-bottom: 24px; }
+.lunar-copy p { margin-top: 14px; color: var(--lunar-muted); }
+.lunar-copy .lunar-transition { margin-top: 22px; color: var(--lunar-ink); font-weight: 600; }
+.lunar-page figure { min-width: 0; }
+.lunar-page figure video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #101719; }
+.lunar-page figcaption { margin-top: 12px; color: #58676b; font-size: 13px; line-height: 1.65; }
+.lunar-page figcaption a { color: inherit; }
+.lunar-comparison { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 24px; margin-top: 30px; }
+.lunar-motion-toggle { display: block; margin-top: 18px; padding: 0 0 3px; background: none; border: 0; border-bottom: 1px solid #9caeae; color: var(--lunar-muted); font: inherit; font-size: 13px; line-height: 1.5; cursor: pointer; }
+.lunar-page .lunar-media-error { padding: 12px; background: #f4f5f4; color: var(--lunar-muted); font-size: 13px; }
+.lunar-workflow { margin-top: 34px !important; }
+.lunar-workflow a { display: block; cursor: zoom-in; }
+.lunar-workflow img { display: block; width: 100%; height: auto; object-fit: contain; }
+.lunar-page .lunar-enlarge { font-size: 12px; }
+.lunar-method-explanation { margin-top: 24px; }
+.lunar-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 920px; padding-block: 34px 36px; }
+.lunar-highlights > div { display: flex; flex-direction: column-reverse; gap: 10px; }
+.lunar-highlights dt { color: var(--lunar-muted); font-size: 14px; line-height: 1.6; max-width: 340px; }
+.lunar-page .lunar-highlights dd { color: var(--lunar-teal); font-size: 48px; line-height: 1.15; font-weight: 650; letter-spacing: -.05em; font-variant-numeric: tabular-nums; }
+.lunar-highlights dd span { font-size: .58em; letter-spacing: -.02em; }
+.lunar-chart { padding-top: 28px; border-top: 1px solid #e1e6e5; }
+.lunar-chart h3 { font-size: 21px; font-weight: 650; line-height: 1.4; letter-spacing: -.02em; }
+.lunar-bars { margin-top: 28px; max-width: 1000px; }
+.lunar-bar-row { display: grid; grid-template-columns: 238px minmax(0,1fr) 76px; align-items: center; column-gap: 16px; margin-bottom: 20px; }
+.lunar-bar-label, .lunar-bar-value { font-size: 14px; line-height: 1.4; }
+.lunar-bar-value { text-align: right; font-variant-numeric: tabular-nums; }
+.lunar-bar-track { height: 28px; border-left: 1px solid #899b9d; background: #f4f6f5; }
+.lunar-bar { display: block; height: 100%; }
+.lunar-bar-plane { width: 95.857142857%; background: #8f9d9e; }
+.lunar-bar-dem { width: 6.857142857%; background: var(--lunar-teal); }
+.lunar-bar-axis { display: flex; justify-content: space-between; margin-left: 254px; margin-right: 92px; border-top: 1px solid #d9dfde; padding-top: 8px; color: #637175; font-size: 12px; }
+.lunar-excavation { margin-top: 30px !important; }
+html[data-project="lunar-construction"] footer { max-width: 1120px; margin-inline: auto; padding: 0 24px 30px; text-align: center; }
+html[data-project="lunar-construction"] footer p { color: #58676b; font-size: 12px; line-height: 1.6; margin: 0; }
+@media (max-width: 1199px) {
+  .lunar-wrap { width: calc(100% - 64px); }
+  .lunar-page .lunar-hero h1 { font-size: clamp(52px,7.2vw,72px); }
+  .lunar-page .lunar-subtitle { max-width: 400px; }
+  .lunar-page .lunar-hero-scene { width: 92%; margin-left: 8%; margin-top: 28px; }
+  .lunar-hero-composition { padding-bottom: 32px; }
+  .lunar-bar-row { grid-template-columns: 205px minmax(0,1fr) 72px; column-gap: 12px; }
+  .lunar-bar-axis { margin-left: 217px; margin-right: 84px; }
+}
+@media (max-width: 600px) {
+  .lunar-wrap { width: calc(100% - 40px); }
+  .lunar-page { font-size: 16px; line-height: 1.7; }
+  .lunar-hero-composition { padding-top: 24px; padding-bottom: 24px; }
+  .lunar-identity { font-size: 9px; letter-spacing: .1em; }
+  .lunar-page .lunar-hero h1 { font-size: clamp(40px,11.4vw,64px); padding-top: 34px; line-height: 1.06; }
+  .desktop-break { display: none; }
+  .lunar-page .lunar-subtitle { max-width: 100%; margin-top: 24px; font-size: 16px; }
+  .lunar-page .lunar-hero-scene { width: 100%; margin-left: 0; margin-top: 28px; }
+  .lunar-paper { padding-block: 36px 40px; }
+  .lunar-page .lunar-paper h2 { font-size: 19px; line-height: 1.5; }
+  .lunar-paper .lunar-authors { font-size: 14px; margin-top: 18px; }
+  .lunar-paper .lunar-journal, .lunar-affiliations { font-size: 12px; }
+  .lunar-story > section { padding-block: 40px; }
+  .lunar-page h2 { font-size: 32px; line-height: 1.18; }
+  .lunar-copy h2 { margin-bottom: 22px; }
+  .lunar-comparison { grid-template-columns: minmax(0,1fr); gap: 26px; margin-top: 26px; }
+  .lunar-page figcaption { font-size: 12px; margin-top: 10px; }
+  .lunar-workflow { margin-top: 28px !important; }
+  .lunar-highlights { gap: 20px; padding-block: 28px; }
+  .lunar-page .lunar-highlights dd { font-size: 34px; white-space: nowrap; }
+  .lunar-highlights dt { font-size: 12px; }
+  .lunar-chart { padding-top: 24px; }
+  .lunar-chart h3 { font-size: 20px; }
+  .lunar-bar-row { grid-template-columns: minmax(0,1fr) 66px; gap: 9px 12px; margin-bottom: 22px; }
+  .lunar-bar-label { grid-column: 1 / -1; }
+  .lunar-bar-value { font-size: 13px; }
+  .lunar-bar-track { height: 24px; }
+  .lunar-bar-axis { margin-left: 0; margin-right: 78px; }
+  .lunar-story { padding-bottom: 20px; }
+}
