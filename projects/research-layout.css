@@ -279,3 +279,67 @@ html.research-page body {
   .research-page .ss-section-heading { grid-template-columns: minmax(0, 1fr); }
   .research-page .ss-metric strong { font-size: clamp(36px, 12vw, 60px); }
 }
+/* Full-bleed layered Heroes. Media stays at its native aspect ratio; a single
+   still supplies the scene extension so videos need only one decoder. */
+.research-page .project-hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  width: 100%; max-width: none; margin: 0; border: 0;
+  background: var(--hero-scene, #f5f4f2); color: var(--hero-ink, #17191c);
+}
+.research-page .project-hero :is(.hero-media-background,.hero-media-primary) {
+  position: absolute; inset: 0; z-index: -2; pointer-events: none;
+}
+.research-page .project-hero .hero-media-background {
+  background: var(--hero-poster) center / cover no-repeat;
+  filter: blur(70px); transform: scale(1.12); opacity: var(--hero-fill-opacity,.6);
+}
+.research-page .project-hero .hero-media-primary { z-index: -1; }
+.research-page .project-hero .hero-media-primary :is(img,video) {
+  display: block; width: 100%; height: 100%; max-width: none; max-height: none;
+  border: 0; border-radius: 0; object-fit: contain; object-position: var(--hero-focal,50% 40%);
+  margin: 0; transform: none;
+  mask-image: linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+}
+.research-page .project-hero .hero-overlay {
+  display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  position: relative; width: 100%; min-height: var(--hero-height,780px);
+  gap: var(--hero-clearance,240px); padding: clamp(40px,4vw,76px) var(--page-gutter) 40px;
+  background: var(--hero-scrim); text-align: center;
+}
+.research-page .project-hero .hero-headline { width: min(100%,1120px); margin: 0; padding: 0; }
+.research-page .project-hero h1 {
+  margin: 0; max-width: none; color: inherit;
+  font-size: clamp(32px,3.5vw,62px); font-weight: 500;
+  line-height: 1.13; letter-spacing: -.045em; text-wrap: balance;
+}
+.research-page .project-hero .research-publication {
+  width: min(100%,980px); margin: 0; padding: 0; gap: 18px; color: inherit;
+}
+.research-page .project-hero .research-publication .hero-paper-title {
+  max-width: 850px; color: inherit; font-size: clamp(20px,1.5vw,26px); line-height: 1.35;
+}
+.research-page .project-hero .research-publication > .text-sm { font-size: 13px; max-width: 900px; }
+.research-page[data-project="bim2workface"] .project-hero {
+  --hero-scene: #eeebeb;
+  --hero-poster: url('/projects/bim2workface/videos/white_side.jpg');
+  --hero-height: clamp(720px,52vw,960px);
+  --hero-scrim: linear-gradient(#fff9,transparent 30%,transparent 48%,#fffffff0 80%,#fff);
+}
+.research-page[data-project="bim-laser"] .project-hero {
+  --hero-scene: #000; --hero-ink: #fff;
+  --hero-poster: url('/projects/bim-laser/assets/bim-laser/projector_rotation-poster.jpg');
+  --hero-fill-opacity: .22; --hero-height: clamp(660px,44vw,820px); --hero-clearance: 180px;
+  --hero-focal: 50% 40%;
+  --hero-scrim: linear-gradient(#0004,transparent 28%,#0003 47%,#000c 90%,#000d);
+}
+@media (max-width:600px) {
+  .research-page .project-hero--academic .hero-overlay { --hero-height: 0px; --hero-clearance: 220px; padding-block: 32px; }
+  .research-page .project-hero--academic .hero-media-primary { bottom: auto; top: 105px; height: 320px; }
+  .research-page .project-hero--academic .hero-media-primary :is(img,video) { object-position: center; mask-image: linear-gradient(transparent,#000 16%,#000 80%,transparent); }
+  .research-page .project-hero--academic .hero-media-background { opacity: .18; }
+  .research-page[data-project="bim2workface"] .project-hero { --hero-scrim: linear-gradient(#fff9,transparent 25%,#fff5 45%,#fff 65%); }
+  .research-page .project-hero--academic h1 br { display: none; }
+}
+/* Keep the horizontal feather on the actual video edges, including ultrawide. */
+.research-page .project-hero--academic .hero-media-primary { display: grid; place-items: center; }
+.research-page .project-hero--academic .hero-media-primary video { width: auto; max-width: 100%; height: 100%; }
