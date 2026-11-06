@@ -62,7 +62,7 @@ html[data-project="lunar-construction"] main { width: 100%; max-width: none; mar
   .lunar-page .lunar-hero-figure { width: min(100%, 760px); justify-self: end; margin-block-start: 0; }
 }
 .lunar-paper { text-align: center; padding-block: clamp(40px, 5vw, 64px); }
-.lunar-page .lunar-paper h2 { max-width: 100%; margin-inline: auto; }
+.lunar-page .lunar-paper h2 { max-width: 100%; margin-inline: auto; text-wrap: balance; }
 .lunar-paper .lunar-authors { margin-top: 24px; font-size: 17px; }
 .lunar-paper .lunar-journal { margin-top: 12px; color: var(--lunar-muted); font-size: 14px; }
 .lunar-affiliations { margin-top: 16px; color: var(--lunar-muted); font-size: 14px; line-height: 1.75; }
