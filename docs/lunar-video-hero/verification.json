@@ -1,0 +1,332 @@
+[
+  {
+    "width": 1440,
+    "scrollWidth": 1440,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 788.28125,
+      "right": 1440,
+      "bottom": 788.28125
+    },
+    "video": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 788.28125,
+      "right": 1440,
+      "bottom": 788.28125
+    },
+    "text": [
+      {
+        "text": "ROBOTIC SPACE CONSTRUCTION",
+        "x": 48,
+        "y": 43.1875,
+        "width": 660,
+        "height": 31.5,
+        "right": 708,
+        "bottom": 74.6875
+      },
+      {
+        "text": "Projecting landmarks for lunar robots.",
+        "x": 48,
+        "y": 90.6875,
+        "width": 660,
+        "height": 139.9375,
+        "right": 708,
+        "bottom": 230.625
+      },
+      {
+        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
+        "x": 48,
+        "y": 250.625,
+        "width": 570,
+        "height": 57.59375,
+        "right": 618,
+        "bottom": 308.21875
+      }
+    ],
+    "paper": {
+      "x": 230,
+      "y": 788.28125,
+      "width": 980,
+      "height": 398.625,
+      "right": 1210,
+      "bottom": 1186.90625
+    },
+    "currentTime": 10,
+    "videoWidth": 1856,
+    "videoHeight": 1016,
+    "muted": true,
+    "inline": true,
+    "autoplay": true,
+    "loop": true
+  },
+  {
+    "width": 1024,
+    "scrollWidth": 1024,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 600,
+      "right": 1024,
+      "bottom": 600
+    },
+    "video": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 600,
+      "right": 1024,
+      "bottom": 600
+    },
+    "text": [
+      {
+        "text": "ROBOTIC SPACE CONSTRUCTION",
+        "x": 34.8125,
+        "y": 30.71875,
+        "width": 660,
+        "height": 28,
+        "right": 694.8125,
+        "bottom": 58.71875
+      },
+      {
+        "text": "Projecting landmarks for lunar robots.",
+        "x": 34.8125,
+        "y": 74.71875,
+        "width": 604.234375,
+        "height": 99.5,
+        "right": 639.046875,
+        "bottom": 174.21875
+      },
+      {
+        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
+        "x": 34.8125,
+        "y": 194.21875,
+        "width": 570,
+        "height": 51.1875,
+        "right": 604.8125,
+        "bottom": 245.40625
+      }
+    ],
+    "paper": {
+      "x": 34.8125,
+      "y": 600,
+      "width": 954.359375,
+      "height": 300.71875,
+      "right": 989.171875,
+      "bottom": 900.71875
+    },
+    "currentTime": 10,
+    "videoWidth": 1856,
+    "videoHeight": 1016,
+    "muted": true,
+    "inline": true,
+    "autoplay": true,
+    "loop": true
+  },
+  {
+    "width": 768,
+    "scrollWidth": 768,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 600,
+      "right": 768,
+      "bottom": 600
+    },
+    "video": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 600,
+      "right": 768,
+      "bottom": 600
+    },
+    "text": [
+      {
+        "text": "ROBOTIC SPACE CONSTRUCTION",
+        "x": 26.109375,
+        "y": 24,
+        "width": 660,
+        "height": 28,
+        "right": 686.109375,
+        "bottom": 52
+      },
+      {
+        "text": "Projecting landmarks for lunar robots.",
+        "x": 26.109375,
+        "y": 68,
+        "width": 494.203125,
+        "height": 81.34375,
+        "right": 520.3125,
+        "bottom": 149.34375
+      },
+      {
+        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
+        "x": 26.109375,
+        "y": 169.34375,
+        "width": 570,
+        "height": 51.1875,
+        "right": 596.109375,
+        "bottom": 220.53125
+      }
+    ],
+    "paper": {
+      "x": 26.109375,
+      "y": 600,
+      "width": 715.765625,
+      "height": 337.9375,
+      "right": 741.875,
+      "bottom": 937.9375
+    },
+    "currentTime": 10,
+    "videoWidth": 1856,
+    "videoHeight": 1016,
+    "muted": true,
+    "inline": true,
+    "autoplay": true,
+    "loop": true
+  },
+  {
+    "width": 390,
+    "scrollWidth": 390,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 560,
+      "right": 390,
+      "bottom": 560
+    },
+    "video": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 560,
+      "right": 390,
+      "bottom": 560
+    },
+    "text": [
+      {
+        "text": "ROBOTIC SPACE CONSTRUCTION",
+        "x": 20,
+        "y": 24,
+        "width": 350,
+        "height": 21,
+        "right": 370,
+        "bottom": 45
+      },
+      {
+        "text": "Projecting landmarks for lunar robots.",
+        "x": 20,
+        "y": 61,
+        "width": 350,
+        "height": 76.6875,
+        "right": 370,
+        "bottom": 137.6875
+      },
+      {
+        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
+        "x": 20,
+        "y": 153.6875,
+        "width": 350,
+        "height": 76.78125,
+        "right": 370,
+        "bottom": 230.46875
+      }
+    ],
+    "paper": {
+      "x": 20,
+      "y": 560,
+      "width": 350,
+      "height": 422.03125,
+      "right": 370,
+      "bottom": 982.03125
+    },
+    "currentTime": 10,
+    "videoWidth": 1856,
+    "videoHeight": 1016,
+    "muted": true,
+    "inline": true,
+    "autoplay": true,
+    "loop": true
+  },
+  {
+    "width": 375,
+    "scrollWidth": 375,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 560,
+      "right": 375,
+      "bottom": 560
+    },
+    "video": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 560,
+      "right": 375,
+      "bottom": 560
+    },
+    "text": [
+      {
+        "text": "ROBOTIC SPACE CONSTRUCTION",
+        "x": 20,
+        "y": 24,
+        "width": 335,
+        "height": 21,
+        "right": 355,
+        "bottom": 45
+      },
+      {
+        "text": "Projecting landmarks for lunar robots.",
+        "x": 20,
+        "y": 61,
+        "width": 335,
+        "height": 73.71875,
+        "right": 355,
+        "bottom": 134.71875
+      },
+      {
+        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
+        "x": 20,
+        "y": 150.71875,
+        "width": 335,
+        "height": 76.78125,
+        "right": 355,
+        "bottom": 227.5
+      }
+    ],
+    "paper": {
+      "x": 20,
+      "y": 560,
+      "width": 335,
+      "height": 451.78125,
+      "right": 355,
+      "bottom": 1011.78125
+    },
+    "currentTime": 10,
+    "videoWidth": 1856,
+    "videoHeight": 1016,
+    "muted": true,
+    "inline": true,
+    "autoplay": true,
+    "loop": true
+  },
+  {
+    "reduced": {
+      "paused": true,
+      "visibility": "hidden",
+      "poster": "http://127.0.0.1:8771/projects/lunar-construction/projects/lunar-construction/media/lunar-localization-hero-poster.jpg",
+      "autoplay": false
+    },
+    "heroRequestsInitially": 0,
+    "preferenceChanges": "passed"
+  }
+]

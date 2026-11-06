@@ -1,6 +1,7 @@
 // Keep the supplied media files unchanged. Motion is controlled at playback time.
 (() => {
   const videos = [...document.querySelectorAll('.lunar-page video[data-motion]')];
+  const hero = document.querySelector('.lunar-hero-video');
   const toggle = document.querySelector('.lunar-motion-toggle');
   const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
   let paused = preference.matches;
@@ -14,6 +15,16 @@
         // The global play button remains available when autoplay is restricted.
       });
     });
+    if (hero) {
+      // The Hero stays on its poster whenever reduced motion is requested.
+      const playHero = !paused && !preference.matches;
+      hero.muted = true;
+      hero.autoplay = playHero;
+      if (!playHero) hero.pause();
+      else hero.play().catch(() => {
+        // Keep the poster visible if this browser restricts autoplay.
+      });
+    }
     toggle.textContent = paused ? 'Play motion' : 'Pause motion';
   };
 
@@ -35,6 +46,11 @@
   });
   toggle.hidden = false;
   toggle.addEventListener('click', () => { paused = !paused; applyMotion(); });
-  preference.addEventListener('change', () => { paused = preference.matches; applyMotion(); });
+  preference.addEventListener('change', () => {
+    paused = preference.matches;
+    // Re-evaluate the Hero source's media query when the preference changes.
+    if (hero) hero.load();
+    applyMotion();
+  });
   applyMotion();
 })();

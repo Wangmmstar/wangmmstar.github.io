@@ -41,10 +41,19 @@ for site in SITES:
     page = Page(source)
     old = Page(subprocess.check_output(["git", "show", f"{BASE}:{relative}"], cwd=ROOT, text=True))
     assert Counter(old.text) == Counter(page.text), f"Research text changed: {site}"
-    assert not old.references() - page.references(), f"An original link or media reference was removed: {site}"
+    removed = old.references() - page.references()
+    if site == "lunar-construction":
+        # The original simulation image is intentionally replaced only in the Hero.
+        removed -= Counter({
+            ("img", "src", "/projects/lunar-construction/projects/lunar-construction/media/lunar-simulation-scene.png"): 1,
+            ("img", "alt", "Research simulation: a fixed laser projector casts identifiable points onto uneven lunar construction terrain. Original labels identify the projector, raycasting, and terrain model."): 1,
+        })
+    assert not removed, f"An original link or media reference was removed: {site}"
     assert sum(tag == "h1" for tag, _ in page.tags) == 1, f"Expected one Hero title: {site}"
     styles = [a["href"] for tag, a in page.tags if tag == "link" and a.get("rel") == "stylesheet"]
-    assert styles[-1] == "/projects/research-heroes.css", f"Hero CSS must load last: {site}"
+    hero_style = "/projects/lunar-construction/lunar-hero.css" if site == "lunar-construction" else "/projects/research-heroes.css"
+    assert styles[-1] == hero_style, f"Hero CSS must load last: {site}"
+    assert "/projects/research-heroes.css" in styles
     assert "/projects/research-layout.css" in styles
     assert any(tag == "meta" and a.get("name") == "viewport" for tag, a in page.tags)
     ids = [a["id"] for _, a in page.tags if "id" in a]

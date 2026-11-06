@@ -1,0 +1,54 @@
+/* This override is loaded only by the Lunar Construction page. */
+.research-page[data-project="lunar-construction"] .lunar-hero {
+  --hero-height: clamp(600px, 54.742vw, 980px);
+  --hero-poster: url('/projects/lunar-construction/projects/lunar-construction/media/lunar-localization-hero-poster.jpg');
+  --hero-focal: 50% 50%;
+  min-height: var(--hero-height);
+}
+.research-page .lunar-hero .hero-media-primary {
+  inset: 0;
+  display: block;
+  background: var(--hero-poster) var(--hero-focal) / cover no-repeat;
+}
+.research-page .lunar-hero .hero-media-primary video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--hero-focal);
+  mask-image: none;
+}
+.research-page .lunar-hero .hero-overlay {
+  min-height: var(--hero-height);
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: clamp(24px, 3vw, 56px) var(--page-gutter);
+  text-align: left;
+  /* Only the sky behind the headline needs a light readability scrim. */
+  background: linear-gradient(180deg, #090d134d, #090d1326 28%, transparent 52%);
+}
+.research-page .lunar-hero .hero-headline {
+  max-width: 660px;
+  text-shadow: 0 1px 4px #000a;
+}
+.research-page .lunar-page .lunar-hero h1 { margin-inline: 0; }
+.research-page .lunar-hero .lunar-subtitle {
+  max-width: 570px;
+  margin-inline: 0;
+  color: #d9e1e9;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+@media (max-width: 700px) {
+  .research-page[data-project="lunar-construction"] .lunar-hero {
+    --hero-height: 560px;
+    /* Favor the projected landmarks and worker as the camera moves closer. */
+    --hero-focal: 35% 50%;
+  }
+  .research-page .lunar-hero .hero-overlay { padding-block: 24px; }
+  .research-page .lunar-hero .lunar-identity { font-size: 12px; }
+  .research-page .lunar-page .lunar-hero h1 { font-size: clamp(30px, 8.7vw, 42px); }
+  .research-page .lunar-hero .lunar-subtitle { font-size: 16px; line-height: 1.6; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .research-page .lunar-hero .lunar-hero-video { visibility: hidden; }
+}

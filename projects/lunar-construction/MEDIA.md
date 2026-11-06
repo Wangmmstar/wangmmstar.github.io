@@ -17,3 +17,9 @@ All inputs were supplied in `C:\Users\mwang5\OneDrive - University of Florida\Ph
 This repository contains published Astro output, including the existing `index.html` and `_astro/` assets. It does not contain `package.json`, an Astro configuration, or `.astro` source files. The update therefore edits the existing published page, with project-local `lunar.css` and `lunar-media.js`; it introduces no framework, dependencies, or shared-style changes. An Astro install/build cannot be run from this repository. The original source project would be needed to reproduce an Astro build.
 
 The upstream page contained no Paper URL. Its paper title, authors, affiliations, journal, year, and footer are preserved; no publication or repository link has been invented.
+
+## Video Hero replacement
+
+The current Hero uses `lunar-localization-hero.mp4` and `lunar-localization-hero-poster.jpg` in the same existing public media directory. The MP4 is a 13.18 MB H.264 High encode of `/home/mwang5/Videos/Screencasts/lunar_localization.webm`; the source recording is unchanged. All 435 frames are retained with their variable timing, plus a single padding pixel at the right and bottom for even 1856 × 1016 dimensions. The poster is extracted at 10 seconds. The previous simulation image remains available as an unchanged asset.
+
+The page-local `lunar-hero.css` overrides the shared Hero layout only on this page. The existing `lunar-media.js` motion control also handles the Hero, while reduced motion always uses its poster. See [verification and encoding details](../../docs/lunar-video-hero/README.md) for screenshots, playback checks, and the unavailable Astro build result.
