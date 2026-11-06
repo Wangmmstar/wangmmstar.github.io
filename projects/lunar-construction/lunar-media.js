@@ -23,6 +23,8 @@
     };
     video.addEventListener('error', showError);
     video.querySelector('source').addEventListener('error', showError);
+    // A cached or fast source failure can precede this deferred script.
+    if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) showError();
     // In reduced-motion mode, show a decoded still frame instead of a black player.
     video.addEventListener('loadeddata', () => {
       if (paused) video.pause();
