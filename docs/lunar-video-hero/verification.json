@@ -21,29 +21,29 @@
     "text": [
       {
         "text": "ROBOTIC SPACE CONSTRUCTION",
-        "x": 48,
+        "x": 390,
         "y": 43.1875,
         "width": 660,
         "height": 31.5,
-        "right": 708,
+        "right": 1050,
         "bottom": 74.6875
       },
       {
         "text": "Projecting landmarks for lunar robots.",
-        "x": 48,
+        "x": 390,
         "y": 90.6875,
         "width": 660,
         "height": 139.9375,
-        "right": 708,
+        "right": 1050,
         "bottom": 230.625
       },
       {
         "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
-        "x": 48,
+        "x": 435,
         "y": 250.625,
         "width": 570,
         "height": 57.59375,
-        "right": 618,
+        "right": 1005,
         "bottom": 308.21875
       }
     ],
@@ -85,29 +85,29 @@
     "text": [
       {
         "text": "ROBOTIC SPACE CONSTRUCTION",
-        "x": 34.8125,
+        "x": 182,
         "y": 30.71875,
         "width": 660,
         "height": 28,
-        "right": 694.8125,
+        "right": 842,
         "bottom": 58.71875
       },
       {
         "text": "Projecting landmarks for lunar robots.",
-        "x": 34.8125,
+        "x": 209.875,
         "y": 74.71875,
         "width": 604.234375,
         "height": 99.5,
-        "right": 639.046875,
+        "right": 814.109375,
         "bottom": 174.21875
       },
       {
         "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
-        "x": 34.8125,
+        "x": 227,
         "y": 194.21875,
         "width": 570,
         "height": 51.1875,
-        "right": 604.8125,
+        "right": 797,
         "bottom": 245.40625
       }
     ],
@@ -149,29 +149,29 @@
     "text": [
       {
         "text": "ROBOTIC SPACE CONSTRUCTION",
-        "x": 26.109375,
+        "x": 54,
         "y": 24,
         "width": 660,
         "height": 28,
-        "right": 686.109375,
+        "right": 714,
         "bottom": 52
       },
       {
         "text": "Projecting landmarks for lunar robots.",
-        "x": 26.109375,
+        "x": 136.890625,
         "y": 68,
         "width": 494.203125,
         "height": 81.34375,
-        "right": 520.3125,
+        "right": 631.09375,
         "bottom": 149.34375
       },
       {
         "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
-        "x": 26.109375,
+        "x": 99,
         "y": 169.34375,
         "width": 570,
         "height": 51.1875,
-        "right": 596.109375,
+        "right": 669,
         "bottom": 220.53125
       }
     ],

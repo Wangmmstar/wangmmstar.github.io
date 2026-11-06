@@ -1,6 +1,6 @@
 # Lunar Construction video Hero verification
 
-The Hero now uses the supplied lunar localization recording with the existing title and subtitle over its sky. Only the Lunar page loads `lunar-hero.css`. The media covers the entire Hero with no side margins, feathering, or blurred extension. The phone crop favors the projected landmarks and worker; the full recording remains in the asset. The existing motion control also pauses the Hero.
+The Hero now uses the supplied lunar localization recording with the existing title and subtitle over its sky. The headline group is horizontally centered at every width, and the subtitle uses font weight 700. Only the Lunar page loads `lunar-hero.css`. The media covers the entire Hero with no side margins, feathering, or blurred extension. The phone crop favors the projected landmarks and worker; the full recording remains in the asset. The existing motion control also pauses the Hero.
 
 ## Optimized media
 
