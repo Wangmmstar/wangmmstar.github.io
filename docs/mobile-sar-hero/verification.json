@@ -1,0 +1,502 @@
+{
+  "baseline": "e9a2a19",
+  "build": "Static GitHub Pages HTML, CSS, and assets assembled in /tmp/mobile-sar-hero-build; no framework build step is configured in this repository.",
+  "checks": [
+    "Complete publication group centered horizontally and vertically inside full-width hero",
+    "Image covers hero without stretching",
+    "No clipping, overlapping text levels, or horizontal overflow",
+    "All author names, affiliation markers, affiliations, and other visible text preserved",
+    "One publication block, contained entirely inside hero",
+    "All subsequent sections and footer byte-for-byte unchanged",
+    "All page asset references resolve; CSS scoped to Mobile SAR page",
+    "No browser errors or failed asset requests",
+    "Desktop 1440px and mobile 390px screenshots visually reviewed: robot and actual projection visible"
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 810,
+        "right": 1440,
+        "bottom": 810
+      },
+      "group": {
+        "x": 195,
+        "y": 237.578125,
+        "width": 1050,
+        "height": 334.828125,
+        "right": 1245,
+        "bottom": 572.40625
+      },
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 810,
+        "right": 1440,
+        "bottom": 810
+      },
+      "imageFit": "cover",
+      "text": [
+        {
+          "text": "A mobile robot brings BIM installation tasks to the right work area\u2014and checks the results.",
+          "x": 195,
+          "y": 237.578125,
+          "width": 1050,
+          "height": 104.125,
+          "right": 1245,
+          "bottom": 341.703125,
+          "align": "center",
+          "fontSize": 46.08
+        },
+        {
+          "text": "Bringing BIM-Grounded Guidance to the Jobsite: A Mobile SAR Co-Pilot for MEP Layout",
+          "x": 295,
+          "y": 373.375,
+          "width": 850,
+          "height": 64.78125,
+          "right": 1145,
+          "bottom": 438.15625,
+          "align": "center",
+          "fontSize": 24
+        },
+        {
+          "text": "Mengjun Wang\na\nDingyuan Huang\na\nShuai Li\na\nJiannan Cai\nb\nYuqing Hu\nc",
+          "x": 401.765625,
+          "y": 458.15625,
+          "width": 636.453125,
+          "height": 25.5,
+          "right": 1038.21875,
+          "bottom": 483.65625,
+          "align": "center",
+          "fontSize": 18
+        },
+        {
+          "text": "a Department of Civil & Coastal Engineering, University of Florida\nb Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio\nc Department of Architectural Engineering, The Pennsylvania State University",
+          "x": 373.296875,
+          "y": 503.65625,
+          "width": 693.40625,
+          "height": 68.75,
+          "right": 1066.703125,
+          "bottom": 572.40625,
+          "align": "center",
+          "fontSize": 13.5
+        }
+      ],
+      "authorNames": [
+        "Mengjun Wang a",
+        "Dingyuan Huang a",
+        "Shuai Li a",
+        "Jiannan Cai b",
+        "Yuqing Hu c"
+      ],
+      "affiliations": [
+        "a Department of Civil & Coastal Engineering, University of Florida",
+        "b Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio",
+        "c Department of Architectural Engineering, The Pennsylvania State University"
+      ],
+      "publicationCount": 1,
+      "publicationInside": true,
+      "nextSection": {
+        "x": 230,
+        "y": 810,
+        "width": 980,
+        "height": 716.84375,
+        "right": 1210,
+        "bottom": 1526.84375
+      }
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 720,
+        "right": 1024,
+        "bottom": 720
+      },
+      "group": {
+        "x": 51.1875,
+        "y": 244.875,
+        "width": 921.625,
+        "height": 230.25,
+        "right": 972.8125,
+        "bottom": 475.125
+      },
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 720,
+        "right": 1024,
+        "bottom": 720
+      },
+      "imageFit": "cover",
+      "text": [
+        {
+          "text": "A mobile robot brings BIM installation tasks to the right work area\u2014and checks the results.",
+          "x": 51.1875,
+          "y": 244.875,
+          "width": 921.625,
+          "height": 74.03125,
+          "right": 972.8125,
+          "bottom": 318.90625,
+          "align": "center",
+          "fontSize": 32.768
+        },
+        {
+          "text": "Bringing BIM-Grounded Guidance to the Jobsite: A Mobile SAR Co-Pilot for MEP Layout",
+          "x": 87,
+          "y": 341.421875,
+          "width": 850,
+          "height": 24.296875,
+          "right": 937,
+          "bottom": 365.71875,
+          "align": "center",
+          "fontSize": 18
+        },
+        {
+          "text": "Mengjun Wang\na\nDingyuan Huang\na\nShuai Li\na\nJiannan Cai\nb\nYuqing Hu\nc",
+          "x": 255.109375,
+          "y": 380.046875,
+          "width": 513.78125,
+          "height": 21,
+          "right": 768.890625,
+          "bottom": 401.046875,
+          "align": "center",
+          "fontSize": 16
+        },
+        {
+          "text": "a Department of Civil & Coastal Engineering, University of Florida\nb Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio\nc Department of Architectural Engineering, The Pennsylvania State University",
+          "x": 216.65625,
+          "y": 415.375,
+          "width": 590.671875,
+          "height": 59.75,
+          "right": 807.328125,
+          "bottom": 475.125,
+          "align": "center",
+          "fontSize": 11.5
+        }
+      ],
+      "authorNames": [
+        "Mengjun Wang a",
+        "Dingyuan Huang a",
+        "Shuai Li a",
+        "Jiannan Cai b",
+        "Yuqing Hu c"
+      ],
+      "affiliations": [
+        "a Department of Civil & Coastal Engineering, University of Florida",
+        "b Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio",
+        "c Department of Architectural Engineering, The Pennsylvania State University"
+      ],
+      "publicationCount": 1,
+      "publicationInside": true,
+      "nextSection": {
+        "x": 34.8125,
+        "y": 720,
+        "width": 954.359375,
+        "height": 630.296875,
+        "right": 989.171875,
+        "bottom": 1350.296875
+      }
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 720,
+        "right": 768,
+        "bottom": 720
+      },
+      "group": {
+        "x": 38.390625,
+        "y": 239.703125,
+        "width": 691.21875,
+        "height": 240.59375,
+        "right": 729.609375,
+        "bottom": 480.296875
+      },
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 720,
+        "right": 768,
+        "bottom": 720
+      },
+      "imageFit": "cover",
+      "text": [
+        {
+          "text": "A mobile robot brings BIM installation tasks to the right work area\u2014and checks the results.",
+          "x": 38.390625,
+          "y": 239.703125,
+          "width": 691.21875,
+          "height": 63.25,
+          "right": 729.609375,
+          "bottom": 302.953125,
+          "align": "center",
+          "fontSize": 28
+        },
+        {
+          "text": "Bringing BIM-Grounded Guidance to the Jobsite: A Mobile SAR Co-Pilot for MEP Layout",
+          "x": 38.390625,
+          "y": 322.953125,
+          "width": 691.21875,
+          "height": 48.59375,
+          "right": 729.609375,
+          "bottom": 371.546875,
+          "align": "center",
+          "fontSize": 18
+        },
+        {
+          "text": "Mengjun Wang\na\nDingyuan Huang\na\nShuai Li\na\nJiannan Cai\nb\nYuqing Hu\nc",
+          "x": 137.328125,
+          "y": 385.546875,
+          "width": 493.34375,
+          "height": 21,
+          "right": 630.671875,
+          "bottom": 406.546875,
+          "align": "center",
+          "fontSize": 16
+        },
+        {
+          "text": "a Department of Civil & Coastal Engineering, University of Florida\nb Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio\nc Department of Architectural Engineering, The Pennsylvania State University",
+          "x": 88.65625,
+          "y": 420.546875,
+          "width": 590.671875,
+          "height": 59.75,
+          "right": 679.328125,
+          "bottom": 480.296875,
+          "align": "center",
+          "fontSize": 11.5
+        }
+      ],
+      "authorNames": [
+        "Mengjun Wang a",
+        "Dingyuan Huang a",
+        "Shuai Li a",
+        "Jiannan Cai b",
+        "Yuqing Hu c"
+      ],
+      "affiliations": [
+        "a Department of Civil & Coastal Engineering, University of Florida",
+        "b Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio",
+        "c Department of Architectural Engineering, The Pennsylvania State University"
+      ],
+      "publicationCount": 1,
+      "publicationInside": true,
+      "nextSection": {
+        "x": 26.109375,
+        "y": 720,
+        "width": 715.765625,
+        "height": 511.71875,
+        "right": 741.875,
+        "bottom": 1231.71875
+      }
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 720,
+        "right": 390,
+        "bottom": 720
+      },
+      "group": {
+        "x": 24,
+        "y": 156.546875,
+        "width": 342,
+        "height": 406.890625,
+        "right": 366,
+        "bottom": 563.4375
+      },
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 720,
+        "right": 390,
+        "bottom": 720
+      },
+      "imageFit": "cover",
+      "text": [
+        {
+          "text": "A mobile robot brings BIM installation tasks to the right work area\u2014and checks the results.",
+          "x": 24,
+          "y": 156.546875,
+          "width": 342,
+          "height": 126.5,
+          "right": 366,
+          "bottom": 283.046875,
+          "align": "center",
+          "fontSize": 28
+        },
+        {
+          "text": "Bringing BIM-Grounded Guidance to the Jobsite: A Mobile SAR Co-Pilot for MEP Layout",
+          "x": 24,
+          "y": 303.046875,
+          "width": 342,
+          "height": 72.890625,
+          "right": 366,
+          "bottom": 375.9375,
+          "align": "center",
+          "fontSize": 18
+        },
+        {
+          "text": "Mengjun Wang\na\nDingyuan Huang\na\nShuai Li\na\nJiannan Cai\nb\nYuqing Hu\nc",
+          "x": 24,
+          "y": 389.9375,
+          "width": 342,
+          "height": 48,
+          "right": 366,
+          "bottom": 437.9375,
+          "align": "center",
+          "fontSize": 16
+        },
+        {
+          "text": "a Department of Civil & Coastal Engineering, University of Florida\nb Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio\nc Department of Architectural Engineering, The Pennsylvania State University",
+          "x": 24,
+          "y": 451.9375,
+          "width": 342,
+          "height": 111.5,
+          "right": 366,
+          "bottom": 563.4375,
+          "align": "center",
+          "fontSize": 11.5
+        }
+      ],
+      "authorNames": [
+        "Mengjun Wang a",
+        "Dingyuan Huang a",
+        "Shuai Li a",
+        "Jiannan Cai b",
+        "Yuqing Hu c"
+      ],
+      "affiliations": [
+        "a Department of Civil & Coastal Engineering, University of Florida",
+        "b Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio",
+        "c Department of Architectural Engineering, The Pennsylvania State University"
+      ],
+      "publicationCount": 1,
+      "publicationInside": true,
+      "nextSection": {
+        "x": 20,
+        "y": 720,
+        "width": 350,
+        "height": 957.625,
+        "right": 370,
+        "bottom": 1677.625
+      }
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 720,
+        "right": 375,
+        "bottom": 720
+      },
+      "group": {
+        "x": 24,
+        "y": 156.546875,
+        "width": 327,
+        "height": 406.890625,
+        "right": 351,
+        "bottom": 563.4375
+      },
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 720,
+        "right": 375,
+        "bottom": 720
+      },
+      "imageFit": "cover",
+      "text": [
+        {
+          "text": "A mobile robot brings BIM installation tasks to the right work area\u2014and checks the results.",
+          "x": 24,
+          "y": 156.546875,
+          "width": 327,
+          "height": 126.5,
+          "right": 351,
+          "bottom": 283.046875,
+          "align": "center",
+          "fontSize": 28
+        },
+        {
+          "text": "Bringing BIM-Grounded Guidance to the Jobsite: A Mobile SAR Co-Pilot for MEP Layout",
+          "x": 24,
+          "y": 303.046875,
+          "width": 327,
+          "height": 72.890625,
+          "right": 351,
+          "bottom": 375.9375,
+          "align": "center",
+          "fontSize": 18
+        },
+        {
+          "text": "Mengjun Wang\na\nDingyuan Huang\na\nShuai Li\na\nJiannan Cai\nb\nYuqing Hu\nc",
+          "x": 24,
+          "y": 389.9375,
+          "width": 327,
+          "height": 48,
+          "right": 351,
+          "bottom": 437.9375,
+          "align": "center",
+          "fontSize": 16
+        },
+        {
+          "text": "a Department of Civil & Coastal Engineering, University of Florida\nb Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio\nc Department of Architectural Engineering, The Pennsylvania State University",
+          "x": 24,
+          "y": 451.9375,
+          "width": 327,
+          "height": 111.5,
+          "right": 351,
+          "bottom": 563.4375,
+          "align": "center",
+          "fontSize": 11.5
+        }
+      ],
+      "authorNames": [
+        "Mengjun Wang a",
+        "Dingyuan Huang a",
+        "Shuai Li a",
+        "Jiannan Cai b",
+        "Yuqing Hu c"
+      ],
+      "affiliations": [
+        "a Department of Civil & Coastal Engineering, University of Florida",
+        "b Civil and Environmental Engineering, and Construction Management, The University of Texas at San Antonio",
+        "c Department of Architectural Engineering, The Pennsylvania State University"
+      ],
+      "publicationCount": 1,
+      "publicationInside": true,
+      "nextSection": {
+        "x": 20,
+        "y": 720,
+        "width": 335,
+        "height": 935.125,
+        "right": 355,
+        "bottom": 1655.125
+      }
+    }
+  ]
+}
