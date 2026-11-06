@@ -1,0 +1,242 @@
+[
+  {
+    "site": "mobile-sar-copilot",
+    "zoom": 1.25,
+    "windowWidth": 1920,
+    "innerWidth": 1536,
+    "outerWidth": 1920,
+    "dpr": 1.25,
+    "scrollWidth": 1536,
+    "heroHeight": 1064
+  },
+  {
+    "site": "bim2workface",
+    "zoom": 1.25,
+    "windowWidth": 1920,
+    "innerWidth": 1536,
+    "outerWidth": 1920,
+    "dpr": 1.25,
+    "scrollWidth": 1536,
+    "heroHeight": 520
+  },
+  {
+    "site": "bim-laser",
+    "zoom": 1.25,
+    "windowWidth": 1920,
+    "innerWidth": 1536,
+    "outerWidth": 1920,
+    "dpr": 1.25,
+    "scrollWidth": 1536,
+    "heroHeight": 520
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.25,
+    "windowWidth": 1920,
+    "innerWidth": 1536,
+    "outerWidth": 1920,
+    "dpr": 1.25,
+    "scrollWidth": 1536,
+    "heroHeight": 861
+  },
+  {
+    "site": "subsurface",
+    "zoom": 1.25,
+    "windowWidth": 1920,
+    "innerWidth": 1536,
+    "outerWidth": 1920,
+    "dpr": 1.25,
+    "scrollWidth": 1524,
+    "heroHeight": 800
+  },
+  {
+    "site": "fire-investigation",
+    "zoom": 1.25,
+    "windowWidth": 1920,
+    "innerWidth": 1536,
+    "outerWidth": 1920,
+    "dpr": 1.25,
+    "scrollWidth": 1536,
+    "heroHeight": 1165
+  },
+  {
+    "site": "mobile-sar-copilot",
+    "zoom": 1.25,
+    "windowWidth": 960,
+    "innerWidth": 768,
+    "outerWidth": 960,
+    "dpr": 1.25,
+    "scrollWidth": 768,
+    "heroHeight": 899
+  },
+  {
+    "site": "bim2workface",
+    "zoom": 1.25,
+    "windowWidth": 960,
+    "innerWidth": 768,
+    "outerWidth": 960,
+    "dpr": 1.25,
+    "scrollWidth": 768,
+    "heroHeight": 432
+  },
+  {
+    "site": "bim-laser",
+    "zoom": 1.25,
+    "windowWidth": 960,
+    "innerWidth": 768,
+    "outerWidth": 960,
+    "dpr": 1.25,
+    "scrollWidth": 768,
+    "heroHeight": 432
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.25,
+    "windowWidth": 960,
+    "innerWidth": 768,
+    "outerWidth": 960,
+    "dpr": 1.25,
+    "scrollWidth": 768,
+    "heroHeight": 636
+  },
+  {
+    "site": "subsurface",
+    "zoom": 1.25,
+    "windowWidth": 960,
+    "innerWidth": 768,
+    "outerWidth": 960,
+    "dpr": 1.25,
+    "scrollWidth": 756,
+    "heroHeight": 672
+  },
+  {
+    "site": "fire-investigation",
+    "zoom": 1.25,
+    "windowWidth": 960,
+    "innerWidth": 768,
+    "outerWidth": 960,
+    "dpr": 1.25,
+    "scrollWidth": 768,
+    "heroHeight": 751
+  },
+  {
+    "site": "mobile-sar-copilot",
+    "zoom": 1.5,
+    "windowWidth": 1920,
+    "innerWidth": 1280,
+    "outerWidth": 1920,
+    "dpr": 1.5,
+    "scrollWidth": 1280,
+    "heroHeight": 978
+  },
+  {
+    "site": "bim2workface",
+    "zoom": 1.5,
+    "windowWidth": 1920,
+    "innerWidth": 1280,
+    "outerWidth": 1920,
+    "dpr": 1.5,
+    "scrollWidth": 1280,
+    "heroHeight": 502
+  },
+  {
+    "site": "bim-laser",
+    "zoom": 1.5,
+    "windowWidth": 1920,
+    "innerWidth": 1280,
+    "outerWidth": 1920,
+    "dpr": 1.5,
+    "scrollWidth": 1280,
+    "heroHeight": 502
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.5,
+    "windowWidth": 1920,
+    "innerWidth": 1280,
+    "outerWidth": 1920,
+    "dpr": 1.5,
+    "scrollWidth": 1280,
+    "heroHeight": 817
+  },
+  {
+    "site": "subsurface",
+    "zoom": 1.5,
+    "windowWidth": 1920,
+    "innerWidth": 1280,
+    "outerWidth": 1920,
+    "dpr": 1.5,
+    "scrollWidth": 1270,
+    "heroHeight": 672
+  },
+  {
+    "site": "fire-investigation",
+    "zoom": 1.5,
+    "windowWidth": 1920,
+    "innerWidth": 1280,
+    "outerWidth": 1920,
+    "dpr": 1.5,
+    "scrollWidth": 1280,
+    "heroHeight": 1119
+  },
+  {
+    "site": "mobile-sar-copilot",
+    "zoom": 1.5,
+    "windowWidth": 960,
+    "innerWidth": 640,
+    "outerWidth": 960,
+    "dpr": 1.5,
+    "scrollWidth": 640,
+    "heroHeight": 928
+  },
+  {
+    "site": "bim2workface",
+    "zoom": 1.5,
+    "windowWidth": 960,
+    "innerWidth": 640,
+    "outerWidth": 960,
+    "dpr": 1.5,
+    "scrollWidth": 640,
+    "heroHeight": 429
+  },
+  {
+    "site": "bim-laser",
+    "zoom": 1.5,
+    "windowWidth": 960,
+    "innerWidth": 640,
+    "outerWidth": 960,
+    "dpr": 1.5,
+    "scrollWidth": 640,
+    "heroHeight": 429
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.5,
+    "windowWidth": 960,
+    "innerWidth": 640,
+    "outerWidth": 960,
+    "dpr": 1.5,
+    "scrollWidth": 640,
+    "heroHeight": 636
+  },
+  {
+    "site": "subsurface",
+    "zoom": 1.5,
+    "windowWidth": 960,
+    "innerWidth": 640,
+    "outerWidth": 960,
+    "dpr": 1.5,
+    "scrollWidth": 630,
+    "heroHeight": 672
+  },
+  {
+    "site": "fire-investigation",
+    "zoom": 1.5,
+    "windowWidth": 960,
+    "innerWidth": 640,
+    "outerWidth": 960,
+    "dpr": 1.5,
+    "scrollWidth": 640,
+    "heroHeight": 687
+  }
+]

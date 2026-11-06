@@ -1,0 +1,281 @@
+/* Stable source for the six published research pages. Load after generated CSS.
+   Keep this link and the research-* hooks if these pages are rebuilt in Astro. */
+html.research-page {
+  --content-width: 1200px;
+  --page-gutter: clamp(20px, 3.4vw, 48px);
+  --reading-width: 76ch;
+  --body-size: clamp(16px, 1.4vw, 18px);
+  --heading-size: clamp(28px, 2.6vw, 40px);
+  --section-space: clamp(40px, 5vw, 72px);
+  --media-space: clamp(24px, 3vw, 36px);
+  --layout-gap: clamp(24px, 3vw, 40px);
+  --caption-size: 14px;
+  /* Legacy carousel scripts still read these named dimensions. */
+  --maximum-text-width: var(--content-width);
+  --minimum-inline-margin: var(--page-gutter);
+  --actual-inline-margin: max(var(--page-gutter), (100cqw - var(--content-width)) / 2);
+  --actual-text-width: calc(100cqw - 2 * var(--actual-inline-margin));
+}
+html.research-page body {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  font-family: var(--font-noto-sans), sans-serif;
+  font-size: var(--body-size);
+  line-height: 1.75;
+}
+.research-page *, .research-page *::before, .research-page *::after { box-sizing: border-box; }
+.research-page main { width: 100%; max-width: none; margin: 0; }
+.research-page .full-bleed { width: 100%; margin-inline: 0; }
+.research-page .research-container,
+.research-page .research-section,
+.research-page .ss .ss-wrap,
+.research-page .lunar-wrap {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width));
+  max-width: none;
+  margin-inline: auto;
+}
+.research-page .research-section { padding-block: var(--section-space); }
+.research-page .research-wide { width: 100%; margin-inline: 0; }
+.research-page .research-section h2,
+.research-page .lunar-page h2,
+.research-page .ss h2 {
+  max-width: none;
+  margin: 0 0 24px;
+  font-size: var(--heading-size);
+  font-weight: 550;
+  line-height: 1.22;
+  letter-spacing: -.035em;
+  text-wrap: pretty;
+}
+.research-page .research-section h3 { margin-block: 24px 12px; font-size: clamp(22px, 2vw, 28px); line-height: 1.3; }
+.research-page .research-section > p,
+.research-page .lunar-copy p { max-width: var(--reading-width); margin: 16px 0 0; font-size: var(--body-size); line-height: 1.75; }
+.research-page .research-section :is(figure,picture) { min-width: 0; }
+.research-page .research-section > picture,
+.research-page .research-section > .research-wide > picture { display: block; margin-block: var(--media-space) 0; }
+.research-page .research-section img {
+  display: block;
+  max-width: 100%;
+  max-height: none;
+  height: auto;
+  object-fit: contain;
+}
+.research-page .research-section > picture img,
+.research-page .research-wide > picture img { width: 100%; margin: 0; }
+.research-page .research-section figure { margin-inline: 0; }
+.research-page figcaption,
+.research-page .sar-story :is(figcaption,.sar-figure figcaption),
+.research-page .ss figcaption,
+.research-page .lunar-page figcaption {
+  margin-top: 12px;
+  font-size: var(--caption-size);
+  line-height: 1.65;
+  text-align: left;
+}
+.research-page .research-section video { display: block; width: 100%; height: auto; object-fit: contain; }
+.research-page [hidden] { display: none !important; }
+.research-page :is(a,button,input):focus-visible { outline-offset: 4px; }
+.research-page footer { width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); max-width: none; margin-inline: auto; padding: 24px 0; }
+.research-page footer :is(p,a) { font-size: 13px; line-height: 1.65; }
+
+/* Publication areas share one hierarchy while retaining existing branding. */
+.research-page .research-publication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-block: var(--section-space);
+  text-align: center;
+  text-shadow: none;
+}
+.research-page .research-publication .hero-paper-title,
+.research-page .lunar-paper h2,
+.research-page .ss .ss-publication h2 {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  color: var(--research-primary, var(--ss-ink, #1d2a2e));
+  font-size: clamp(26px, 2.35vw, 34px);
+  font-weight: 550;
+  line-height: 1.35;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+.research-page .research-publication .header-authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 24px;
+  margin: 0;
+}
+.research-page .research-publication .header-authors > div > div { font-size: 17px; line-height: 1.5; align-items: baseline; }
+.research-page .research-publication sup { font-size: .72em; line-height: 1; }
+.research-page .research-publication > .text-sm { font-size: 14px; line-height: 1.7; }
+.research-page .research-publication .not-prose a { color: #27272a; font-size: 15px; }
+.research-page .sar-story .header-authors > div + div::before { content: none; }
+
+/* Floating photograph: bounded columns, complete original image, no offsets. */
+.research-page .sar-story .research-hero { border: 0; margin: 0; }
+.research-page .sar-story .research-hero .header-content { width: 100%; max-width: none; min-height: 0; padding: 0; }
+.research-page .sar-story .research-hero .hero-copy { display: block; width: 100%; }
+.research-page .sar-story .sar-hero-stage {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: var(--layout-gap);
+  width: 100%;
+  padding: var(--section-space) max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
+  overflow: visible;
+  background: #17191c;
+  text-align: left;
+}
+.research-page .sar-story .sar-hero-stage .hero-heading { width: 100%; max-width: none; padding: 0; margin: 0; text-align: left; }
+.research-page .sar-story .sar-hero-stage h1 { font-size: clamp(34px, calc(24px + 2vw), 62px); line-height: 1.12; letter-spacing: -.045em; }
+.research-page .sar-story .sar-hero-media { width: 100%; margin: 0; padding: clamp(8px, 1vw, 14px); background: #242629; overflow: visible; border: 1px solid #ffffff20; }
+.research-page .sar-story .sar-hero-media::after { content: none; }
+.research-page .sar-story .sar-hero-media img { width: 100%; height: auto; object-fit: contain; }
+.research-page .sar-story .research-hero .hero-byline { width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); padding-block: var(--section-space); gap: 18px; }
+.research-page .sar-story .research-hero .hero-byline > .text-sm { font-size: 14px; line-height: 1.7; }
+.research-page .sar-story :is(.sar-figure,.sar-problem-gallery,.sar-results) { width: 100%; max-width: none; margin-top: var(--media-space); }
+.research-page .sar-story .sar-record-summary { max-width: var(--reading-width); margin-inline: 0; }
+.research-page .sar-story .sar-guidance-pattern img { object-fit: contain; }
+.research-page .sar-story .sar-problem-image img { width: 100%; height: 100%; object-fit: cover; }
+.research-page .sar-story .sar-target-image img { width: 90%; height: 90%; object-fit: contain; }
+.research-page .sar-story .sar-guidance-image img { width: 100%; height: 100%; object-fit: contain; }
+.research-page .sar-story .sar-results .stat-value { font-size: clamp(32px, 3.6vw, 52px); white-space: normal; }
+.research-page .sar-target-pair { grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--layout-gap); }
+
+/* Lunar illustration floats beside supporting copy below a full-width title.
+   The image keeps its original annotations at every width. */
+.research-page .lunar-page { --lunar-content: var(--content-width); --lunar-hero-width: var(--content-width); --lunar-gutter: var(--page-gutter); --lunar-space: var(--media-space); font-size: var(--body-size); }
+.research-page .lunar-hero-composition { display: block; padding-block: var(--section-space); }
+.research-page .lunar-identity { margin-bottom: 24px; }
+.research-page .lunar-hero-layout { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--layout-gap); align-items: start; }
+.research-page .lunar-hero-intro { display: contents; }
+.research-page .lunar-page .lunar-hero h1 { grid-column: 1 / -1; grid-row: auto; max-width: 22ch; font-size: clamp(36px, 4.5vw, 68px); line-height: 1.1; }
+.research-page .lunar-page .lunar-subtitle { grid-column: 1 / 5; width: 100%; margin: 0; font-size: var(--body-size); }
+.research-page .lunar-page .lunar-hero-figure { grid-column: 5 / -1; grid-row: auto; width: 100%; margin: 0; padding: clamp(8px, 1vw, 14px); }
+.research-page .lunar-page .lunar-hero-scene { width: 100%; height: auto; object-fit: contain; }
+.research-page .lunar-paper { padding-block: var(--section-space); }
+.research-page .lunar-story > section { padding-block: var(--section-space); }
+.research-page .lunar-page .lunar-copy h2 { margin-bottom: 24px; }
+.research-page .lunar-page .lunar-authors { font-size: 17px; }
+.research-page .lunar-affiliations { font-size: 14px; }
+
+/* Media Heroes have an independent headline, native-ratio video, and publication.
+   No viewport-height formulas, masks, or absolutely positioned video. */
+.research-page .research-media-hero { margin: 0; padding-block: var(--section-space); border-bottom: 1px solid var(--research-rule, #e2e5eb); }
+.research-page .research-media-composition { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: var(--layout-gap); }
+.research-page .research-media-hero h1 { margin: 0; font-size: clamp(34px, calc(20px + 2vw), 56px); line-height: 1.13; letter-spacing: -.04em; font-weight: 500; text-wrap: pretty; }
+.research-page .research-media-frame { min-width: 0; margin: 0; border-radius: 6px; background: #101214; box-shadow: 0 12px 32px #00000018; }
+.research-page .research-media-frame video { position: static; display: block; width: 100%; height: auto; max-width: none; max-height: none; margin: 0; border-radius: 6px; object-fit: contain; transform: none; }
+.research-page[data-project="bim-laser"] .research-media-hero { background: #141718; color: #fff; }
+.research-page[data-project="bim-laser"] .research-media-hero h1 { color: #fff; }
+.research-page .video-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: var(--layout-gap); }
+.research-page .comparison-media { max-width: none; }
+.research-page .demo-controls { flex-wrap: wrap; }
+.research-page .alignment-gallery [data-tabs-list] { flex-wrap: wrap; }
+
+/* The legacy laser template had prose, columns and wide media as siblings. */
+.research-page .research-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); align-items: start; gap: var(--layout-gap); margin-top: var(--media-space); }
+.research-page .research-columns > div { min-width: 0; }
+.research-page .research-columns > div > h3:first-child { margin-top: 0; }
+.research-page .research-columns p { max-width: var(--reading-width); font-size: var(--body-size); }
+.research-page .research-columns img { width: 100%; height: auto; }
+/* Low-resolution equipment photos remain intentionally smaller, on the grid. */
+.research-page .research-equipment img { width: auto; max-width: 100%; max-height: 300px; margin-inline: 0; aspect-ratio: auto; }
+.research-page .carousel-wrapper { margin-top: var(--media-space); }
+.research-page .carousel-viewport { width: 100%; margin: 0; }
+.research-page .carousel { width: 100%; margin: 0; padding: 0; scroll-padding: 0; overflow-x: auto; overflow-y: hidden; }
+.research-page .slide-viewport { flex: 0 0 100%; min-width: 0; padding: 0; }
+.research-page .slide { width: 100%; }
+.research-page .slide figure { margin: 0; }
+.research-page .slide img { width: auto; max-width: 100%; max-height: 560px; margin-inline: auto; }
+.research-page .slide figcaption { text-align: center; }
+
+/* Fire uses shared grid rows to float the image across a dark/light boundary.
+   Its complete scene and the headline occupy separate, naturally sized rows. */
+.research-page .fire-navigation > div { width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); max-width: none; padding-inline: 0; }
+.research-page .fire-hero-wrap .research-hero { background: var(--research-background); margin: 0; }
+.research-page .fire-hero-wrap .header-content {
+  width: 100%; max-width: none; min-height: 0; padding: 0;
+  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto auto;
+  gap: 0;
+}
+.research-page .fire-hero-wrap .header-content::before { content: ""; grid-column: 1; grid-row: 1 / 3; align-self: stretch; width: 100%; height: 100%; background: var(--fire-charcoal); }
+.research-page .fire-hero-wrap .hero-heading { grid-column: 1; grid-row: 1; width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); margin: 0 auto; padding: var(--section-space) 0 var(--media-space); }
+.research-page[data-project="fire-investigation"] .fire-hero-wrap h1 { font-size: clamp(34px, 4.7vw, 72px); line-height: 1.12; }
+.research-page[data-project="fire-investigation"] .research-section h2 { max-width: none; font-size: var(--heading-size); }
+.research-page .research-section > .fire-kicker { font-size: 13px; }
+.research-page .fire-hero-wrap .hero-media { grid-column: 1; grid-row: 2 / 4; width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); margin: 0 auto; }
+.research-page .fire-hero-wrap .hero-byline { grid-column: 1; grid-row: 4; width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); margin: 0 auto; padding: 24px 0 var(--section-space); }
+.research-page .fire-hero-wrap .hero-byline::before,
+.research-page .fire-hero-figure::before { content: none; }
+.research-page .fire-hero-wrap .hero-paper-title { color: var(--research-secondary); font-size: var(--body-size); }
+.research-page .fire-hero-wrap .header-authors { color: var(--research-primary); }
+.research-page .fire-hero-wrap .header-authors > div > div + div { color: var(--research-secondary); font-size: 14px; }
+.research-page .fire-hero-wrap .fire-hero-figure figcaption { color: var(--research-secondary); }
+.research-page .fire-hero-figure img { object-fit: contain; }
+.research-page :is(.fire-approach,.fire-evidence-section,.fire-simulation-intro) { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: var(--layout-gap); }
+.research-page .fire-approach { max-width: none; padding: clamp(20px, 3vw, 40px); }
+.research-page .fire-approach > div > p:last-child,
+.research-page .fire-evidence-copy > p:not(.fire-kicker),
+.research-page .fire-simulation-intro > p { font-size: var(--body-size); line-height: 1.75; }
+.research-page .fire-evidence-section { align-items: start; }
+.research-page .fire-evidence-copy .fire-evidence-verbs { white-space: normal; }
+.research-page .fire-simulation-intro { margin-bottom: var(--media-space); }
+.research-page :is(.fire-comparison,.fire-investigation-records) { max-width: none; margin-top: var(--media-space); }
+.research-page .fire-trace ol { grid-template-columns: repeat(auto-fit, minmax(min(100%, 175px), 1fr)); gap: 24px; }
+.research-page .fire-trace li:not(:last-child)::after { content: none; }
+.research-page .fire-trace-heading { flex-wrap: wrap; }
+
+/* Subsurface keeps its full-bleed background, gradients, focal point and controls.
+   Only the content grid and typography are shared. */
+.research-page .ss { font-size: var(--body-size); }
+.research-page .ss .ss-section { padding-block: var(--section-space); }
+.research-page .ss :is(.ss-body,.ss-research-copy .ss-body,.ss-direction-question) { font-size: var(--body-size); line-height: 1.75; }
+.research-page .ss :is(.ss-authors,.ss-journal) { font-size: 14px; }
+.research-page .ss-publication-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+.research-page .ss-publication-grid > a { justify-self: start; }
+.research-page .ss :is(.ss-comparison,.ss-site-visual) { width: 100%; max-width: none; margin-inline: 0; }
+.research-page .ss-direction figure { margin-inline: 0; }
+.research-page .ss .ss-direction figcaption { margin-inline: 0; }
+.research-page .ss :is(.ss-problem-copy,.ss-direction-copy) { max-width: none; }
+.research-page .ss-section-heading,
+.research-page .ss-research-copy { gap: var(--layout-gap); }
+.research-page .ss-detection-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .research-page .fire-trace ol { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .research-page .fire-trace ol { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 860px) {
+  .research-page .sar-story .sar-hero-stage,
+  .research-page .research-media-composition { grid-template-columns: minmax(0, 1fr); }
+  /* Keep media close to its pre-stack size instead of doubling at the reflow. */
+  .research-page .sar-story .sar-hero-media,
+  .research-page .research-media-frame { width: min(100%, 440px); justify-self: center; }
+  .research-page .research-media-hero h1 { max-width: 25ch; }
+  .research-page .research-media-hero h1 br { display: none; }
+  .research-page .lunar-page .lunar-subtitle,
+  .research-page .lunar-page .lunar-hero-figure { grid-column: 1 / -1; }
+  .research-page .lunar-page .lunar-hero-figure { width: min(100%, 540px); justify-self: end; }
+  .research-page .lunar-page .lunar-subtitle { max-width: var(--reading-width); }
+  .research-page .ss-problem-grid { grid-template-columns: minmax(0, 1fr); gap: var(--layout-gap); }
+  .research-page .ss .ss-sensing-film { width: 100%; max-width: none; margin-inline: 0 !important; }
+}
+@media (max-width: 600px) {
+  .research-page .research-publication .header-authors > div > div { font-size: 16px; }
+  .research-page .sar-story :is(.sar-problem-gallery,.sar-guidance-gallery,.sar-evidence-grid,.sar-results) { grid-template-columns: minmax(0, 1fr); }
+  .research-page .sar-story .sar-record-summary dl { grid-template-columns: minmax(0, 1fr); }
+  .research-page .fire-reasoning-comparison { grid-template-columns: minmax(0, 1fr); }
+  .research-page .fire-trace ol { grid-template-columns: minmax(0, 1fr); }
+  .research-page .fire-hero-wrap .fire-hero-figure figcaption { display: block; }
+  .research-page .fire-hero-wrap .fire-hero-figure figcaption span:last-child { display: block; margin-top: 4px; font-size: 13px; }
+  .research-page .ss-section-heading { grid-template-columns: minmax(0, 1fr); }
+  .research-page .ss-metric strong { font-size: clamp(36px, 12vw, 60px); }
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="bg-white dark:bg-zinc-900" lang="en" data-theme="light">
+<html data-project="bim-laser" class="research-page bg-white dark:bg-zinc-900" lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -46,46 +46,36 @@
       rel="stylesheet"
       href="/projects/bim-laser/_astro/index.CvaH5bFe.css"
     />
-  </head>
+  <link rel="stylesheet" href="/projects/research-layout.css">
+</head>
   <body
     class="prose prose-lg prose-zinc dark:prose-invert prose-a:text-blue-600 prose-a:hover:text-blue-900 prose-a:dark:text-blue-200 prose-a:dark:hover:text-blue-100 prose-a:underline prose-a:decoration-dashed prose-a:underline-offset-4 prose-a:hover:decoration-solid prose-a:font-normal prose-code:bg-zinc-200 prose-code:dark:bg-zinc-800 prose-code:text-zinc-800 prose-code:dark:text-zinc-200 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-medium prose-code:before:content-none prose-code:after:content-none max-w-none pt-16 pb-6 font-(family-name:--font-noto-sans)"
   >
     <main>
-      <header
-        class="full-bleed relative mb-12 -mt-16 pt-24 pb-28"
-        data-astro-cid-3ef6ksr2
-      >
-        <div
-          class="cover absolute inset-0 z-0 overflow-hidden"
-          data-astro-cid-3ef6ksr2
-        >
-          <video
+      <header class="research-media-hero">
+<div class="research-container research-media-composition">
+<h1 class="my-0 text-5xl font-medium" data-astro-cid-3ef6ksr2>
+            Project BIM installation layouts onto real surfaces.
+          </h1>
+<figure class="research-media-frame not-prose">
+<video aria-label="Laser projector rotating to display the BIM-derived layout"
             class="aspect-video h-auto w-full rounded-lg"
             src="/projects/bim-laser/assets/bim-laser/projector_rotation.mp4"
             loop
             playsinline
             muted
             autoplay
-            style="object-fit: contain; background-color: black;"
           ></video>
-          <div
-            class="absolute inset-0 bg-black/40"
-            data-astro-cid-3ef6ksr2
-          ></div>
-        </div>
-        <div
-          class="relative z-10 mx-auto flex max-w-[80rem] flex-col items-center px-6 text-center gap-10 text-white prose-headings:text-white [text-shadow:0_0_8px_rgba(0,0,0,0.6)]"
-          data-astro-cid-3ef6ksr2
-        >
-          <h1 class="my-0 text-5xl font-medium" data-astro-cid-3ef6ksr2>
-            Project BIM installation layouts onto real surfaces.
-          </h1>
-          <div class="text-xl" data-astro-cid-3ef6ksr2>
+</figure>
+</div>
+</header>
+<div class="research-publication research-container hero-byline">
+<h2 class="hero-paper-title text-xl" data-astro-cid-3ef6ksr2>
             BIM-driven laser spatial augmented reality for in-situ layout and
             assembly
-          </div>
-          <div
-            class="flex flex-row flex-wrap justify-center gap-x-8 gap-y-4"
+          </h2>
+<div
+            class="header-authors flex flex-row flex-wrap justify-center gap-x-8 gap-y-4"
             data-astro-cid-3ef6ksr2
           >
             <div
@@ -124,7 +114,7 @@
               </div>
             </div>
           </div>
-          <div class="text-center text-sm space-y-1" data-astro-cid-3ef6ksr2>
+<div class="text-center text-sm space-y-1" data-astro-cid-3ef6ksr2>
             <span class="block" data-astro-cid-3ef6ksr2>
               <sup data-astro-cid-3ef6ksr2>a</sup> Dept. of Civil and Coastal
               Engineering, University of Florida, Gainesville, FL, USA </span
@@ -138,7 +128,7 @@
               USA
             </span>
           </div>
-          <div
+<div
             class="not-prose flex flex-row flex-wrap justify-center gap-2"
             data-astro-cid-3ef6ksr2
           >
@@ -184,11 +174,10 @@
               <span data-astro-cid-3ef6ksr2>GitHub</span>
             </a>
           </div>
-        </div>
-      </header>
+</div>
       <div class="full-bleed bg-zinc-200 py-8 dark:bg-zinc-800">
         <div
-          class="mx-[var(--actual-inline-margin)] [&>:first-child]:mt-0 [&>:last-child]:mb-0"
+          class="research-section  [&>:first-child]:mt-0 [&>:last-child]:mb-0"
         >
           <h2 id="overview">Overview</h2>
           <p>
@@ -200,7 +189,8 @@
           </p>
         </div>
       </div>
-      <h2 id="the-design-is-digital-the-work-is-physical">
+      <section class="research-section" aria-labelledby="the-design-is-digital-the-work-is-physical">
+<h2 id="the-design-is-digital-the-work-is-physical">
         Why measure and mark what BIM already defines?
       </h2>
       <p>
@@ -215,7 +205,7 @@
         layout process.
       </p>
       <div
-        class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-100rem)/2)-var(--actual-inline-margin))]"
+        class="research-wide"
       >
         <style>
           astro-island,astro-slot,astro-static-slot{display:contents}
@@ -241,14 +231,11 @@
             class="not-prose w-full rounded-lg"
             style="position:relative;display:flex;overflow:hidden;touch-action:none;user-select:none;-khtml-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none"
             data-rcs="root"
-          >
-            <astro-slot name="itemOne"
-              ><picture>
-                <source
+          ><astro-slot name="itemOne"
+              ><picture><source
                   srcset="/projects/bim-laser/_astro/before_white.EgUVVEeu_29YXst.avif 640w, /projects/bim-laser/_astro/before_white.EgUVVEeu_l5XjV.avif 750w, /projects/bim-laser/_astro/before_white.EgUVVEeu_2d1QM8.avif 828w, /projects/bim-laser/_astro/before_white.EgUVVEeu_1bineb.avif 1080w, /projects/bim-laser/_astro/before_white.EgUVVEeu_rwxM8.avif 1280w, /projects/bim-laser/_astro/before_white.EgUVVEeu_27ovH0.avif 1303w"
                   type="image/avif"
-                />
-                <img
+                /><img
                   src="/projects/bim-laser/_astro/before_white.EgUVVEeu_1QLXm5.png"
                   srcset="/projects/bim-laser/_astro/before_white.EgUVVEeu_Z2gFk7O.png 640w, /projects/bim-laser/_astro/before_white.EgUVVEeu_YBNxz.png 750w, /projects/bim-laser/_astro/before_white.EgUVVEeu_Z2dDqNa.png 828w, /projects/bim-laser/_astro/before_white.EgUVVEeu_UFOSg.png 1080w, /projects/bim-laser/_astro/before_white.EgUVVEeu_bU0rd.png 1280w, /projects/bim-laser/_astro/before_white.EgUVVEeu_1QLXm5.png 1303w"
                   alt="Conventional workflow in which a worker interprets design information, locates the workface, measures, and marks the target location."
@@ -261,19 +248,15 @@
                   width="1303"
                   height="378"
                   class="rounded-lg max-h-[calc(100svh-3rem)] max-w-full w-min mx-auto "
-                /> </picture
-            ></astro-slot>
-            <div
+                /></picture
+            ></astro-slot><div
               style="position:absolute;top:0;left:0;width:100%;height:100%;user-select:none;will-change:clip-path, transition;-khtml-user-select:none;-moz-user-select:none;-webkit-user-select:none"
               data-rcs="clip-item"
-            >
-              <astro-slot name="itemTwo"
-                ><picture>
-                  <source
+            ><astro-slot name="itemTwo"
+                ><picture><source
                     srcset="/projects/bim-laser/_astro/after_white.m-lgWoK2_23OLXU.avif 640w, /projects/bim-laser/_astro/after_white.m-lgWoK2_1rW3Bq.avif 750w, /projects/bim-laser/_astro/after_white.m-lgWoK2_Iyvuq.avif 828w, /projects/bim-laser/_astro/after_white.m-lgWoK2_Z3ktvV.avif 1080w, /projects/bim-laser/_astro/after_white.m-lgWoK2_CijJc.avif 1280w, /projects/bim-laser/_astro/after_white.m-lgWoK2_ZVO59i.avif 1668w, /projects/bim-laser/_astro/after_white.m-lgWoK2_ZU2syy.avif 2048w"
                     type="image/avif"
-                  />
-                  <img
+                  /><img
                     src="/projects/bim-laser/_astro/after_white.m-lgWoK2_ZgvCkU.png"
                     srcset="/projects/bim-laser/_astro/after_white.m-lgWoK2_2p7kFV.png 640w, /projects/bim-laser/_astro/after_white.m-lgWoK2_1NeBjr.png 750w, /projects/bim-laser/_astro/after_white.m-lgWoK2_14Q4cr.png 828w, /projects/bim-laser/_astro/after_white.m-lgWoK2_AblGH.png 1080w, /projects/bim-laser/_astro/after_white.m-lgWoK2_1gO9WP.png 1280w, /projects/bim-laser/_astro/after_white.m-lgWoK2_ZiieUE.png 1668w, /projects/bim-laser/_astro/after_white.m-lgWoK2_ZgvCkU.png 2048w"
                     alt="Direct workface guidance with the target projected at the physical location of work."
@@ -286,10 +269,8 @@
                     width="2048"
                     height="609"
                     class="rounded-lg max-h-[calc(100svh-3rem)] max-w-full w-min mx-auto "
-                  /> </picture
-              ></astro-slot>
-            </div>
-            <button
+                  /></picture
+              ></astro-slot></div><button
               aria-label="Drag to move or focus and use arrow keys"
               aria-orientation="horizontal"
               aria-valuemin="0"
@@ -298,43 +279,34 @@
               data-rcs="handle-container"
               role="slider"
               style="position:absolute;top:0;height:100%;background:none;border:0;padding:0;pointer-events:all;appearance:none;-webkit-appearance:none;-moz-appearance:none;outline:0;transform:translate3d(-50%, 0, 0)"
-            >
-              <div
+            ><div
                 class="__rcs-handle-root"
                 style="display:flex;flex-direction:column;place-items:center;height:100%;cursor:ew-resize;pointer-events:none;color:#fff"
-              >
-                <div
+              ><div
                   class="__rcs-handle-line"
                   style="flex-grow:1;height:100%;width:2px;background-color:currentColor;pointer-events:auto;box-shadow:0 0 4px rgba(0,0,0,.5)"
-                ></div>
-                <div
+                ></div><div
                   class="__rcs-handle-button"
                   style="display:grid;grid-auto-flow:column;gap:8px;place-content:center;flex-shrink:0;width:56px;height:56px;border-radius:50%;border-style:solid;border-width:2px;pointer-events:auto;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);background-color:rgba(0, 0, 0, 0.125);box-shadow:0 0 4px rgba(0,0,0,.35)"
-                >
-                  <div
+                ><div
                     class="__rcs-handle-arrow"
                     style="width:0;height:0;border-top:8px solid transparent;border-right:10px solid;border-bottom:8px solid transparent"
-                  ></div>
-                  <div
+                  ></div><div
                     class="__rcs-handle-arrow"
                     style="width:0;height:0;border-top:8px solid transparent;border-right:10px solid;border-bottom:8px solid transparent;transform:rotate(180deg)"
-                  ></div>
-                </div>
-                <div
+                  ></div></div><div
                   class="__rcs-handle-line"
                   style="flex-grow:1;height:100%;width:2px;background-color:currentColor;pointer-events:auto;box-shadow:0 0 4px rgba(0,0,0,.5)"
-                ></div>
-              </div>
-            </button>
-          </div>
-          <!--astro:end--></astro-island
+                ></div></div></button></div><!--astro:end--></astro-island
         >
       </div>
       <p>
         Laser projection displays the installation layout directly on the
         physical surface.
       </p>
-      <h2 id="from-digital-design-to-the-physical-workface">
+      </section>
+<section class="research-section" aria-labelledby="from-digital-design-to-the-physical-workface">
+<h2 id="from-digital-design-to-the-physical-workface">
         Convert BIM geometry into laser paths.
       </h2>
       <p>
@@ -344,7 +316,7 @@
         surface.
       </p>
       <div
-        class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-100rem)/2)-var(--actual-inline-margin))]"
+        class="research-wide"
       >
         <img
           class="mx-auto h-auto w-full rounded-lg"
@@ -352,7 +324,9 @@
           alt="BIM design examples converted to laser patterns and reproduced as physical projections on workfaces."
         />
       </div>
-      <h2 id="a-physical-interface-for-digital-design">
+      </section>
+<section class="research-section" aria-labelledby="a-physical-interface-for-digital-design">
+<h2 id="a-physical-interface-for-digital-design">
         A low-cost laser projector for construction layout.
       </h2>
       <p>
@@ -362,9 +336,9 @@
         surface, allowing BIM-derived patterns to be displayed at the
         intended locations.
       </p>
-      <div class="flex w-full flex-wrap items-stretch gap-4">
+      <div class="research-columns">
         <div
-          class="min-w-[16rem] flex-1 [&>:first-child]:mt-0 [&>:last-child]:mb-0"
+          class="research-column"
         >
           <div class="flex h-full items-center justify-center">
             <video
@@ -378,7 +352,7 @@
           </div>
         </div>
         <div
-          class="min-w-[16rem] flex-1 [&>:first-child]:mt-0 [&>:last-child]:mb-0"
+          class="research-column"
         >
           <h3 id="laser-vector-projection">Laser vector projection</h3>
           <p>
@@ -398,7 +372,9 @@
           </p>
         </div>
       </div>
-      <h2 id="move-the-translation-upstream">Prepare the layout digitally. Project it on site.</h2>
+      </section>
+<section class="research-section" aria-labelledby="move-the-translation-upstream">
+<h2 id="move-the-translation-upstream">Prepare the layout digitally. Project it on site.</h2>
       <p>
         Before installation, a user selects a BIM component and generates
         its corresponding laser pattern from the model geometry and
@@ -413,7 +389,7 @@
         <strong>From BIM selection to on-site laser projection.</strong>
       </p>
       <div
-        class="mx-[calc(max(var(--minimum-inline-margin),(100cqw-100rem)/2)-var(--actual-inline-margin))]"
+        class="research-wide"
       >
         <picture>
           <source
@@ -436,7 +412,9 @@
           />
         </picture>
       </div>
-      <h2 id="if-projection-replaces-layout-it-must-preserve-layout-accuracy">
+      </section>
+<section class="research-section" aria-labelledby="if-projection-replaces-layout-it-must-preserve-layout-accuracy">
+<h2 id="if-projection-replaces-layout-it-must-preserve-layout-accuracy">
         How accurate are the projected layouts?
       </h2>
       <p>
@@ -470,7 +448,9 @@
         />
       </picture>
 
-      <h2 id="one-projection-interface-different-carriers">
+      </section>
+<section class="research-section" aria-labelledby="one-projection-interface-different-carriers">
+<h2 id="one-projection-interface-different-carriers">
         A tripod-mounted prototype, with potential for robotic deployment.
       </h2>
       <p>
@@ -479,9 +459,9 @@
         hardware is a separate module, future implementations could mount it
         on robotic positioning platforms.
       </p>
-      <div class="flex w-full flex-wrap items-stretch gap-4">
+      <div class="research-columns research-equipment">
         <div
-          class="min-w-[16rem] flex-1 [&>:first-child]:mt-0 [&>:last-child]:mb-0"
+          class="research-column"
         >
           <h3 id="evaluated-setup">Tested configuration</h3>
           <div
@@ -514,7 +494,7 @@
           </p>
         </div>
         <div
-          class="min-w-[16rem] flex-1 [&>:first-child]:mt-0 [&>:last-child]:mb-0"
+          class="research-column"
         >
           <h3 id="potential-deployment">Potential robotic configuration</h3>
           <div
@@ -548,7 +528,9 @@
           </p>
         </div>
       </div>
-      <h2 id="beyond-simple-geometry">From building layouts to assembly patterns.</h2>
+      </section>
+<section class="research-section" aria-labelledby="beyond-simple-geometry">
+<h2 id="beyond-simple-geometry">From building layouts to assembly patterns.</h2>
       <p>
         The system was demonstrated using full-scale dimensional layouts,
         BIM-derived building component outlines, and manufacturing assembly
@@ -748,9 +730,10 @@
       <script type="module">
         const S=document.querySelectorAll("div.carousel-wrapper");S.forEach(o=>{const b=o.querySelector("div.carousel-viewport"),s=o.querySelectorAll("div.slide"),i=o.querySelectorAll("div.slide-viewport"),l=o.querySelector("button.prev-button"),c=o.querySelector("button.next-button"),v=o.querySelectorAll("button.page-button");if(!b||!l||!c||s.length===0)return;let e=0;function u(){l.disabled=e===0,c.disabled=e===s.length-1,v.forEach((t,n)=>{t.classList.toggle("active",n===e)})}function a(t){t<0||t>=s.length||(i[t].scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),u())}if(l.addEventListener("click",()=>{a(e-1)}),c.addEventListener("click",()=>{a(e+1)}),v.forEach((t,n)=>{t.addEventListener("click",()=>{a(n)})}),u(),i.length===0)return;const h=new IntersectionObserver(t=>{const n=t.filter(r=>r.isIntersecting);if(n.length===0)return;const f=n.reduce((r,g)=>g.intersectionRatio>r.intersectionRatio?g:r).target,d=Number(f.dataset.index??"-1");Number.isNaN(d)||d===e||(e=d,u())},{root:b,threshold:.5});i.forEach(t=>h.observe(t))});
       </script>
-      <div class="full-bleed bg-zinc-200 py-8 dark:bg-zinc-800">
+      </section>
+<div class="full-bleed bg-zinc-200 py-8 dark:bg-zinc-800">
         <div
-          class="mx-[var(--actual-inline-margin)] [&>:first-child]:mt-0 [&>:last-child]:mb-0"
+          class="research-section  [&>:first-child]:mt-0 [&>:last-child]:mb-0"
         >
           <h2 id="future-directions-title">What's next?</h2>
           <h3>Beyond Installation Layouts</h3>

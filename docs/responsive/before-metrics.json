@@ -1,0 +1,1847 @@
+{
+  "stage": "before",
+  "viewports": [
+    {
+      "site": "mobile-sar-copilot",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1233.75
+      },
+      "title": {
+        "x": 400,
+        "y": 72,
+        "width": 1120,
+        "height": 205.4375
+      },
+      "titleSize": "96px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "The bracket is in the model.The work happens on a wall.",
+          "x": 560,
+          "y": 1305.75,
+          "width": 800,
+          "height": 99.8125,
+          "font": "41.6px"
+        },
+        {
+          "text": "Ask for a bracket, not its coordinates.",
+          "x": 560,
+          "y": 2176.546875,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        },
+        {
+          "text": "The right layout has to reach the right wall.",
+          "x": 560,
+          "y": 3068.90625,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        },
+        {
+          "text": "The projected layout becomes a reference for inspection.",
+          "x": 560,
+          "y": 4641.546875,
+          "width": 800,
+          "height": 99.8125,
+          "font": "41.6px"
+        },
+        {
+          "text": "How well did it work?",
+          "x": 560,
+          "y": 6089,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        },
+        {
+          "text": "Toward a robotic site superintendent.",
+          "x": 560,
+          "y": 6901.65625,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "site": "mobile-sar-copilot",
+      "width": 960,
+      "height": 900,
+      "scrollWidth": 960,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 960,
+        "height": 1161.84375
+      },
+      "title": {
+        "x": 32,
+        "y": 72,
+        "width": 896,
+        "height": 133.53125
+      },
+      "titleSize": "62.4px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "The bracket is in the model.The work happens on a wall.",
+          "x": 80,
+          "y": 1233.84375,
+          "width": 800,
+          "height": 76.78125,
+          "font": "32px"
+        },
+        {
+          "text": "Ask for a bracket, not its coordinates.",
+          "x": 80,
+          "y": 2003.609375,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "The right layout has to reach the right wall.",
+          "x": 80,
+          "y": 2775.640625,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "The projected layout becomes a reference for inspection.",
+          "x": 80,
+          "y": 4143.328125,
+          "width": 800,
+          "height": 76.78125,
+          "font": "32px"
+        },
+        {
+          "text": "How well did it work?",
+          "x": 80,
+          "y": 5450.75,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "Toward a robotic site superintendent.",
+          "x": 80,
+          "y": 6220.203125,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "site": "mobile-sar-copilot",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 893.46875
+      },
+      "title": {
+        "x": 24,
+        "y": 48,
+        "width": 342,
+        "height": 87.5
+      },
+      "titleSize": "39.78px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "The bracket is in the model.The work happens on a wall.",
+          "x": 24,
+          "y": 941.46875,
+          "width": 342,
+          "height": 145.9375,
+          "font": "30.4px"
+        },
+        {
+          "text": "Ask for a bracket, not its coordinates.",
+          "x": 24,
+          "y": 2066.375,
+          "width": 342,
+          "height": 72.96875,
+          "font": "30.4px"
+        },
+        {
+          "text": "The right layout has to reach the right wall.",
+          "x": 24,
+          "y": 2769.703125,
+          "width": 342,
+          "height": 72.96875,
+          "font": "30.4px"
+        },
+        {
+          "text": "The projected layout becomes a reference for inspection.",
+          "x": 24,
+          "y": 4140.09375,
+          "width": 342,
+          "height": 109.453125,
+          "font": "30.4px"
+        },
+        {
+          "text": "How well did it work?",
+          "x": 24,
+          "y": 5879.234375,
+          "width": 342,
+          "height": 36.484375,
+          "font": "30.4px"
+        },
+        {
+          "text": "Toward a robotic site superintendent.",
+          "x": 24,
+          "y": 7010.90625,
+          "width": 342,
+          "height": 72.96875,
+          "font": "30.4px"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "site": "bim2workface",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1009
+      },
+      "title": {
+        "x": 448,
+        "y": 96,
+        "width": 1024,
+        "height": 125.4375
+      },
+      "titleSize": "56px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "A BIM target is not a robot command.",
+          "x": 560,
+          "y": 1089,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        },
+        {
+          "text": "Project the installation target onto the wall.",
+          "x": 560,
+          "y": 2435.25,
+          "width": 800,
+          "height": 115.1875,
+          "font": "48px"
+        },
+        {
+          "text": "From BIM geometry to a visible target.",
+          "x": 560,
+          "y": 2833.9375,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        },
+        {
+          "text": "Use camera feedback to correct alignment.",
+          "x": 560,
+          "y": 3659.234375,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        },
+        {
+          "text": "Robotic alignment on three wall backgrounds.",
+          "x": 560,
+          "y": 4676.203125,
+          "width": 800,
+          "height": 99.8125,
+          "font": "41.6px"
+        },
+        {
+          "text": "How accurately does the robot align?",
+          "x": 560,
+          "y": 5661.125,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        },
+        {
+          "text": "What's next?",
+          "x": 560,
+          "y": 6866.40625,
+          "width": 800,
+          "height": 49.90625,
+          "font": "41.6px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/bim2workface/videos/white_side.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 320,
+          "y": 0,
+          "width": 1280,
+          "height": 1008
+        },
+        {
+          "src": "/projects/bim2workface/videos/white_wrist.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 320,
+          "y": 5091.453125,
+          "width": 632,
+          "height": 355.5
+        },
+        {
+          "src": "/projects/bim2workface/videos/white_side.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 968,
+          "y": 5091.453125,
+          "width": 632,
+          "height": 355.5
+        },
+        {
+          "src": "/projects/bim2workface/videos/concrete_wrist.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/concrete_side.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/wood_wrist.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/wood_side.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "site": "bim2workface",
+      "width": 960,
+      "height": 900,
+      "scrollWidth": 960,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 960,
+        "height": 606.59375
+      },
+      "title": {
+        "x": 24,
+        "y": 80,
+        "width": 912,
+        "height": 89.59375
+      },
+      "titleSize": "40px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "A BIM target is not a robot command.",
+          "x": 80,
+          "y": 686.59375,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "Project the installation target onto the wall.",
+          "x": 80,
+          "y": 1950.015625,
+          "width": 800,
+          "height": 44.15625,
+          "font": "36.8px"
+        },
+        {
+          "text": "From BIM geometry to a visible target.",
+          "x": 80,
+          "y": 2277.671875,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "Use camera feedback to correct alignment.",
+          "x": 80,
+          "y": 2971.28125,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "Robotic alignment on three wall backgrounds.",
+          "x": 80,
+          "y": 3820.171875,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "How accurately does the robot align?",
+          "x": 80,
+          "y": 4640.171875,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        },
+        {
+          "text": "What's next?",
+          "x": 80,
+          "y": 5801.3125,
+          "width": 800,
+          "height": 38.390625,
+          "font": "32px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/bim2workface/videos/white_side.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        {
+          "src": "/projects/bim2workface/videos/white_wrist.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 24,
+          "y": 4174,
+          "width": 448,
+          "height": 252
+        },
+        {
+          "src": "/projects/bim2workface/videos/white_side.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 488,
+          "y": 4174,
+          "width": 448,
+          "height": 252
+        },
+        {
+          "src": "/projects/bim2workface/videos/concrete_wrist.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/concrete_side.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/wood_wrist.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/wood_side.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "site": "bim2workface",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 833.03125
+      },
+      "title": {
+        "x": 24,
+        "y": 80,
+        "width": 342,
+        "height": 157.6875
+      },
+      "titleSize": "35.2px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "A BIM target is not a robot command.",
+          "x": 24,
+          "y": 889.03125,
+          "width": 342,
+          "height": 76.78125,
+          "font": "32px"
+        },
+        {
+          "text": "Project the installation target onto the wall.",
+          "x": 24,
+          "y": 1818.28125,
+          "width": 342,
+          "height": 132.46875,
+          "font": "36.8px"
+        },
+        {
+          "text": "From BIM geometry to a visible target.",
+          "x": 24,
+          "y": 2259.75,
+          "width": 342,
+          "height": 76.78125,
+          "font": "32px"
+        },
+        {
+          "text": "Use camera feedback to correct alignment.",
+          "x": 24,
+          "y": 2778.59375,
+          "width": 342,
+          "height": 76.78125,
+          "font": "32px"
+        },
+        {
+          "text": "Robotic alignment on three wall backgrounds.",
+          "x": 24,
+          "y": 3451.609375,
+          "width": 342,
+          "height": 115.171875,
+          "font": "32px"
+        },
+        {
+          "text": "How accurately does the robot align?",
+          "x": 24,
+          "y": 4589.03125,
+          "width": 342,
+          "height": 76.78125,
+          "font": "32px"
+        },
+        {
+          "text": "What's next?",
+          "x": 24,
+          "y": 5792.328125,
+          "width": 342,
+          "height": 38.390625,
+          "font": "32px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/bim2workface/videos/white_side.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 0,
+          "y": 266.328125,
+          "width": 390,
+          "height": 219.375
+        },
+        {
+          "src": "/projects/bim2workface/videos/white_wrist.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 24,
+          "y": 3948.328125,
+          "width": 342,
+          "height": 192.375
+        },
+        {
+          "src": "/projects/bim2workface/videos/white_side.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 24,
+          "y": 4196.6875,
+          "width": 342,
+          "height": 192.375
+        },
+        {
+          "src": "/projects/bim2workface/videos/concrete_wrist.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/concrete_side.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/wood_wrist.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/projects/bim2workface/videos/wood_side.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "site": "bim-laser",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 623.984375
+      },
+      "title": {
+        "x": 384.34375,
+        "y": 96,
+        "width": 1151.296875,
+        "height": 48
+      },
+      "titleSize": "48px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Overview",
+          "x": 560,
+          "y": 703.984375,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Why measure and mark what BIM already defines?",
+          "x": 560,
+          "y": 991.96875,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Convert BIM geometry into laser paths.",
+          "x": 560,
+          "y": 1848.0625,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "A low-cost laser projector for construction layout.",
+          "x": 560,
+          "y": 3304.046875,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Prepare the layout digitally. Project it on site.",
+          "x": 560,
+          "y": 4043.9375,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "How accurate are the projected layouts?",
+          "x": 560,
+          "y": 5323.28125,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "A tripod-mounted prototype, with potential for robotic deployment.",
+          "x": 560,
+          "y": 6053.375,
+          "width": 800,
+          "height": 79.96875,
+          "font": "30.0001px"
+        },
+        {
+          "text": "From building layouts to assembly patterns.",
+          "x": 560,
+          "y": 6831.328125,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "What's next?",
+          "x": 560,
+          "y": 7644.625,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/bim-laser/assets/bim-laser/projector_rotation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 623.984375
+        },
+        {
+          "src": "/projects/bim-laser/assets/bim-laser/projector_rotation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 560,
+          "y": 3631.71875,
+          "width": 392,
+          "height": 220.5
+        }
+      ]
+    },
+    {
+      "site": "bim-laser",
+      "width": 960,
+      "height": 900,
+      "scrollWidth": 960,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 960,
+        "height": 671.984375
+      },
+      "title": {
+        "x": 24,
+        "y": 96,
+        "width": 912,
+        "height": 96
+      },
+      "titleSize": "48px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Overview",
+          "x": 80,
+          "y": 751.984375,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Why measure and mark what BIM already defines?",
+          "x": 80,
+          "y": 1039.96875,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Convert BIM geometry into laser paths.",
+          "x": 80,
+          "y": 1696.46875,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "A low-cost laser projector for construction layout.",
+          "x": 80,
+          "y": 2636.453125,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Prepare the layout digitally. Project it on site.",
+          "x": 80,
+          "y": 3376.34375,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "How accurate are the projected layouts?",
+          "x": 80,
+          "y": 4263.78125,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "A tripod-mounted prototype, with potential for robotic deployment.",
+          "x": 80,
+          "y": 4993.875,
+          "width": 800,
+          "height": 79.96875,
+          "font": "30.0001px"
+        },
+        {
+          "text": "From building layouts to assembly patterns.",
+          "x": 80,
+          "y": 5771.828125,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "What's next?",
+          "x": 80,
+          "y": 6585.125,
+          "width": 800,
+          "height": 39.984375,
+          "font": "30.0001px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/bim-laser/assets/bim-laser/projector_rotation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 671.984375
+        },
+        {
+          "src": "/projects/bim-laser/assets/bim-laser/projector_rotation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 80,
+          "y": 2964.125,
+          "width": 392,
+          "height": 220.5
+        }
+      ]
+    },
+    {
+      "site": "bim-laser",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 927.984375
+      },
+      "title": {
+        "x": 24,
+        "y": 96,
+        "width": 342,
+        "height": 192
+      },
+      "titleSize": "48px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Overview",
+          "x": 24,
+          "y": 1007.984375,
+          "width": 342,
+          "height": 39.984375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Why measure and mark what BIM already defines?",
+          "x": 24,
+          "y": 1455.96875,
+          "width": 342,
+          "height": 119.953125,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Convert BIM geometry into laser paths.",
+          "x": 24,
+          "y": 2251.078125,
+          "width": 342,
+          "height": 79.96875,
+          "font": "30.0001px"
+        },
+        {
+          "text": "A low-cost laser projector for construction layout.",
+          "x": 24,
+          "y": 2899.546875,
+          "width": 342,
+          "height": 119.953125,
+          "font": "30.0001px"
+        },
+        {
+          "text": "Prepare the layout digitally. Project it on site.",
+          "x": 24,
+          "y": 4283.78125,
+          "width": 342,
+          "height": 119.953125,
+          "font": "30.0001px"
+        },
+        {
+          "text": "How accurate are the projected layouts?",
+          "x": 24,
+          "y": 5118.5,
+          "width": 342,
+          "height": 79.96875,
+          "font": "30.0001px"
+        },
+        {
+          "text": "A tripod-mounted prototype, with potential for robotic deployment.",
+          "x": 24,
+          "y": 5841.203125,
+          "width": 342,
+          "height": 159.9375,
+          "font": "30.0001px"
+        },
+        {
+          "text": "From building layouts to assembly patterns.",
+          "x": 24,
+          "y": 7326.125,
+          "width": 342,
+          "height": 79.96875,
+          "font": "30.0001px"
+        },
+        {
+          "text": "What's next?",
+          "x": 24,
+          "y": 7938.25,
+          "width": 342,
+          "height": 39.984375,
+          "font": "30.0001px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/bim-laser/assets/bim-laser/projector_rotation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 927.984375
+        },
+        {
+          "src": "/projects/bim-laser/assets/bim-laser/projector_rotation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 24,
+          "y": 3363.484375,
+          "width": 342,
+          "height": 192.375
+        }
+      ]
+    },
+    {
+      "site": "lunar-construction",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 717.84375
+      },
+      "title": {
+        "x": 336,
+        "y": 103.5,
+        "width": 772.796875,
+        "height": 138.21875
+      },
+      "titleSize": "64px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Robotic Localization via Active Projected Fiducials for Space Construction",
+          "x": 400,
+          "y": 781.84375,
+          "width": 1120,
+          "height": 40,
+          "font": "32px"
+        },
+        {
+          "text": "On the Moon, position estimates can drift.",
+          "x": 400,
+          "y": 1104.53125,
+          "width": 1120,
+          "height": 40,
+          "font": "32px"
+        },
+        {
+          "text": "Create landmarks where the work happens.",
+          "x": 400,
+          "y": 2076.78125,
+          "width": 1120,
+          "height": 40,
+          "font": "32px"
+        },
+        {
+          "text": "How accurately can the rover locate itself?",
+          "x": 400,
+          "y": 3327.703125,
+          "width": 1120,
+          "height": 40,
+          "font": "32px"
+        },
+        {
+          "text": "When the ground changes, the reference must change.",
+          "x": 400,
+          "y": 4117.4375,
+          "width": 1120,
+          "height": 40,
+          "font": "32px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/apollo16-rover.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 400,
+          "y": 1458.6875,
+          "width": 548,
+          "height": 411
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/lunar-localization-problem.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 972,
+          "y": 1458.6875,
+          "width": 548,
+          "height": 308.703125
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/rassor-excavation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 400,
+          "y": 4433,
+          "width": 1120,
+          "height": 630
+        }
+      ]
+    },
+    {
+      "site": "lunar-construction",
+      "width": 960,
+      "height": 900,
+      "scrollWidth": 960,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 960,
+        "height": 841.8125
+      },
+      "title": {
+        "x": 38.40625,
+        "y": 86.6875,
+        "width": 579.59375,
+        "height": 103.65625
+      },
+      "titleSize": "48px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Robotic Localization via Active Projected Fiducials for Space Construction",
+          "x": 38.40625,
+          "y": 889.8125,
+          "width": 883.1875,
+          "height": 80,
+          "font": "32px"
+        },
+        {
+          "text": "On the Moon, position estimates can drift.",
+          "x": 38.40625,
+          "y": 1220.5,
+          "width": 883.1875,
+          "height": 40,
+          "font": "32px"
+        },
+        {
+          "text": "Create landmarks where the work happens.",
+          "x": 38.40625,
+          "y": 2064.734375,
+          "width": 883.1875,
+          "height": 40,
+          "font": "32px"
+        },
+        {
+          "text": "How accurately can the rover locate itself?",
+          "x": 38.40625,
+          "y": 3137.90625,
+          "width": 883.1875,
+          "height": 40,
+          "font": "32px"
+        },
+        {
+          "text": "When the ground changes, the reference must change.",
+          "x": 38.40625,
+          "y": 3863,
+          "width": 883.1875,
+          "height": 40,
+          "font": "32px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/apollo16-rover.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 38.40625,
+          "y": 1567.453125,
+          "width": 429.59375,
+          "height": 322.1875
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/lunar-localization-problem.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 492,
+          "y": 1567.453125,
+          "width": 429.59375,
+          "height": 242
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/rassor-excavation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 38.40625,
+          "y": 4171.359375,
+          "width": 883.1875,
+          "height": 496.78125
+        }
+      ]
+    },
+    {
+      "site": "lunar-construction",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 565.640625
+      },
+      "title": {
+        "x": 20,
+        "y": 71.5,
+        "width": 350,
+        "height": 116.625
+      },
+      "titleSize": "36px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Robotic Localization via Active Projected Fiducials for Space Construction",
+          "x": 20,
+          "y": 605.640625,
+          "width": 350,
+          "height": 150,
+          "font": "30px"
+        },
+        {
+          "text": "On the Moon, position estimates can drift.",
+          "x": 20,
+          "y": 1063.828125,
+          "width": 350,
+          "height": 75,
+          "font": "30px"
+        },
+        {
+          "text": "Create landmarks where the work happens.",
+          "x": 20,
+          "y": 2274.453125,
+          "width": 350,
+          "height": 75,
+          "font": "30px"
+        },
+        {
+          "text": "How accurately can the rover locate itself?",
+          "x": 20,
+          "y": 3306.015625,
+          "width": 350,
+          "height": 75,
+          "font": "30px"
+        },
+        {
+          "text": "When the ground changes, the reference must change.",
+          "x": 20,
+          "y": 4316.25,
+          "width": 350,
+          "height": 112.5,
+          "font": "30px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/apollo16-rover.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 20,
+          "y": 1573.515625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/lunar-localization-problem.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 20,
+          "y": 1895.109375,
+          "width": 350,
+          "height": 197.15625
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/lunar-construction/projects/lunar-construction/media/rassor-excavation.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 20,
+          "y": 4797.65625,
+          "width": 350,
+          "height": 196.875
+        }
+      ]
+    },
+    {
+      "site": "subsurface",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1905,
+      "hero": {
+        "x": 0,
+        "y": 68.1875,
+        "width": 1905,
+        "height": 800
+      },
+      "title": {
+        "x": 312.5,
+        "y": 278.203125,
+        "width": 928,
+        "height": 206.875
+      },
+      "titleSize": "97.6px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Underground infrastructure detection and localization using deep\n                learning enabled radargram inversion and vision based mapping",
+          "x": 312.5,
+          "y": 940.734375,
+          "width": 992,
+          "height": 67.21875,
+          "font": "22.4px"
+        },
+        {
+          "text": "We need to know what’s buried before we dig.",
+          "x": 312.5,
+          "y": 1354.859375,
+          "width": 510,
+          "height": 180.046875,
+          "font": "53.6px"
+        },
+        {
+          "text": "What we demonstrated.",
+          "x": 312.5,
+          "y": 4410.15625,
+          "width": 1280,
+          "height": 60.015625,
+          "font": "53.6px"
+        },
+        {
+          "text": "Where this research could go next.",
+          "x": 312.5,
+          "y": 4935.734375,
+          "width": 768,
+          "height": 120.03125,
+          "font": "53.6px"
+        },
+        {
+          "text": "Interested in testing these ideas?",
+          "x": 312.5,
+          "y": 6798.734375,
+          "width": 768,
+          "height": 120.03125,
+          "font": "53.6px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/subsurface/assets/subsurface/concepts/hero_scan_loop_CONCEPT.mp4",
+          "ready": 0,
+          "fit": "cover",
+          "x": 0,
+          "y": 68.1875,
+          "width": 1905,
+          "height": 800
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/subsurface/assets/subsurface/video/gpr-sensing-principle.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 902.5,
+          "y": 1223.90625,
+          "width": 690,
+          "height": 483.296875
+        }
+      ]
+    },
+    {
+      "site": "subsurface",
+      "width": 960,
+      "height": 900,
+      "scrollWidth": 945,
+      "hero": {
+        "x": 0,
+        "y": 68.1875,
+        "width": 945,
+        "height": 672
+      },
+      "title": {
+        "x": 32,
+        "y": 251.5,
+        "width": 881,
+        "height": 132.28125
+      },
+      "titleSize": "62.4px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Underground infrastructure detection and localization using deep\n                learning enabled radargram inversion and vision based mapping",
+          "x": 32,
+          "y": 812.734375,
+          "width": 641.65625,
+          "height": 55.21875,
+          "font": "18.4px"
+        },
+        {
+          "text": "We need to know what’s buried before we dig.",
+          "x": 32,
+          "y": 1120.40625,
+          "width": 354.015625,
+          "height": 116.109375,
+          "font": "34.56px"
+        },
+        {
+          "text": "What we demonstrated.",
+          "x": 32,
+          "y": 3735.578125,
+          "width": 881,
+          "height": 38.703125,
+          "font": "34.56px"
+        },
+        {
+          "text": "Where this research could go next.",
+          "x": 32,
+          "y": 4202.71875,
+          "width": 768,
+          "height": 38.703125,
+          "font": "34.56px"
+        },
+        {
+          "text": "Interested in testing these ideas?",
+          "x": 32,
+          "y": 5546.078125,
+          "width": 768,
+          "height": 38.703125,
+          "font": "34.56px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/subsurface/assets/subsurface/concepts/hero_scan_loop_CONCEPT.mp4",
+          "ready": 0,
+          "fit": "cover",
+          "x": 0,
+          "y": 68.1875,
+          "width": 945,
+          "height": 672
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/subsurface/assets/subsurface/video/gpr-sensing-principle.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 434.015625,
+          "y": 1046.78125,
+          "width": 478.984375,
+          "height": 335.671875
+        }
+      ]
+    },
+    {
+      "site": "subsurface",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 375,
+      "hero": {
+        "x": 0,
+        "y": 61,
+        "width": 375,
+        "height": 688
+      },
+      "title": {
+        "x": 20,
+        "y": 245.78125,
+        "width": 335,
+        "height": 92.59375
+      },
+      "titleSize": "43.68px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "Underground infrastructure detection and localization using deep\n                learning enabled radargram inversion and vision based mapping",
+          "x": 20,
+          "y": 810.359375,
+          "width": 335,
+          "height": 110.4375,
+          "font": "18.4px"
+        },
+        {
+          "text": "We need to know what’s buried before we dig.",
+          "x": 20,
+          "y": 1200.375,
+          "width": 335,
+          "height": 115.59375,
+          "font": "34.4px"
+        },
+        {
+          "text": "What we demonstrated.",
+          "x": 20,
+          "y": 3542.796875,
+          "width": 335,
+          "height": 77.0625,
+          "font": "34.4px"
+        },
+        {
+          "text": "Where this research could go next.",
+          "x": 20,
+          "y": 4161.796875,
+          "width": 335,
+          "height": 77.0625,
+          "font": "34.4px"
+        },
+        {
+          "text": "Interested in testing these ideas?",
+          "x": 20,
+          "y": 6122.125,
+          "width": 335,
+          "height": 77.0625,
+          "font": "34.4px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/subsurface/assets/subsurface/concepts/hero_scan_loop_CONCEPT.mp4",
+          "ready": 0,
+          "fit": "cover",
+          "x": 0,
+          "y": 61,
+          "width": 375,
+          "height": 688
+        },
+        {
+          "src": "http://127.0.0.1:8766/projects/subsurface/assets/subsurface/video/gpr-sensing-principle.mp4",
+          "ready": 4,
+          "fit": "contain",
+          "x": 20,
+          "y": 1466.359375,
+          "width": 335,
+          "height": 234.953125
+        }
+      ]
+    },
+    {
+      "site": "fire-investigation",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "hero": {
+        "x": 0,
+        "y": 60.171875,
+        "width": 1920,
+        "height": 957.234375
+      },
+      "title": {
+        "x": 384,
+        "y": 172.5625,
+        "width": 1152,
+        "height": 172.78125
+      },
+      "titleSize": "80px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+          "x": 560,
+          "y": 1122.9375,
+          "width": 640.59375,
+          "height": 105.71875,
+          "font": "44.8px"
+        },
+        {
+          "text": "An Interactive Environment for Investigative Reasoning.",
+          "x": 428.796875,
+          "y": 1689.453125,
+          "width": 420.984375,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "Explore What Remains.",
+          "x": 560,
+          "y": 2044.875,
+          "width": 640.59375,
+          "height": 52.859375,
+          "font": "44.8px"
+        },
+        {
+          "text": "Turn Observations Into Evidence.",
+          "x": 352,
+          "y": 3135.421875,
+          "width": 329.0625,
+          "height": 150.09375,
+          "font": "42.4px"
+        },
+        {
+          "text": "Test Explanations Against Fire Development.",
+          "x": 384,
+          "y": 3752.4375,
+          "width": 604.4375,
+          "height": 105.71875,
+          "font": "44.8px"
+        },
+        {
+          "text": "Make the Investigation Process Visible.",
+          "x": 560,
+          "y": 4783.84375,
+          "width": 640.59375,
+          "height": 105.71875,
+          "font": "44.8px"
+        },
+        {
+          "text": "Toward Reasoning-Aware AI Assistance.",
+          "x": 560,
+          "y": 5515.171875,
+          "width": 800,
+          "height": 52.859375,
+          "font": "44.8px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/fire-investigation/projects/fire-investigation/evidence_labeling.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 724.25,
+          "y": 3066.9375,
+          "width": 843.75,
+          "height": 474.609375
+        },
+        {
+          "src": "/projects/fire-investigation/projects/fire-investigation/fire_simulation.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 384,
+          "y": 3929.75,
+          "width": 1152,
+          "height": 648
+        }
+      ]
+    },
+    {
+      "site": "fire-investigation",
+      "width": 960,
+      "height": 900,
+      "scrollWidth": 960,
+      "hero": {
+        "x": 0,
+        "y": 60.171875,
+        "width": 960,
+        "height": 812.984375
+      },
+      "title": {
+        "x": 32,
+        "y": 172.5625,
+        "width": 896,
+        "height": 116.125
+      },
+      "titleSize": "53.76px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+          "x": 80,
+          "y": 978.6875,
+          "width": 457.59375,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "An Interactive Environment for Investigative Reasoning.",
+          "x": 56,
+          "y": 1502.1875,
+          "width": 420.984375,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "Explore What Remains.",
+          "x": 80,
+          "y": 1844.8125,
+          "width": 457.59375,
+          "height": 37.75,
+          "font": "32px"
+        },
+        {
+          "text": "Turn Observations Into Evidence.",
+          "x": 24,
+          "y": 2757.296875,
+          "width": 327.703125,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "Test Explanations Against Fire Development.",
+          "x": 32,
+          "y": 3262.546875,
+          "width": 480,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "Make the Investigation Process Visible.",
+          "x": 80,
+          "y": 4119.734375,
+          "width": 457.59375,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "Toward Reasoning-Aware AI Assistance.",
+          "x": 80,
+          "y": 4811.609375,
+          "width": 800,
+          "height": 37.75,
+          "font": "32px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/fire-investigation/projects/fire-investigation/evidence_labeling.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 378.890625,
+          "y": 2732.140625,
+          "width": 557.09375,
+          "height": 313.359375
+        },
+        {
+          "src": "/projects/fire-investigation/projects/fire-investigation/fire_simulation.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 32,
+          "y": 3409.640625,
+          "width": 896,
+          "height": 504
+        }
+      ]
+    },
+    {
+      "site": "fire-investigation",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "hero": {
+        "x": 0,
+        "y": 54,
+        "width": 390,
+        "height": 572.828125
+      },
+      "title": {
+        "x": 24,
+        "y": 143.8125,
+        "width": 342,
+        "height": 62.1875
+      },
+      "titleSize": "28.8px",
+      "brokenImages": [],
+      "overflow": [],
+      "headings": [
+        {
+          "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+          "x": 24,
+          "y": 708.359375,
+          "width": 342,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "An Interactive Environment for Investigative Reasoning.",
+          "x": 48,
+          "y": 1391.28125,
+          "width": 294,
+          "height": 135.875,
+          "font": "28.8px"
+        },
+        {
+          "text": "Explore What Remains.",
+          "x": 24,
+          "y": 2055.140625,
+          "width": 342,
+          "height": 37.75,
+          "font": "32px"
+        },
+        {
+          "text": "Turn Observations Into Evidence.",
+          "x": 24,
+          "y": 2790.984375,
+          "width": 342,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "Test Explanations Against Fire Development.",
+          "x": 24,
+          "y": 3555.734375,
+          "width": 342,
+          "height": 113.25,
+          "font": "32px"
+        },
+        {
+          "text": "Make the Investigation Process Visible.",
+          "x": 24,
+          "y": 4285.765625,
+          "width": 342,
+          "height": 75.5,
+          "font": "32px"
+        },
+        {
+          "text": "Toward Reasoning-Aware AI Assistance.",
+          "x": 24,
+          "y": 5418.09375,
+          "width": 342,
+          "height": 75.5,
+          "font": "32px"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/fire-investigation/projects/fire-investigation/evidence_labeling.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 24,
+          "y": 3173.5,
+          "width": 342,
+          "height": 192.375
+        },
+        {
+          "src": "/projects/fire-investigation/projects/fire-investigation/fire_simulation.mp4",
+          "ready": 0,
+          "fit": "contain",
+          "x": 24,
+          "y": 3903.53125,
+          "width": 342,
+          "height": 192.375
+        }
+      ]
+    }
+  ],
+  "sweeps": [],
+  "errors": [
+    {
+      "site": "bim2workface",
+      "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "site": "bim2workface",
+      "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "site": "bim2workface",
+      "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "site": "bim-laser",
+      "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "site": "bim-laser",
+      "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "site": "bim-laser",
+      "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    }
+  ]
+}
