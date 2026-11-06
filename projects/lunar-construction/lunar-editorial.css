@@ -1,5 +1,4 @@
-/* Lunar-only editorial theme. Grid defaults match ../research-layout.css;
-   fallbacks keep publication independent of the unfinished shared refactor. */
+/* Lunar dark editorial identity; shared layout and hero rules load afterward. */
 html[data-project="lunar-construction"] {
   color-scheme: dark;
   background: #090d13;
@@ -31,39 +30,6 @@ html[data-project="lunar-construction"] main { width: 100%; max-width: none; mar
 .lunar-page a:hover { color: #c9f5fa; text-decoration-color: currentColor; }
 .lunar-page :is(a,button):focus-visible { outline: 2px solid var(--lunar-accent); outline-offset: 5px; }
 .lunar-page ::selection { background: #85d9e5; color: #090d13; }
-
-/* The original annotated simulation flows beneath the title. Its overlap grows
-   continuously on wide screens; soft edges merge into the page at every size. */
-.lunar-hero { background: var(--lunar-background); }
-.lunar-hero-composition {
-  --lunar-content: 1600px;
-  min-height: 100vh; min-height: 100svh;
-  display: flex; flex-direction: column; justify-content: center;
-  padding-block: clamp(36px, 5vw, 80px) 0;
-}
-.lunar-identity { font-size: 12px; line-height: 1.5; letter-spacing: .18em; font-weight: 550; color: var(--lunar-accent); margin-bottom: clamp(32px, 4vw, 64px) !important; }
-.lunar-hero-layout { display: flex; flex-direction: column; isolation: isolate; }
-.lunar-hero-intro { position: relative; z-index: 1; pointer-events: none; }
-.lunar-page .lunar-hero h1 {
-  max-width: 17ch; font-size: clamp(44px, 6.7vw, 128px);
-  line-height: 1.04; letter-spacing: -.055em; font-weight: 550;
-  color: var(--lunar-ink); text-wrap: balance;
-}
-.lunar-page .lunar-subtitle {
-  max-width: 39ch; margin-top: clamp(24px, 2.6vw, 42px);
-  color: #b9c6d5; font-size: clamp(16px, 1.25vw, 20px); line-height: 1.7;
-  text-wrap: pretty;
-}
-.lunar-page .lunar-hero-figure {
-  align-self: end; width: min(100vw, 1440px, 108svh); max-width: none;
-  margin-top: clamp(-240px, calc(1000px - 75vw), 0px);
-  margin-right: calc(-1 * var(--lunar-gutter));
-  border: 0; padding: 0; background: transparent; box-shadow: none;
-  /* Fade only the Hero presentation; the source image stays unchanged. */
-  mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 76%, transparent 100%), linear-gradient(to right, transparent, #000 17%, #000 88%, transparent);
-  mask-composite: intersect;
-}
-.lunar-page .lunar-hero-scene { display: block; width: 100%; height: auto; object-fit: contain; opacity: .8; }
 
 .lunar-paper { padding-block: var(--lunar-section-space); text-align: left; }
 .lunar-page .lunar-paper h2 { max-width: 32ch; font-size: clamp(26px, 2.35vw, 36px); line-height: 1.35; text-wrap: balance; }

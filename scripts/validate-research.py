@@ -44,11 +44,8 @@ for site in SITES:
     assert not old.references() - page.references(), f"An original link or media reference was removed: {site}"
     assert sum(tag == "h1" for tag, _ in page.tags) == 1, f"Expected one Hero title: {site}"
     styles = [a["href"] for tag, a in page.tags if tag == "link" and a.get("rel") == "stylesheet"]
-    if site == "lunar-construction":
-        # Latest user instruction keeps the concurrent Lunar theme independent.
-        assert styles[-1] == "/projects/lunar-construction/lunar-editorial.css"
-    else:
-        assert styles[-1] == "/projects/research-layout.css", f"Shared CSS must load last: {site}"
+    assert styles[-1] == "/projects/research-heroes.css", f"Hero CSS must load last: {site}"
+    assert "/projects/research-layout.css" in styles
     assert any(tag == "meta" and a.get("name") == "viewport" for tag, a in page.tags)
     ids = [a["id"] for _, a in page.tags if "id" in a]
     assert len(ids) == len(set(ids)), f"Duplicate element IDs: {site}"

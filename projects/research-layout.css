@@ -1,9 +1,10 @@
 /* Stable source for the six published research pages. Load after generated CSS.
    Keep this link and the research-* hooks if these pages are rebuilt in Astro. */
 html.research-page {
-  --content-width: 1200px;
+  --content-boundary: 1200px;
+  --content-width: 980px;
   --page-gutter: clamp(20px, 3.4vw, 48px);
-  --reading-width: 76ch;
+  --reading-width: 810px;
   --body-size: clamp(16px, 1.4vw, 18px);
   --heading-size: clamp(28px, 2.6vw, 40px);
   --section-space: clamp(40px, 5vw, 72px);
@@ -115,28 +116,7 @@ html.research-page body {
 .research-page .research-publication .not-prose a { color: #27272a; font-size: 15px; }
 .research-page .sar-story .header-authors > div + div::before { content: none; }
 
-/* Floating photograph: bounded columns, complete original image, no offsets. */
-.research-page .sar-story .research-hero { border: 0; margin: 0; }
-.research-page .sar-story .research-hero .header-content { width: 100%; max-width: none; min-height: 0; padding: 0; }
-.research-page .sar-story .research-hero .hero-copy { display: block; width: 100%; }
-.research-page .sar-story .sar-hero-stage {
-  display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-  align-items: center;
-  gap: var(--layout-gap);
-  width: 100%;
-  padding: var(--section-space) max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
-  overflow: visible;
-  background: #17191c;
-  text-align: left;
-}
-.research-page .sar-story .sar-hero-stage .hero-heading { width: 100%; max-width: none; padding: 0; margin: 0; text-align: left; }
-.research-page .sar-story .sar-hero-stage h1 { font-size: clamp(34px, calc(24px + 2vw), 62px); line-height: 1.12; letter-spacing: -.045em; }
-.research-page .sar-story .sar-hero-media { width: 100%; margin: 0; padding: clamp(8px, 1vw, 14px); background: #242629; overflow: visible; border: 1px solid #ffffff20; }
-.research-page .sar-story .sar-hero-media::after { content: none; }
-.research-page .sar-story .sar-hero-media img { width: 100%; height: auto; object-fit: contain; }
-.research-page .sar-story .research-hero .hero-byline { width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); padding-block: var(--section-space); gap: 18px; }
-.research-page .sar-story .research-hero .hero-byline > .text-sm { font-size: 14px; line-height: 1.7; }
+/* Mobile SAR galleries preserve their original research framing. */
 .research-page .sar-story :is(.sar-figure,.sar-problem-gallery,.sar-results) { width: 100%; max-width: none; margin-top: var(--media-space); }
 .research-page .sar-story .sar-record-summary { max-width: var(--reading-width); margin-inline: 0; }
 .research-page .sar-story .sar-guidance-pattern img { object-fit: contain; }
@@ -146,32 +126,12 @@ html.research-page body {
 .research-page .sar-story .sar-results .stat-value { font-size: clamp(32px, 3.6vw, 52px); white-space: normal; }
 .research-page .sar-target-pair { grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--layout-gap); }
 
-/* Lunar illustration floats beside supporting copy below a full-width title.
-   The image keeps its original annotations at every width. */
-.research-page .lunar-page { --lunar-content: var(--content-width); --lunar-hero-width: var(--content-width); --lunar-gutter: var(--page-gutter); --lunar-space: var(--media-space); font-size: var(--body-size); }
-.research-page .lunar-hero-composition { display: block; padding-block: var(--section-space); }
-.research-page .lunar-identity { margin-bottom: 24px; }
-.research-page .lunar-hero-layout { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--layout-gap); align-items: start; }
-.research-page .lunar-hero-intro { display: contents; }
-.research-page .lunar-page .lunar-hero h1 { grid-column: 1 / -1; grid-row: auto; max-width: 22ch; font-size: clamp(36px, 4.5vw, 68px); line-height: 1.1; }
-.research-page .lunar-page .lunar-subtitle { grid-column: 1 / 5; width: 100%; margin: 0; font-size: var(--body-size); }
-.research-page .lunar-page .lunar-hero-figure { grid-column: 5 / -1; grid-row: auto; width: 100%; margin: 0; padding: clamp(8px, 1vw, 14px); }
-.research-page .lunar-page .lunar-hero-scene { width: 100%; height: auto; object-fit: contain; }
 .research-page .lunar-paper { padding-block: var(--section-space); }
 .research-page .lunar-story > section { padding-block: var(--section-space); }
 .research-page .lunar-page .lunar-copy h2 { margin-bottom: 24px; }
 .research-page .lunar-page .lunar-authors { font-size: 17px; }
 .research-page .lunar-affiliations { font-size: 14px; }
 
-/* Media Heroes have an independent headline, native-ratio video, and publication.
-   No viewport-height formulas, masks, or absolutely positioned video. */
-.research-page .research-media-hero { margin: 0; padding-block: var(--section-space); border-bottom: 1px solid var(--research-rule, #e2e5eb); }
-.research-page .research-media-composition { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: var(--layout-gap); }
-.research-page .research-media-hero h1 { margin: 0; font-size: clamp(34px, calc(20px + 2vw), 56px); line-height: 1.13; letter-spacing: -.04em; font-weight: 500; text-wrap: pretty; }
-.research-page .research-media-frame { min-width: 0; margin: 0; border-radius: 6px; background: #101214; box-shadow: 0 12px 32px #00000018; }
-.research-page .research-media-frame video { position: static; display: block; width: 100%; height: auto; max-width: none; max-height: none; margin: 0; border-radius: 6px; object-fit: contain; transform: none; }
-.research-page[data-project="bim-laser"] .research-media-hero { background: #141718; color: #fff; }
-.research-page[data-project="bim-laser"] .research-media-hero h1 { color: #fff; }
 .research-page .video-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: var(--layout-gap); }
 .research-page .comparison-media { max-width: none; }
 .research-page .demo-controls { flex-wrap: wrap; }
@@ -194,29 +154,10 @@ html.research-page body {
 .research-page .slide img { width: auto; max-width: 100%; max-height: 560px; margin-inline: auto; }
 .research-page .slide figcaption { text-align: center; }
 
-/* Fire uses shared grid rows to float the image across a dark/light boundary.
-   Its complete scene and the headline occupy separate, naturally sized rows. */
-.research-page .fire-navigation > div { width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); max-width: none; padding-inline: 0; }
-.research-page .fire-hero-wrap .research-hero { background: var(--research-background); margin: 0; }
-.research-page .fire-hero-wrap .header-content {
-  width: 100%; max-width: none; min-height: 0; padding: 0;
-  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto auto;
-  gap: 0;
-}
-.research-page .fire-hero-wrap .header-content::before { content: ""; grid-column: 1; grid-row: 1 / 3; align-self: stretch; width: 100%; height: 100%; background: var(--fire-charcoal); }
-.research-page .fire-hero-wrap .hero-heading { grid-column: 1; grid-row: 1; width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); margin: 0 auto; padding: var(--section-space) 0 var(--media-space); }
-.research-page[data-project="fire-investigation"] .fire-hero-wrap h1 { font-size: clamp(34px, 4.7vw, 72px); line-height: 1.12; }
-.research-page[data-project="fire-investigation"] .research-section h2 { max-width: none; font-size: var(--heading-size); }
+/* Fire narrative and interactive evidence. */
+.research-page .fire-navigation > div { width: min(calc(100% - 2 * var(--page-gutter)),1200px); max-width: none; padding-inline: 0; }
+.research-page[data-project="fire-investigation"] .research-section h2 { font-size: var(--heading-size); }
 .research-page .research-section > .fire-kicker { font-size: 13px; }
-.research-page .fire-hero-wrap .hero-media { grid-column: 1; grid-row: 2 / 4; width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); margin: 0 auto; }
-.research-page .fire-hero-wrap .hero-byline { grid-column: 1; grid-row: 4; width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); margin: 0 auto; padding: 24px 0 var(--section-space); }
-.research-page .fire-hero-wrap .hero-byline::before,
-.research-page .fire-hero-figure::before { content: none; }
-.research-page .fire-hero-wrap .hero-paper-title { color: var(--research-secondary); font-size: var(--body-size); }
-.research-page .fire-hero-wrap .header-authors { color: var(--research-primary); }
-.research-page .fire-hero-wrap .header-authors > div > div + div { color: var(--research-secondary); font-size: 14px; }
-.research-page .fire-hero-wrap .fire-hero-figure figcaption { color: var(--research-secondary); }
-.research-page .fire-hero-figure img { object-fit: contain; }
 .research-page :is(.fire-approach,.fire-evidence-section,.fire-simulation-intro) { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: var(--layout-gap); }
 .research-page .fire-approach { max-width: none; padding: clamp(20px, 3vw, 40px); }
 .research-page .fire-approach > div > p:last-child,
@@ -254,17 +195,6 @@ html.research-page body {
 }
 
 @media (max-width: 860px) {
-  .research-page .sar-story .sar-hero-stage,
-  .research-page .research-media-composition { grid-template-columns: minmax(0, 1fr); }
-  /* Keep media close to its pre-stack size instead of doubling at the reflow. */
-  .research-page .sar-story .sar-hero-media,
-  .research-page .research-media-frame { width: min(100%, 440px); justify-self: center; }
-  .research-page .research-media-hero h1 { max-width: 25ch; }
-  .research-page .research-media-hero h1 br { display: none; }
-  .research-page .lunar-page .lunar-subtitle,
-  .research-page .lunar-page .lunar-hero-figure { grid-column: 1 / -1; }
-  .research-page .lunar-page .lunar-hero-figure { width: min(100%, 540px); justify-self: end; }
-  .research-page .lunar-page .lunar-subtitle { max-width: var(--reading-width); }
   .research-page .ss-problem-grid { grid-template-columns: minmax(0, 1fr); gap: var(--layout-gap); }
   .research-page .ss .ss-sensing-film { width: 100%; max-width: none; margin-inline: 0 !important; }
 }
@@ -274,72 +204,32 @@ html.research-page body {
   .research-page .sar-story .sar-record-summary dl { grid-template-columns: minmax(0, 1fr); }
   .research-page .fire-reasoning-comparison { grid-template-columns: minmax(0, 1fr); }
   .research-page .fire-trace ol { grid-template-columns: minmax(0, 1fr); }
-  .research-page .fire-hero-wrap .fire-hero-figure figcaption { display: block; }
-  .research-page .fire-hero-wrap .fire-hero-figure figcaption span:last-child { display: block; margin-top: 4px; font-size: 13px; }
   .research-page .ss-section-heading { grid-template-columns: minmax(0, 1fr); }
   .research-page .ss-metric strong { font-size: clamp(36px, 12vw, 60px); }
 }
-/* Full-bleed layered Heroes. Media stays at its native aspect ratio; a single
-   still supplies the scene extension so videos need only one decoder. */
-.research-page .project-hero {
-  position: relative; isolation: isolate; overflow: hidden;
-  width: 100%; max-width: none; margin: 0; border: 0;
-  background: var(--hero-scene, #f5f4f2); color: var(--hero-ink, #17191c);
-}
-.research-page .project-hero :is(.hero-media-background,.hero-media-primary) {
-  position: absolute; inset: 0; z-index: -2; pointer-events: none;
-}
-.research-page .project-hero .hero-media-background {
-  background: var(--hero-poster) center / cover no-repeat;
-  filter: blur(70px); transform: scale(1.12); opacity: var(--hero-fill-opacity,.6);
-}
-.research-page .project-hero .hero-media-primary { z-index: -1; }
-.research-page .project-hero .hero-media-primary :is(img,video) {
-  display: block; width: 100%; height: 100%; max-width: none; max-height: none;
-  border: 0; border-radius: 0; object-fit: contain; object-position: var(--hero-focal,50% 40%);
-  margin: 0; transform: none;
-  mask-image: linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
-}
-.research-page .project-hero .hero-overlay {
-  display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-  position: relative; width: 100%; min-height: var(--hero-height,780px);
-  gap: var(--hero-clearance,240px); padding: clamp(40px,4vw,76px) var(--page-gutter) 40px;
-  background: var(--hero-scrim); text-align: center;
-}
-.research-page .project-hero .hero-headline { width: min(100%,1120px); margin: 0; padding: 0; }
-.research-page .project-hero h1 {
-  margin: 0; max-width: none; color: inherit;
-  font-size: clamp(32px,3.5vw,62px); font-weight: 500;
-  line-height: 1.13; letter-spacing: -.045em; text-wrap: balance;
-}
-.research-page .project-hero .research-publication {
-  width: min(100%,980px); margin: 0; padding: 0; gap: 18px; color: inherit;
-}
-.research-page .project-hero .research-publication .hero-paper-title {
-  max-width: 850px; color: inherit; font-size: clamp(20px,1.5vw,26px); line-height: 1.35;
-}
-.research-page .project-hero .research-publication > .text-sm { font-size: 13px; max-width: 900px; }
-.research-page[data-project="bim2workface"] .project-hero {
-  --hero-scene: #eeebeb;
-  --hero-poster: url('/projects/bim2workface/videos/white_side.jpg');
-  --hero-height: clamp(720px,52vw,960px);
-  --hero-scrim: linear-gradient(#fff9,transparent 30%,transparent 48%,#fffffff0 80%,#fff);
-}
-.research-page[data-project="bim-laser"] .project-hero {
-  --hero-scene: #000; --hero-ink: #fff;
-  --hero-poster: url('/projects/bim-laser/assets/bim-laser/projector_rotation-poster.jpg');
-  --hero-fill-opacity: .22; --hero-height: clamp(660px,44vw,820px); --hero-clearance: 180px;
-  --hero-focal: 50% 40%;
-  --hero-scrim: linear-gradient(#0004,transparent 28%,#0003 47%,#000c 90%,#000d);
-}
-@media (max-width:600px) {
-  .research-page .project-hero--academic .hero-overlay { --hero-height: 0px; --hero-clearance: 220px; padding-block: 32px; }
-  .research-page .project-hero--academic .hero-media-primary { bottom: auto; top: 105px; height: 320px; }
-  .research-page .project-hero--academic .hero-media-primary :is(img,video) { object-position: center; mask-image: linear-gradient(transparent,#000 16%,#000 80%,transparent); }
-  .research-page .project-hero--academic .hero-media-background { opacity: .18; }
-  .research-page[data-project="bim2workface"] .project-hero { --hero-scrim: linear-gradient(#fff9,transparent 25%,#fff5 45%,#fff 65%); }
-  .research-page .project-hero--academic h1 br { display: none; }
-}
-/* Keep the horizontal feather on the actual video edges, including ultrawide. */
-.research-page .project-hero--academic .hero-media-primary { display: grid; place-items: center; }
-.research-page .project-hero--academic .hero-media-primary video { width: auto; max-width: 100%; height: 100%; }
+
+/* A 1200px boundary is available, while typical compositions use 980px.
+   Prose and its heading form a centered reading group inside the media group. */
+.research-page .research-section > :is(h2,p),
+.research-page .research-section > h3 { max-width: var(--reading-width); margin-inline: auto; }
+.research-page .research-section > .research-wide { margin-top: var(--media-space); }
+.research-page .research-publication .hero-paper-title { max-width: 980px; }
+.research-page .research-section :is(.comparison-media,.alignment-gallery) { margin-top: var(--media-space); }
+.research-page .research-section .research-columns { margin-top: var(--media-space); }
+.research-page .research-section .research-columns p { margin-top: 16px; }
+.research-page .research-section > .research-equipment { width: min(100%,810px); margin-inline: auto; }
+.research-page .lunar-page { --lunar-content: var(--content-width); --lunar-section-space: var(--section-space); }
+.research-page .lunar-page .lunar-copy { max-width: var(--reading-width); margin-inline: auto; }
+.research-page .lunar-page .lunar-paper h2 { max-width: 980px; }
+.research-page .lunar-paper :is(.lunar-authors,.lunar-journal,.lunar-affiliations) { max-width: 810px; }
+.research-page .lunar-workflow a { padding: 0; }
+.research-page .lunar-page :is(.lunar-excavation,.lunar-chart,.lunar-highlights) { max-width: 900px; margin-inline: auto; }
+.research-page .lunar-page .lunar-method-explanation { margin-top: var(--media-space); }
+.research-page .sar-story .sar-record-summary { margin-inline: auto; }
+.research-page .ss :is(.ss-future-intro,.ss-collab .ss-wrap > .ss-body) { max-width: 810px; }
+.research-page .ss .ss-comparison { max-width: 900px; }
+.research-page .ss .ss-site-visual { max-width: 860px; }
+.research-page .ss .ss-direction { gap: var(--layout-gap); }
+.research-page .research-equipment img { margin-inline: auto; }
+.research-page .research-enlarge { display: block; margin-top: var(--media-space); cursor: zoom-in; }
+.research-page .research-enlarge img { width: 100%; height: auto; margin: 0; }
