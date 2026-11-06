@@ -1,0 +1,43 @@
+# Rescue narrative media provenance
+
+Audited November 6, 2026. This revision reuses existing repository images;
+no experiment, scientific panel, or concept rendering was generated or altered.
+
+The author-supplied package is `Search_Rescue_Final_Website_Materials`, whose
+`search_rescue_materials/ASSET_GUIDE.md` and
+`03_proposal_ppt_figures/original_ppt_figure_manifest.csv` distinguish concepts,
+platform graphics, and prior research. A proposal slide number establishes the
+supplied image's immediate source, not its original publication or validation.
+
+- `hero_belief_concept.webp`: proposal slide 1, image 6. Concept rendering,
+  visibly labeled on the page; not a measured interior or deployed rescue system.
+- `concept_void_ar.webp`: proposal slide 1, image 1. Concept rendering. Geometry,
+  volume, depth, and confidence readouts are illustrative, not measured results.
+- `robot_drone_gpr.webp`: proposal slide 1, image 2, aerial-platform graphic.
+- `robot_quadruped.webp`: proposal slide 1, image 4, legged-platform graphic.
+  Neither graphic establishes the pictured platform's integration with GPR or
+  testing in disaster rubble. Original hardware-image credits remain unverified.
+- `gpr_waveform.webp`: proposal slide 3, image 10, described in the supplied
+  manifest as a raw radargram example. Original study, acquisition conditions,
+  and the nature of the scanned targets remain unverified.
+- `gpr_inversion_results.webp`: proposal slide 4, image 1, described in the
+  supplied manifest as a prior-research radargram/ground-truth/prediction
+  comparison. Original publication, experimental context, and embedded void
+  labels remain unverified. The page identifies this as a supplied example,
+  not evidence of void detection in disaster rubble. No accuracy or rescue
+  validation claim is derived from it. If its underlying study concerns buried
+  utilities, it must continue to be distinguished from rubble-void detection.
+- `disaster_rubble_aerial.jpg`: separately supplied photograph, identified in
+  the guide as context photography. Photographer, location, date, and usage
+  rights remain unverified; the page does not assign an event or place to it.
+- `pancake_void_diagram.webp`: existing diagram from the supplied
+  `pancake_void_training_slide.jpg`, showing the void diagram without the slide
+  header. Preserve the known “Conducting Search Operations” training-material
+  credit. Original training provider and usage terms still require confirmation.
+- `uncertainty_targeted_measurement.svg`: supplied editable concept artwork,
+  labeled as future research. It illustrates a proposed measurement near an
+  uncertain region, not a completed or validated adaptive-sensing capability.
+
+The six retained proposal WebPs, the aerial photograph, and the targeted-sensing
+SVG were compared byte-for-byte with their author-supplied package counterparts.
+The page's expandable image credits preserve the source limitations above.
