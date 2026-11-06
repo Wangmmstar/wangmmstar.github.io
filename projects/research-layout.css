@@ -212,6 +212,17 @@ html.research-page body {
    Prose and its heading form a centered reading group inside the media group. */
 .research-page .research-section > :is(h2,p),
 .research-page .research-section > h3 { max-width: var(--reading-width); margin-inline: auto; }
+/* Fire's legacy html[data-project] heading shorthand outranks the general
+   reading measure. Give standalone narrative groups one explicit column;
+   nested evidence/approach columns and the split simulation intro keep theirs. */
+html.research-page[data-project="fire-investigation"]
+.research-section:is(.story-section, .fire-vision)
+> :is(.fire-kicker, h2, p:not(.fire-emphasis, .fire-closing)) {
+  width: min(100%, var(--reading-width));
+  max-width: none;
+  margin-inline: auto;
+}
+
 .research-page .research-section > .research-wide { margin-top: var(--media-space); }
 .research-page .research-publication .hero-paper-title { max-width: 980px; }
 .research-page .research-section :is(.comparison-media,.alignment-gallery) { margin-top: var(--media-space); }
