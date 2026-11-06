@@ -67,7 +67,7 @@
 </div>
   <div class="hero-overlay">
     <div class="hero-headline"><h1 id="hero-title" class="my-0 text-5xl font-medium" data-astro-cid-3ef6ksr2="">
-                How can robots build where BIM says they should?
+                How can robots build where the design says they should?
               </h1></div>
     <div class="research-publication hero-byline" data-astro-cid-3ef6ksr2="">
 <h2 class="hero-paper-title" data-astro-cid-3ef6ksr2="" id="publication-title">
@@ -134,8 +134,10 @@
 </header>
 
       <section class="research-section story-section" id="problem" aria-labelledby="problem-title">
-        <h2 id="problem-title">A BIM target is not a robot command.</h2>
-        <p>BIM specifies where a construction component should be installed. Traditionally, a robot needs that target registered to the worksite and transformed into its own coordinate system. We investigate another way to deliver the installation target: projecting it onto the wall for the robot to observe.</p>
+        <h2 id="problem-title">A design target is not a robot command.</h2>
+        <p>To use design targets directly, robots need those targets expressed in their own coordinate systems. Workers, meanwhile, cannot easily see where the robots intend to build.</p>
+        <p><strong>What if both could see the same target?</strong></p>
+        <p>We project design-defined installation targets onto the workface, creating a shared spatial reference that robots can follow and workers can inspect.</p>
         <div class="concept-comparison comparison-media">
           <style>
             astro-island,astro-slot,astro-static-slot{display:contents}
@@ -233,7 +235,7 @@
       </section>
       <section class="research-section story-section" id="approach" aria-labelledby="approach-title">
         <h2 id="approach-title">Project the target. Align the bracket.</h2>
-        <p>BIM-defined bracket geometry can be converted into a projection pattern and displayed on the installation surface.</p>
+        <p>Design-defined bracket geometry becomes a projected pattern on the wall. Cameras observe the pattern and the bracket, while a learned controller adjusts the robot until they align.</p>
         <div class="research-wide"><a class="research-enlarge" href="/projects/bim2workface/_astro/align_process.CZAeH1a0_ZQKwYX.png" target="_blank" rel="noopener" aria-label="Enlarge original research diagram"><picture>
             <source
               srcset="/projects/bim2workface/_astro/align_process.CZAeH1a0_Z1In0Mh.avif 640w, /projects/bim2workface/_astro/align_process.CZAeH1a0_v8Hc5.avif 750w, /projects/bim2workface/_astro/align_process.CZAeH1a0_Z14CHSx.avif 828w, /projects/bim2workface/_astro/align_process.CZAeH1a0_Zeq3Dw.avif 1080w, /projects/bim2workface/_astro/align_process.CZAeH1a0_A5UWL.avif 1280w, /projects/bim2workface/_astro/align_process.CZAeH1a0_Z9VTSu.avif 1668w, /projects/bim2workface/_astro/align_process.CZAeH1a0_OnUU7.avif 1724w"
@@ -254,7 +256,7 @@
               class="rounded-lg max-h-[calc(100svh-3rem)] max-w-full w-min mx-auto "
             />
           </picture></a></div>
-        <p>In the robotic alignment experiments, cameras observe the projected target and the bracket held by the robot. A learned controller makes incremental corrections without receiving a BIM-derived absolute goal pose.</p>
+        <p>The design-to-projection and robotic alignment stages were evaluated separately.</p>
         <div class="research-wide"><a class="research-enlarge" href="/projects/bim2workface/_astro/architecture.CbaxTfPH_Z3Xv4j.png" target="_blank" rel="noopener" aria-label="Enlarge original research diagram"><picture>
             <source
               srcset="/projects/bim2workface/_astro/architecture.CbaxTfPH_JrWxs.avif 640w, /projects/bim2workface/_astro/architecture.CbaxTfPH_uvdf.avif 750w, /projects/bim2workface/_astro/architecture.CbaxTfPH_20qkfj.avif 828w, /projects/bim2workface/_astro/architecture.CbaxTfPH_2qEhgg.avif 1080w, /projects/bim2workface/_astro/architecture.CbaxTfPH_ioDN3.avif 1280w, /projects/bim2workface/_astro/architecture.CbaxTfPH_1CL9kQ.avif 1668w, /projects/bim2workface/_astro/architecture.CbaxTfPH_Z1DHr4P.avif 1904w"
@@ -518,8 +520,9 @@
         <p class="scope-note">Errors are reported for the 133 trials with recorded final poses.</p>
       </section>
       <section class="research-section story-section" id="future-directions" aria-labelledby="future-directions-title">
-        <h2 id="future-directions-title">Can different robots use the same installation target?</h2>
-        <p>The alignment experiments tested one robotic setup. Future work will explore more complex components, changing worksite conditions, and whether robots with different sensing and control systems can align to the same projected target.</p>
+        <h2 id="future-directions-title">One interface. Many builders.</h2>
+        <p>Imagine building a data center: one robot drills mounting holes, another installs supports, and a worker checks the result. A shared projection could show everyone where to work, what comes next, and whether the installation matches the design.</p>
+        <p>The same idea could extend to flexible manufacturing and, eventually, multi-robot construction on the Moon.</p>
       </section>
     </main>
     <footer class="mx-auto max-w-[50rem] px-6 text-center">
