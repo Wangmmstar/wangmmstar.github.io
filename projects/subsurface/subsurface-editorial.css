@@ -1,11 +1,57 @@
 /* Editorial structure for Subsurface only; shared and generated styles stay intact. */
+html[data-project="subsurface"] .ss .ss-hero {
+  display: grid;
+  grid-template-rows: minmax(min-content, 1fr) auto minmax(min-content, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+  text-align: center;
+}
+html[data-project="subsurface"] .ss .ss-hero-inner {
+  grid-row: 2;
+  padding-block: 2rem;
+}
 html[data-project="subsurface"] .ss .ss-hero h1 {
   max-width: 56rem;
+  margin-inline: auto;
   font-size: clamp(2.5rem, 5vw, 4.8rem);
   line-height: 1.1;
   text-wrap: balance;
 }
-html[data-project="subsurface"] .ss .ss-hero-foot { justify-content: flex-end; }
+html[data-project="subsurface"] .ss .ss-hero-publication {
+  grid-row: 3;
+  align-self: end;
+  max-width: 980px;
+  padding-bottom: 5rem;
+  color: #fff;
+}
+html[data-project="subsurface"] .ss .ss-hero-paper-title {
+  max-width: 850px;
+  margin: 0 auto 1rem;
+  color: inherit;
+  font-size: clamp(1.125rem, 1.5vw, 1.625rem);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+html[data-project="subsurface"] .ss .ss-hero-paper-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+html[data-project="subsurface"] .ss :is(.ss-hero-authors,.ss-hero-journal) {
+  color: #e0e8e5;
+  font-size: clamp(.8125rem, 1vw, 1rem);
+  line-height: 1.6;
+  text-wrap: balance;
+}
+html[data-project="subsurface"] .ss .ss-hero-journal { margin-top: .5rem; }
+html[data-project="subsurface"] .ss .ss-hero .ss-hero-foot {
+  left: auto;
+  right: var(--page-gutter);
+  bottom: 1.3rem;
+  width: auto;
+  margin-inline: 0;
+  justify-content: flex-end;
+}
 html[data-project="subsurface"] .ss .ss-motion {
   width: 40px;
   height: 40px;
@@ -68,18 +114,10 @@ html[data-project="subsurface"] .ss .ss-field-outcome h3 { font-size: 22px; }
 html[data-project="subsurface"] .ss .ss-field-outcome p {
   max-width: none; margin-top: 16px; font-size: var(--body-size); line-height: 1.75;
 }
-html[data-project="subsurface"] .ss-future .ss-wrap,
-html[data-project="subsurface"] .ss-publication .ss-wrap { max-width: var(--reading-width); }
-html[data-project="subsurface"] .ss .ss-publication { padding-block: 32px; }
-html[data-project="subsurface"] .ss :is(.ss-citation,.ss-contact) { font-size: 14px; line-height: 1.75; }
-html[data-project="subsurface"] .ss .ss-citation { color: var(--ss-muted); }
-html[data-project="subsurface"] .ss .ss-contact { margin-top: 16px; }
-html[data-project="subsurface"] .ss :is(.ss-citation,.ss-contact) a {
-  text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere;
-}
+html[data-project="subsurface"] .ss-future .ss-wrap { max-width: var(--reading-width); }
 @media (max-width: 600px) {
   html[data-project="subsurface"] .ss .ss-inversion-pair { grid-template-columns: minmax(0, 1fr); gap: 28px; }
-  html[data-project="subsurface"] .ss .ss-hero-inner { padding-block: 4rem 7rem; }
+  html[data-project="subsurface"] .ss .ss-hero { min-height: 52rem; }
   html[data-project="subsurface"] .ss .ss-hero:after {
     background: linear-gradient(90deg, #05181aeb, #05181ab3 65%, #05181a66), linear-gradient(0deg, #05181ab3, transparent 35%);
   }
