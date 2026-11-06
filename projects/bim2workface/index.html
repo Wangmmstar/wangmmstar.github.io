@@ -136,43 +136,99 @@
       <section class="research-section story-section" id="problem" aria-labelledby="problem-title">
         <h2 id="problem-title">A BIM target is not a robot command.</h2>
         <p>BIM specifies where a construction component should be installed. Traditionally, a robot needs that target registered to the worksite and transformed into its own coordinate system. We investigate another way to deliver the installation target: projecting it onto the wall for the robot to observe.</p>
-        <div class="concept-comparison">
-          <figure><figcaption>Target sent in robot coordinates</figcaption><picture><source
-                      srcset="/projects/bim2workface/_astro/before.FFV-YgfD_mlOlo.avif 640w, /projects/bim2workface/_astro/before.FFV-YgfD_ZOabVb.avif 750w, /projects/bim2workface/_astro/before.FFV-YgfD_Z2dBwLa.avif 828w, /projects/bim2workface/_astro/before.FFV-YgfD_1lxlhB.avif 1080w, /projects/bim2workface/_astro/before.FFV-YgfD_Z1Woqik.avif 1280w, /projects/bim2workface/_astro/before.FFV-YgfD_1ACbLL.avif 1350w"
+        <div class="concept-comparison comparison-media">
+          <style>
+            astro-island,astro-slot,astro-static-slot{display:contents}
+          </style>
+          <script>
+            (()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();
+          </script>
+          <script>
+            (()=>{var g=Object.defineProperty;var w=(c,s,d)=>s in c?g(c,s,{enumerable:!0,configurable:!0,writable:!0,value:d}):c[s]=d;var l=(c,s,d)=>w(c,typeof s!="symbol"?s+"":s,d);var E=new Set(["__proto__","constructor","prototype"]);{let c={0:t=>y(t),1:t=>d(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(d(t)),5:t=>new Set(d(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in c?c[p](e):void 0},d=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},i=this.querySelectorAll("template[data-astro-template]");for(let o of i){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let a=o.closest(this.tagName);a!=null&&a.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let a=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(a+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${a}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let n=new URL(e,document.baseURI),r=`astro-retry=${Date.now()}`,i=n.hash.replace(/^#/,"");return n.hash=i?`${i}&${r}`:r,n.toString()}async importWithRetry(e){try{return await import(e)}catch(n){return await new Promise(r=>setTimeout(r,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let n=this.getAttribute("component-url"),r=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:n}});this.dispatchEvent(r)&&console.error(`[astro-island] Error hydrating ${n}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url");try{let[i,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),r?this.importWithRetry(r):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=i;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=i[h]}return this.hydrator=u,this.hydrate}catch(i){return this.handleHydrationError(i),()=>{}}},e,this)}catch(r){this.handleHydrationError(r)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();
+          </script>
+          <astro-island
+            uid="ZljKbS"
+            prefix="r1"
+            component-url="/projects/bim2workface/_astro/Comparison.D19zAIX8.js"
+            component-export="Comparison"
+            renderer-url="/projects/bim2workface/_astro/client.DTojXMD-.js"
+            props="{}"
+            ssr
+            client="visible"
+            opts='{"name":"Comparison","value":true}'
+            await-children
+            ><div
+              class="not-prose w-full rounded-lg"
+              style="position:relative;display:flex;overflow:hidden;touch-action:none;user-select:none;-khtml-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none"
+              data-rcs="root"
+            ><astro-slot name="itemOne"
+                ><picture><source
+                    srcset="/projects/bim2workface/_astro/before.FFV-YgfD_mlOlo.avif 640w, /projects/bim2workface/_astro/before.FFV-YgfD_ZOabVb.avif 750w, /projects/bim2workface/_astro/before.FFV-YgfD_Z2dBwLa.avif 828w, /projects/bim2workface/_astro/before.FFV-YgfD_1lxlhB.avif 1080w, /projects/bim2workface/_astro/before.FFV-YgfD_Z1Woqik.avif 1280w, /projects/bim2workface/_astro/before.FFV-YgfD_1ACbLL.avif 1350w"
+                    type="image/avif"
+                  /><img
+                    src="/projects/bim2workface/_astro/before.FFV-YgfD_2f920p.png"
+                    srcset="/projects/bim2workface/_astro/before.FFV-YgfD_1Q6eDf.png 640w, /projects/bim2workface/_astro/before.FFV-YgfD_EzdlF.png 750w, /projects/bim2workface/_astro/before.FFV-YgfD_ZIR7tj.png 828w, /projects/bim2workface/_astro/before.FFV-YgfD_1GOSYC.png 1080w, /projects/bim2workface/_astro/before.FFV-YgfD_Z1iRA4G.png 1280w, /projects/bim2workface/_astro/before.FFV-YgfD_2f920p.png 1350w"
+                    alt="Conceptual robot-specific target delivery: the BIM design target is re-expressed in independent executor coordinate frames."
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(min-width: 1350px) 1350px, 100vw"
+                    data-astro-image="constrained"
+                    data-astro-image-fit="contain"
+                    data-astro-image-pos="center"
+                    width="1350"
+                    height="1094"
+                    class="rounded-lg max-h-[calc(100svh-3rem)] max-w-full w-min mx-auto "
+                  /></picture
+              ></astro-slot><div
+                style="position:absolute;top:0;left:0;width:100%;height:100%;user-select:none;will-change:clip-path, transition;-khtml-user-select:none;-moz-user-select:none;-webkit-user-select:none"
+                data-rcs="clip-item"
+              ><astro-slot name="itemTwo"
+                  ><picture><source
+                      srcset="/projects/bim2workface/_astro/after.Cai6UHK__nTQXe.avif 640w, /projects/bim2workface/_astro/after.Cai6UHK__Z2wxgVM.avif 750w, /projects/bim2workface/_astro/after.Cai6UHK__15NE1V.avif 828w, /projects/bim2workface/_astro/after.Cai6UHK__1jFt4e.avif 1080w, /projects/bim2workface/_astro/after.Cai6UHK__Z1YXCpM.avif 1280w, /projects/bim2workface/_astro/after.Cai6UHK__Z1pUnjo.avif 1356w"
                       type="image/avif"
                     /><img
-                      src="/projects/bim2workface/_astro/before.FFV-YgfD_2f920p.png"
-                      srcset="/projects/bim2workface/_astro/before.FFV-YgfD_1Q6eDf.png 640w, /projects/bim2workface/_astro/before.FFV-YgfD_EzdlF.png 750w, /projects/bim2workface/_astro/before.FFV-YgfD_ZIR7tj.png 828w, /projects/bim2workface/_astro/before.FFV-YgfD_1GOSYC.png 1080w, /projects/bim2workface/_astro/before.FFV-YgfD_Z1iRA4G.png 1280w, /projects/bim2workface/_astro/before.FFV-YgfD_2f920p.png 1350w"
-                      alt="Conceptual robot-specific target delivery: the BIM design target is re-expressed in independent executor coordinate frames."
+                      src="/projects/bim2workface/_astro/after.Cai6UHK__Z14COBn.png"
+                      srcset="/projects/bim2workface/_astro/after.Cai6UHK__Z3aJrF.png 640w, /projects/bim2workface/_astro/after.Cai6UHK__26yfrf.png 750w, /projects/bim2workface/_astro/after.Cai6UHK__DI2B2.png 828w, /projects/bim2workface/_astro/after.Cai6UHK__Z2gLfrQ.png 1080w, /projects/bim2workface/_astro/after.Cai6UHK__Z1DG4HL.png 1280w, /projects/bim2workface/_astro/after.Cai6UHK__Z14COBn.png 1356w"
+                      alt="Conceptual workface spatial interface: the BIM target is materialized at the workface as an observable projected cue; additional executor types illustrate the broader concept."
                       loading="lazy"
                       decoding="async"
-                      sizes="(min-width: 1350px) 1350px, 100vw"
+                      sizes="(min-width: 1356px) 1356px, 100vw"
                       data-astro-image="constrained"
                       data-astro-image-fit="contain"
                       data-astro-image-pos="center"
-                      width="1350"
+                      width="1356"
                       height="1094"
                       class="rounded-lg max-h-[calc(100svh-3rem)] max-w-full w-min mx-auto "
                     /></picture
-                ></figure>
-          <figure><figcaption>Target projected onto the wall</figcaption><picture><source
-                        srcset="/projects/bim2workface/_astro/after.Cai6UHK__nTQXe.avif 640w, /projects/bim2workface/_astro/after.Cai6UHK__Z2wxgVM.avif 750w, /projects/bim2workface/_astro/after.Cai6UHK__15NE1V.avif 828w, /projects/bim2workface/_astro/after.Cai6UHK__1jFt4e.avif 1080w, /projects/bim2workface/_astro/after.Cai6UHK__Z1YXCpM.avif 1280w, /projects/bim2workface/_astro/after.Cai6UHK__Z1pUnjo.avif 1356w"
-                        type="image/avif"
-                      /><img
-                        src="/projects/bim2workface/_astro/after.Cai6UHK__Z14COBn.png"
-                        srcset="/projects/bim2workface/_astro/after.Cai6UHK__Z3aJrF.png 640w, /projects/bim2workface/_astro/after.Cai6UHK__26yfrf.png 750w, /projects/bim2workface/_astro/after.Cai6UHK__DI2B2.png 828w, /projects/bim2workface/_astro/after.Cai6UHK__Z2gLfrQ.png 1080w, /projects/bim2workface/_astro/after.Cai6UHK__Z1DG4HL.png 1280w, /projects/bim2workface/_astro/after.Cai6UHK__Z14COBn.png 1356w"
-                        alt="Conceptual workface spatial interface: the BIM target is materialized at the workface as an observable projected cue; additional executor types illustrate the broader concept."
-                        loading="lazy"
-                        decoding="async"
-                        sizes="(min-width: 1356px) 1356px, 100vw"
-                        data-astro-image="constrained"
-                        data-astro-image-fit="contain"
-                        data-astro-image-pos="center"
-                        width="1356"
-                        height="1094"
-                        class="rounded-lg max-h-[calc(100svh-3rem)] max-w-full w-min mx-auto "
-                      /></picture
-                  ></figure>
+                ></astro-slot></div><button
+                aria-label="Drag to move or focus and use arrow keys"
+                aria-orientation="horizontal"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="50"
+                data-rcs="handle-container"
+                role="slider"
+                style="position:absolute;top:0;height:100%;background:none;border:0;padding:0;pointer-events:all;appearance:none;-webkit-appearance:none;-moz-appearance:none;outline:0;transform:translate3d(-50%, 0, 0)"
+              ><div
+                  class="__rcs-handle-root"
+                  style="display:flex;flex-direction:column;place-items:center;height:100%;cursor:ew-resize;pointer-events:none;color:#fff"
+                ><div
+                    class="__rcs-handle-line"
+                    style="flex-grow:1;height:100%;width:2px;background-color:currentColor;pointer-events:auto;box-shadow:0 0 4px rgba(0,0,0,.5)"
+                  ></div><div
+                    class="__rcs-handle-button"
+                    style="display:grid;grid-auto-flow:column;gap:8px;place-content:center;flex-shrink:0;width:56px;height:56px;border-radius:50%;border-style:solid;border-width:2px;pointer-events:auto;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);background-color:rgba(0, 0, 0, 0.125);box-shadow:0 0 4px rgba(0,0,0,.35)"
+                  ><div
+                      class="__rcs-handle-arrow"
+                      style="width:0;height:0;border-top:8px solid transparent;border-right:10px solid;border-bottom:8px solid transparent"
+                    ></div><div
+                      class="__rcs-handle-arrow"
+                      style="width:0;height:0;border-top:8px solid transparent;border-right:10px solid;border-bottom:8px solid transparent;transform:rotate(180deg)"
+                    ></div></div><div
+                    class="__rcs-handle-line"
+                    style="flex-grow:1;height:100%;width:2px;background-color:currentColor;pointer-events:auto;box-shadow:0 0 4px rgba(0,0,0,.5)"
+                  ></div></div></button></div><!--astro:end--></astro-island
+          >
         </div>
       </section>
       <section class="research-section story-section" id="approach" aria-labelledby="approach-title">

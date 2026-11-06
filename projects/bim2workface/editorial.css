@@ -10,20 +10,9 @@ html.research-page[data-project="bim2workface"] {
 .research-page .research-section h2 { margin-bottom: 16px; }
 .research-page .research-section > p { margin-top: 12px; }
 .research-page .concept-comparison {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
   width: min(100%, var(--reading-width));
   margin: 24px auto 0;
 }
-.research-page .concept-comparison figure { margin: 0; }
-.research-page .concept-comparison figcaption {
-  margin: 0 0 10px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-.research-page .concept-comparison :is(picture, img) { display: block; width: 100%; margin: 0; }
 .research-page #approach .research-wide { margin-block: 20px 24px; }
 .research-page #approach .research-enlarge { margin: 0; }
 .research-page #approach .research-wide:last-child { margin-bottom: 0; }
@@ -61,6 +50,5 @@ html.research-page[data-project="bim2workface"] {
 .research-page #results > .error-row { margin-block: 8px 0; }
 .research-page #results > .scope-note { font-size: 14px; margin-top: 12px; }
 @media (max-width: 600px) {
-  .research-page .concept-comparison { grid-template-columns: minmax(0, 1fr); }
   .research-page .success-statistics { column-gap: 16px; }
 }

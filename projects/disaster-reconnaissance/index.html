@@ -54,15 +54,124 @@
           <h2 id="recognition-title">Identifying building damage from the air.</h2>
           <p>We developed a deep-learning model to detect and classify building damage in aerial images. Trained using 24,496 annotated damage instances, the model achieved 71.9% mean average precision on the test data.</p>
         </div>
-        <div class="research-figure figure-pair">
-          <figure>
-            <img src="./assets/disaster-reconnaissance/damage-severe.jpg" width="851" height="637" loading="lazy" decoding="async" alt="Aerial image illustrating severe tornado-related building damage." />
-            <figcaption>Severe damage</figcaption>
-          </figure>
-          <figure>
-            <img src="./assets/disaster-reconnaissance/damage-devastating.jpg" width="730" height="487" loading="lazy" decoding="async" alt="Aerial image illustrating devastating tornado-related building damage." />
-            <figcaption>Devastating damage</figcaption>
-          </figure>
+        <div
+          class="damage-selector not-prose"
+          data-damage-selector
+          data-levels='[{"name":"Minor","file":"damage-minor.jpg","width":489,"height":326,"src":"/projects/disaster-reconnaissance/assets/disaster-reconnaissance/damage-minor.jpg","alt":"Example of the minor tornado-related building damage category."},{"name":"Moderate","file":"damage-moderate.jpg","width":489,"height":326,"src":"/projects/disaster-reconnaissance/assets/disaster-reconnaissance/damage-moderate.jpg","alt":"Example of the moderate tornado-related building damage category."},{"name":"Considerable","file":"damage-considerable.jpg","width":195,"height":146,"src":"/projects/disaster-reconnaissance/assets/disaster-reconnaissance/damage-considerable.jpg","alt":"Example of the considerable tornado-related building damage category."},{"name":"Severe","file":"damage-severe.jpg","width":851,"height":637,"src":"/projects/disaster-reconnaissance/assets/disaster-reconnaissance/damage-severe.jpg","alt":"Example of the severe tornado-related building damage category."},{"name":"Devastating","file":"damage-devastating.jpg","width":730,"height":487,"src":"/projects/disaster-reconnaissance/assets/disaster-reconnaissance/damage-devastating.jpg","alt":"Example of the devastating tornado-related building damage category."},{"name":"Incredible","file":"damage-incredible.jpg","width":260,"height":195,"src":"/projects/disaster-reconnaissance/assets/disaster-reconnaissance/damage-incredible.jpg","alt":"Example of the incredible tornado-related building damage category."}]'
+          data-astro-cid-nsojrbig
+        >
+          <output
+            class="damage-selected-label"
+            id="damage-level-label"
+            for="damage-level-range"
+            aria-live="polite"
+            aria-atomic="true"
+            data-astro-cid-nsojrbig
+            >Considerable damage</output
+          >
+          <div class="damage-photo-stage" data-astro-cid-nsojrbig>
+            <img
+              data-damage-photo
+              src="/projects/disaster-reconnaissance/assets/disaster-reconnaissance/damage-considerable.jpg"
+              width="195"
+              height="146"
+              loading="lazy"
+              decoding="async"
+              alt="Example of the considerable tornado-related building damage category."
+              data-astro-cid-nsojrbig
+            />
+          </div>
+          <div
+            class="damage-selector-controls"
+            hidden
+            data-astro-cid-nsojrbig
+          >
+            <label
+              class="damage-range-label"
+              for="damage-level-range"
+              data-astro-cid-nsojrbig
+              >Damage severity</label
+            >
+            <input
+              id="damage-level-range"
+              type="range"
+              min="0"
+              max="5"
+              step="1"
+              value="2"
+              aria-valuetext="Considerable damage, level 3 of 6"
+              list="damage-level-stops"
+              data-astro-cid-nsojrbig
+            />
+            <datalist id="damage-level-stops" data-astro-cid-nsojrbig>
+              <option
+                value="0"
+                label="Minor"
+                data-astro-cid-nsojrbig
+              ></option>
+              <option
+                value="1"
+                label="Moderate"
+                data-astro-cid-nsojrbig
+              ></option>
+              <option
+                value="2"
+                label="Considerable"
+                data-astro-cid-nsojrbig
+              ></option>
+              <option
+                value="3"
+                label="Severe"
+                data-astro-cid-nsojrbig
+              ></option>
+              <option
+                value="4"
+                label="Devastating"
+                data-astro-cid-nsojrbig
+              ></option>
+              <option
+                value="5"
+                label="Incredible"
+                data-astro-cid-nsojrbig
+              ></option>
+            </datalist>
+            <div
+              class="damage-stop-labels"
+              aria-hidden="true"
+              data-astro-cid-nsojrbig
+            >
+              <span data-astro-cid-nsojrbig>Minor</span
+              ><span data-astro-cid-nsojrbig>Moderate</span
+              ><span data-astro-cid-nsojrbig>Considerable</span
+              ><span data-astro-cid-nsojrbig>Severe</span
+              ><span data-astro-cid-nsojrbig>Devastating</span
+              ><span data-astro-cid-nsojrbig>Incredible</span>
+            </div>
+            <div class="damage-step-controls" data-astro-cid-nsojrbig>
+              <button
+                type="button"
+                data-damage-previous
+                aria-label="Previous damage level"
+                data-astro-cid-nsojrbig
+              >
+                ← Previous
+              </button>
+              <button
+                type="button"
+                data-damage-next
+                aria-label="Next damage level"
+                data-astro-cid-nsojrbig
+              >
+                Next →
+              </button>
+            </div>
+          </div>
+          <noscript
+            ><p class="damage-selector-fallback" data-astro-cid-nsojrbig>
+              Considerable damage example. Enable JavaScript to explore the
+              six damage levels.
+            </p></noscript
+          >
         </div>
       </section>
 
@@ -71,16 +180,49 @@
           <h2 id="mapping-title">Putting the damage on the map.</h2>
           <p>In a Chattanooga tornado case study, recognition results were used to map 193 damaged buildings. The map shows where damaged buildings are located and how severely they were affected.</p>
         </div>
-        <div class="research-figure figure-pair">
-          <figure>
-            <img src="./assets/disaster-reconnaissance/map-before.png" width="1446" height="1894" loading="lazy" decoding="async" alt="Geographic imagery of the Chattanooga tornado study area, with its boundary outlined in red." />
-            <figcaption>Geographic imagery</figcaption>
-          </figure>
-          <figure>
-            <img src="./assets/disaster-reconnaissance/map-after.png" width="1478" height="1904" loading="lazy" decoding="async" alt="The same study area with damaged buildings marked by severity, manually mapped from recognition results." />
-            <figcaption>Mapped building damage</figcaption>
-          </figure>
-        </div>
+        <figure class="damage-comparison not-prose" data-damage-comparison>
+          <div class="map-stage" style="--split: 50%">
+            <img
+              class="map-before"
+              src="/projects/disaster-reconnaissance/assets/disaster-reconnaissance/map-before.png"
+              width="1446"
+              height="1894"
+              loading="lazy"
+              decoding="async"
+              alt="Original Google Earth map of the Chattanooga tornado study area, with its boundary outlined in red."
+            />
+            <div class="map-after-clip">
+              <img
+                class="map-after"
+                src="/projects/disaster-reconnaissance/assets/disaster-reconnaissance/map-after.png"
+                width="1478"
+                height="1904"
+                loading="lazy"
+                decoding="async"
+                alt="The same neighborhood with 193 damaged buildings marked by damage category; map constructed manually from recognition results."
+              />
+            </div>
+            <span class="map-label map-label-before">Original</span>
+            <span class="map-label map-label-after">Inference</span>
+            <span class="map-divider" aria-hidden="true"><span>↔</span></span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              step="1"
+              aria-label="Compare original geographic map and inferred building damage map"
+              aria-describedby="map-help"
+              aria-valuetext="50% original map, 50% inference map"
+            />
+          </div>
+          <figcaption id="map-help">
+            Drag to compare · Use arrow keys when focused.<br />Original
+            geographic map → Inferred building damage map.<br /><span
+              >Imagery: Google Earth · © 2022 Maxar Technologies.</span
+            >
+          </figcaption>
+        </figure>
         <div class="figure-notes">
           <p>The damage map was manually constructed from recognition results.</p>
           <p>Imagery: Google Earth · © 2022 Maxar Technologies.</p>
@@ -92,10 +234,139 @@
           <h2 id="planning-title">Using damage to plan the next flight.</h2>
           <p>Building damage information can also guide subsequent drone inspections. Instead of treating every location equally, the optimization model prioritizes surveying more severely damaged buildings while accounting for available drones, flight speed, and battery life.</p>
         </div>
-        <figure class="research-figure planning-figure">
-          <img src="./assets/disaster-reconnaissance/planning-low.svg" width="244" height="331" loading="lazy" decoding="async" alt="Computationally optimized routes for two drones surveying damaged-building locations." />
-          <figcaption>Example optimized routes for two drones with 10-minute battery limits.</figcaption>
-        </figure>
+        <div class="mission-planning not-prose" data-mission-planning>
+          <div
+            class="mission-tabs"
+            role="tablist"
+            aria-label="Drone resource conditions"
+            hidden
+          >
+            <button
+              type="button"
+              id="tab-low"
+              role="tab"
+              aria-controls="panel-low"
+              aria-selected="true"
+              tabindex="0"
+            >
+              Low</button
+            ><button
+              type="button"
+              id="tab-moderate"
+              role="tab"
+              aria-controls="panel-moderate"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Moderate</button
+            ><button
+              type="button"
+              id="tab-high"
+              role="tab"
+              aria-controls="panel-high"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              High
+            </button>
+          </div>
+          <div
+            id="panel-low"
+            class="mission-panel"
+            role="tabpanel"
+            aria-labelledby="tab-low"
+            tabindex="0"
+          >
+            <h3 class="scenario-fallback">Low resources</h3>
+            <img
+              src="/projects/disaster-reconnaissance/assets/disaster-reconnaissance/planning-low.svg"
+              width="244"
+              height="331"
+              loading="lazy"
+              decoding="async"
+              alt="Published low-resource planning result: routes for 2 drones through damaged-building locations, at 2.1 meters per second with 10-minute batteries."
+            />
+            <dl class="mission-parameters">
+              <div>
+                <dt>Available drones</dt>
+                <dd>2 UAVs</dd>
+              </div>
+              <div>
+                <dt>Flight speed</dt>
+                <dd>2.1 m/s</dd>
+              </div>
+              <div>
+                <dt>Battery life</dt>
+                <dd>10 minutes</dd>
+              </div>
+            </dl>
+          </div>
+          <div
+            id="panel-moderate"
+            class="mission-panel"
+            role="tabpanel"
+            aria-labelledby="tab-moderate"
+            tabindex="0"
+          >
+            <h3 class="scenario-fallback">Moderate resources</h3>
+            <img
+              src="/projects/disaster-reconnaissance/assets/disaster-reconnaissance/planning-moderate.svg"
+              width="244"
+              height="331"
+              loading="lazy"
+              decoding="async"
+              alt="Published moderate-resource planning result: routes for 3 drones through damaged-building locations, at 4.6 meters per second with 20-minute batteries."
+            />
+            <dl class="mission-parameters">
+              <div>
+                <dt>Available drones</dt>
+                <dd>3 UAVs</dd>
+              </div>
+              <div>
+                <dt>Flight speed</dt>
+                <dd>4.6 m/s</dd>
+              </div>
+              <div>
+                <dt>Battery life</dt>
+                <dd>20 minutes</dd>
+              </div>
+            </dl>
+          </div>
+          <div
+            id="panel-high"
+            class="mission-panel"
+            role="tabpanel"
+            aria-labelledby="tab-high"
+            tabindex="0"
+          >
+            <h3 class="scenario-fallback">High resources</h3>
+            <img
+              src="/projects/disaster-reconnaissance/assets/disaster-reconnaissance/planning-high.svg"
+              width="244"
+              height="330"
+              loading="lazy"
+              decoding="async"
+              alt="Published high-resource planning result: routes for 4 drones through damaged-building locations, at 6.1 meters per second with 30-minute batteries."
+            />
+            <dl class="mission-parameters">
+              <div>
+                <dt>Available drones</dt>
+                <dd>4 UAVs</dd>
+              </div>
+              <div>
+                <dt>Flight speed</dt>
+                <dd>6.1 m/s</dd>
+              </div>
+              <div>
+                <dt>Battery life</dt>
+                <dd>30 minutes</dd>
+              </div>
+            </dl>
+          </div>
+          <p class="mission-caption">
+            Damage-informed routes under different drone resource constraints.
+          </p>
+        </div>
         <p class="figure-notes">Mission planning was evaluated computationally using a real disaster case study, not through autonomous field deployment.</p>
       </section>
 
