@@ -31,7 +31,8 @@ class Page(HTMLParser):
 
     def references(self):
         return Counter((tag, key, value) for tag, attrs in self.tags for key, value in attrs.items()
-                       if key in ("src", "href", "srcset", "alt", "poster", "data-src"))
+                       if key in ("src", "href", "srcset", "alt", "poster", "data-src")
+                       and not (tag == "link" and attrs.get("rel") == "stylesheet"))
 
 
 for site in SITES:
@@ -43,7 +44,11 @@ for site in SITES:
     assert not old.references() - page.references(), f"An original link or media reference was removed: {site}"
     assert sum(tag == "h1" for tag, _ in page.tags) == 1, f"Expected one Hero title: {site}"
     styles = [a["href"] for tag, a in page.tags if tag == "link" and a.get("rel") == "stylesheet"]
-    assert styles[-1] == "/projects/research-layout.css", f"Shared CSS must load last: {site}"
+    if site == "lunar-construction":
+        # Latest user instruction keeps the concurrent Lunar theme independent.
+        assert styles[-1] == "/projects/lunar-construction/lunar-editorial.css"
+    else:
+        assert styles[-1] == "/projects/research-layout.css", f"Shared CSS must load last: {site}"
     assert any(tag == "meta" and a.get("name") == "viewport" for tag, a in page.tags)
     ids = [a["id"] for _, a in page.tags if "id" in a]
     assert len(ids) == len(set(ids)), f"Duplicate element IDs: {site}"

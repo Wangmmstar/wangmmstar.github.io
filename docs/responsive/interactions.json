@@ -10,16 +10,6 @@
     "passed": true
   },
   {
-    "site": "lunar-construction",
-    "width": 1920,
-    "passed": true
-  },
-  {
-    "site": "subsurface",
-    "width": 1920,
-    "passed": true
-  },
-  {
     "site": "fire-investigation",
     "width": 1920,
     "passed": true
@@ -36,16 +26,6 @@
   },
   {
     "site": "bim-laser",
-    "width": 960,
-    "passed": true
-  },
-  {
-    "site": "lunar-construction",
-    "width": 960,
-    "passed": true
-  },
-  {
-    "site": "subsurface",
     "width": 960,
     "passed": true
   },
@@ -70,22 +50,42 @@
     "passed": true
   },
   {
-    "site": "lunar-construction",
-    "width": 390,
-    "passed": true
-  },
-  {
-    "site": "subsurface",
-    "width": 390,
-    "passed": true
-  },
-  {
     "site": "fire-investigation",
     "width": 390,
     "passed": true
   },
   {
     "site": "mobile-sar-copilot",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "site": "lunar-construction",
+    "width": 1920,
+    "passed": true
+  },
+  {
+    "site": "subsurface",
+    "width": 1920,
+    "passed": true
+  },
+  {
+    "site": "lunar-construction",
+    "width": 960,
+    "passed": true
+  },
+  {
+    "site": "subsurface",
+    "width": 960,
+    "passed": true
+  },
+  {
+    "site": "lunar-construction",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "site": "subsurface",
     "width": 390,
     "passed": true
   }

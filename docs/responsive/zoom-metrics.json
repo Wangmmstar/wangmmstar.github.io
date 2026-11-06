@@ -30,16 +30,6 @@
     "heroHeight": 520
   },
   {
-    "site": "lunar-construction",
-    "zoom": 1.25,
-    "windowWidth": 1920,
-    "innerWidth": 1536,
-    "outerWidth": 1920,
-    "dpr": 1.25,
-    "scrollWidth": 1536,
-    "heroHeight": 861
-  },
-  {
     "site": "subsurface",
     "zoom": 1.25,
     "windowWidth": 1920,
@@ -88,16 +78,6 @@
     "dpr": 1.25,
     "scrollWidth": 768,
     "heroHeight": 432
-  },
-  {
-    "site": "lunar-construction",
-    "zoom": 1.25,
-    "windowWidth": 960,
-    "innerWidth": 768,
-    "outerWidth": 960,
-    "dpr": 1.25,
-    "scrollWidth": 768,
-    "heroHeight": 636
   },
   {
     "site": "subsurface",
@@ -150,16 +130,6 @@
     "heroHeight": 502
   },
   {
-    "site": "lunar-construction",
-    "zoom": 1.5,
-    "windowWidth": 1920,
-    "innerWidth": 1280,
-    "outerWidth": 1920,
-    "dpr": 1.5,
-    "scrollWidth": 1280,
-    "heroHeight": 817
-  },
-  {
     "site": "subsurface",
     "zoom": 1.5,
     "windowWidth": 1920,
@@ -210,16 +180,6 @@
     "heroHeight": 429
   },
   {
-    "site": "lunar-construction",
-    "zoom": 1.5,
-    "windowWidth": 960,
-    "innerWidth": 640,
-    "outerWidth": 960,
-    "dpr": 1.5,
-    "scrollWidth": 640,
-    "heroHeight": 636
-  },
-  {
     "site": "subsurface",
     "zoom": 1.5,
     "windowWidth": 960,
@@ -238,5 +198,45 @@
     "dpr": 1.5,
     "scrollWidth": 640,
     "heroHeight": 687
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.25,
+    "windowWidth": 1920,
+    "innerWidth": 1536,
+    "outerWidth": 1920,
+    "dpr": 1.25,
+    "scrollWidth": 1536,
+    "heroHeight": 830
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.25,
+    "windowWidth": 960,
+    "innerWidth": 768,
+    "outerWidth": 960,
+    "dpr": 1.25,
+    "scrollWidth": 768,
+    "heroHeight": 762
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.5,
+    "windowWidth": 1920,
+    "innerWidth": 1280,
+    "outerWidth": 1920,
+    "dpr": 1.5,
+    "scrollWidth": 1280,
+    "heroHeight": 821
+  },
+  {
+    "site": "lunar-construction",
+    "zoom": 1.5,
+    "windowWidth": 960,
+    "innerWidth": 640,
+    "outerWidth": 960,
+    "dpr": 1.5,
+    "scrollWidth": 640,
+    "heroHeight": 667
   }
 ]

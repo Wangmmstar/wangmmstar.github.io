@@ -7,8 +7,9 @@ const {spawnSync}=require('node:child_process');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.RESPONSIVE_URL||'http://127.0.0.1:8766';
 const host=new URL(base).hostname;
-const sites=['mobile-sar-copilot','bim2workface','bim-laser','lunar-construction','subsurface','fire-investigation'];
-const reports=[];
+const sites=process.env.RESPONSIVE_SITES?.split(',')||['mobile-sar-copilot','bim2workface','bim-laser','lunar-construction','subsurface','fire-investigation'];
+const priorFile='docs/responsive/zoom-metrics.json';
+const reports=process.env.RESPONSIVE_SITES && fs.existsSync(priorFile) ? JSON.parse(fs.readFileSync(priorFile,'utf8')).filter(x=>!sites.includes(x.site)) : [];
 (async()=>{
   for(const zoom of [1.25,1.5])for(const windowWidth of [1920,960]) {
     const dir=fs.mkdtempSync(path.join(os.tmpdir(),'research-zoom-'));
@@ -49,7 +50,7 @@ const reports=[];
         assert.equal(stitch.status,0,stitch.stderr);
         await cdp.detach();reports.push({site,zoom,windowWidth,...m});
       }
-      console.log(`Native zoom ${zoom*100}% at ${windowWidth}: all six passed`);
+      console.log(`Native zoom ${zoom*100}% at ${windowWidth}: ${sites.length} page(s) passed`);
     } finally {await context.close();fs.rmSync(dir,{recursive:true,force:true});fs.writeFileSync('docs/responsive/zoom-metrics.json',JSON.stringify(reports,null,2)+'\n');}
   }
 })();

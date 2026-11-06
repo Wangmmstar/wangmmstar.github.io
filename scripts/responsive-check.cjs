@@ -6,9 +6,14 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8766';
 const stage = process.argv[2] || 'after';
 const output = path.resolve('docs/responsive');
-const sites = ['mobile-sar-copilot', 'bim2workface', 'bim-laser', 'lunar-construction', 'subsurface', 'fire-investigation'];
+const allSites = ['mobile-sar-copilot', 'bim2workface', 'bim-laser', 'lunar-construction', 'subsurface', 'fire-investigation'];
+const sites = process.env.RESPONSIVE_SITES ? process.env.RESPONSIVE_SITES.split(',') : allSites;
+assert(sites.every(s=>allSites.includes(s)), 'Unknown responsive site');
 const viewports = [[2560,1440],[1920,1080],[1440,900],[1200,800],[960,900],[768,1024],[600,900],[390,844],[320,700]];
-const report = { stage, viewports: [], sweeps: [], errors: [] };
+const priorFile=path.join(output, `${stage}-metrics.json`);
+const prior=process.env.RESPONSIVE_SITES && fs.existsSync(priorFile) ? JSON.parse(fs.readFileSync(priorFile,'utf8')) : {};
+const retain=items=>(items||[]).filter(x=>!sites.includes(x.site));
+const report = { stage, viewports: retain(prior.viewports), sweeps: retain(prior.sweeps), errors: retain(prior.errors) };
 fs.mkdirSync(output, {recursive:true});
 
 async function settle(page) {

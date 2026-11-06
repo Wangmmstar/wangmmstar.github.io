@@ -2,7 +2,9 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8766';
-const results = [];
+const selected=process.env.RESPONSIVE_SITES?.split(',');
+const priorFile='docs/responsive/interactions.json';
+const results=selected && fs.existsSync(priorFile) ? JSON.parse(fs.readFileSync(priorFile,'utf8')).filter(x=>!selected.includes(x.site)) : [];
 const check = (condition, message) => assert(condition, message);
 
 async function advancing(page, video) {
@@ -27,6 +29,7 @@ async function advancing(page, video) {
       const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
       const errors=[]; page.on('pageerror',e=>errors.push(e.message));
       for(const site of ['bim2workface','bim-laser','lunar-construction','subsurface','fire-investigation','mobile-sar-copilot']) {
+        if(selected && !selected.includes(site))continue;
         await page.goto(`${base}/projects/${site}/`);
         await page.evaluate(()=>document.fonts.ready);
         if(site==='bim2workface'||site==='bim-laser') {
@@ -83,7 +86,9 @@ async function advancing(page, video) {
           const range=page.locator('input[type="range"]');await range.focus();await page.keyboard.press('Home');
           check(await range.inputValue()==='0','Subsurface range keyboard failed');
           await advancing(page,page.locator('[data-ss-sensing-video]'));
+          await page.evaluate(()=>document.documentElement.style.scrollBehavior='auto');
           await page.emulateMedia({reducedMotion:'no-preference'});await page.locator('header').scrollIntoViewIfNeeded();
+          await page.waitForFunction(()=>document.querySelector('[data-ss-video]').classList.contains('is-playing'));
           const motion=page.locator('[data-ss-motion]');await motion.waitFor({state:'visible'});
           await motion.click();check(await page.locator('[data-ss-video]').evaluate(v=>v.paused),'Subsurface pause failed');
           await motion.click();await page.waitForFunction(()=>!document.querySelector('[data-ss-video]').paused);
