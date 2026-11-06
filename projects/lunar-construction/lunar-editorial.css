@@ -37,11 +37,10 @@ html[data-project="lunar-construction"] main { width: 100%; max-width: none; mar
 .lunar-paper .lunar-journal { margin-top: 12px; color: var(--lunar-accent); font-size: 14px; }
 .lunar-affiliations { max-width: 90ch; margin-top: 20px; color: var(--lunar-muted); font-size: 14px; line-height: 1.75; }
 .lunar-story { padding-bottom: var(--lunar-space); }
-.lunar-story > section { padding-block: var(--lunar-section-space); border-top: 1px solid var(--lunar-rule); }
+.lunar-story > section { padding-block: var(--lunar-section-space); }
 .lunar-copy { width: 100%; }
 .lunar-copy h2 { margin-bottom: 24px; }
 .lunar-copy p { max-width: var(--reading-width, 76ch); margin-top: 16px; color: var(--lunar-muted); }
-.lunar-copy .lunar-transition { margin-top: 24px; color: var(--lunar-ink); font-weight: 500; }
 .lunar-page figure { min-width: 0; }
 .lunar-page figure video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #000; }
 .lunar-page figcaption { margin-top: 12px; color: var(--lunar-muted); font-size: 14px; line-height: 1.65; text-align: left; }
@@ -53,7 +52,6 @@ html[data-project="lunar-construction"] main { width: 100%; max-width: none; mar
 /* Keep every pixel of the original technical figure on an intentional light stage. */
 .lunar-workflow a { display: block; padding: clamp(12px, 2vw, 28px); background: #fff; cursor: zoom-in; }
 .lunar-workflow img { display: block; width: 100%; height: auto; }
-.lunar-page .lunar-enlarge { font-size: 13px; }
 .lunar-page .lunar-method-explanation { margin-top: var(--lunar-space); }
 .lunar-method-explanation p:first-child { margin-top: 0; }
 .lunar-highlights { display: grid; align-items: start; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--lunar-space); padding-block: clamp(32px, 4vw, 56px); }
@@ -61,7 +59,7 @@ html[data-project="lunar-construction"] main { width: 100%; max-width: none; mar
 .lunar-highlights dt { color: var(--lunar-muted); font-size: 14px; line-height: 1.6; }
 .lunar-page .lunar-highlights dd { color: var(--lunar-accent); font-size: clamp(36px, 4vw, 56px); line-height: 1.15; font-weight: 500; letter-spacing: -.05em; font-variant-numeric: tabular-nums; }
 .lunar-highlights dd span { font-size: .58em; letter-spacing: -.02em; }
-.lunar-chart { padding-top: var(--lunar-space); border-top: 1px solid var(--lunar-rule); }
+.lunar-chart { padding-top: var(--lunar-space); }
 .lunar-chart h3 { color: var(--lunar-ink); font-size: 18px; font-weight: 550; line-height: 1.5; letter-spacing: -.02em; }
 .lunar-bars { --lunar-bar-label: clamp(190px, 20vw, 238px); --lunar-bar-value: 76px; --lunar-bar-gap: 16px; margin-top: 28px; }
 .lunar-bar-row { display: grid; grid-template-columns: var(--lunar-bar-label) minmax(0, 1fr) var(--lunar-bar-value); align-items: center; column-gap: var(--lunar-bar-gap); margin-bottom: 20px; }
@@ -72,10 +70,11 @@ html[data-project="lunar-construction"] main { width: 100%; max-width: none; mar
 .lunar-bar { display: block; height: 100%; }
 .lunar-bar-plane { width: 95.857142857%; background: #768b9f; }
 .lunar-bar-dem { width: 6.857142857%; background: var(--lunar-accent); }
-.lunar-bar-axis { display: flex; justify-content: space-between; margin-left: calc(var(--lunar-bar-label) + var(--lunar-bar-gap)); margin-right: calc(var(--lunar-bar-value) + var(--lunar-bar-gap)); border-top: 1px solid var(--lunar-rule); padding-top: 8px; color: var(--lunar-muted); font-size: 13px; }
+.lunar-bar-axis { display: flex; justify-content: space-between; margin-left: calc(var(--lunar-bar-label) + var(--lunar-bar-gap)); margin-right: calc(var(--lunar-bar-value) + var(--lunar-bar-gap)); border-top: 1px solid var(--lunar-rule); padding-top: 8px; color: var(--lunar-muted); font-size: 14px; }
 html[data-project="lunar-construction"] footer { box-sizing: border-box; width: min(calc(100% - 2 * clamp(20px, 3.4vw, 48px)), 1200px); max-width: none; margin-inline: auto; padding: 24px 0 40px; border-top: 1px solid var(--lunar-rule); text-align: left; }
 html[data-project="lunar-construction"] footer p { color: var(--lunar-muted); font-size: 13px; line-height: 1.6; margin: 0; }
 @media (max-width: 700px) {
+  .lunar-highlights { grid-template-columns: minmax(0, 1fr); }
   .lunar-comparison { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .lunar-bars { --lunar-bar-value: 66px; --lunar-bar-gap: 12px; }
   .lunar-bar-row { grid-template-columns: minmax(0, 1fr) var(--lunar-bar-value); gap: 10px var(--lunar-bar-gap); margin-bottom: 22px; }
@@ -83,5 +82,4 @@ html[data-project="lunar-construction"] footer p { color: var(--lunar-muted); fo
   .lunar-bar-track { height: 24px; }
   .lunar-bar-axis { margin-left: 0; }
 }
-@media (max-width: 360px) { .lunar-highlights { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { .lunar-page { scroll-behavior: auto; } }

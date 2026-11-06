@@ -72,8 +72,7 @@
 </div>
 <div class="hero-overlay">
   <div class="hero-headline">
-    <p class="lunar-identity">ROBOTIC SPACE CONSTRUCTION</p>
-    <h1 id="hero-title">Projecting landmarks for lunar robots.</h1>
+    <h1 id="hero-title">How can lunar construction robots locate themselves without GPS?</h1>
   </div>
     <div class="lunar-hero-publication">
           <h2 class="lunar-hero-paper-title">
@@ -106,10 +105,8 @@
         <div class="lunar-wrap lunar-story">
           <section aria-labelledby="lunar-problem">
             <div class="lunar-copy">
-              <h2 id="lunar-problem">On the Moon, position estimates can drift.</h2>
-              <p>Without GPS, a rover estimates its motion using onboard sensors, cameras, and maps. Wheel slip can accumulate error, while shadows, dust, and changes to the ground can make natural features difficult to match.</p>
-              <p>For construction, positioning errors also affect where a robot digs, grades, or places materials.</p>
-              <p class="lunar-transition">When natural landmarks are not dependable, a rover needs another reference it can recognize.</p>
+              <h2 id="lunar-problem">On the Moon, robots can lose track of their position.</h2>
+              <p>Lunar rovers estimate their position using cameras and onboard sensors. Wheel slip can make those estimates drift, while shadows, dust, and changing terrain make natural landmarks harder to recognize. For construction, positioning errors affect where a robot digs, grades, or places materials.</p>
             </div>
             <div class="lunar-comparison">
               <figure>
@@ -117,46 +114,40 @@
                   <source src="/projects/lunar-construction/projects/lunar-construction/media/apollo16-rover.mp4" type="video/mp4" />
                 </video>
                 <p class="lunar-media-error" hidden>This browser cannot play the supplied Apollo video. <a href="/projects/lunar-construction/projects/lunar-construction/media/apollo16-rover.mp4">Open the original footage</a>.</p>
-                <figcaption>Apollo 16 lunar rover on the Moon. <a href="https://commons.wikimedia.org/wiki/File:Ap16_rover.ogv">NASA, 1972.</a></figcaption>
+                <figcaption>Apollo 16 lunar rover · <a href="https://commons.wikimedia.org/wiki/File:Ap16_rover.ogv">NASA, 1972</a></figcaption>
               </figure>
               <figure>
                 <video muted loop playsinline preload="auto" width="1200" height="676" aria-label="Conceptual animation of actual and estimated trajectories diverging" data-motion>
                   <source src="/projects/lunar-construction/projects/lunar-construction/media/lunar-localization-problem.mp4" type="video/mp4" />
                 </video>
                 <p class="lunar-media-error" hidden>This browser cannot play the supplied animation. <a href="/projects/lunar-construction/projects/lunar-construction/media/lunar-localization-problem.mp4">Open the animation</a>.</p>
-                <figcaption>Illustration of accumulated localization drift. Conceptual simulation, not Apollo mission data.</figcaption>
+                <figcaption>Illustration of accumulated localization drift · Conceptual simulation</figcaption>
               </figure>
             </div>
             <button class="lunar-motion-toggle" type="button" hidden>Pause motion</button>
           </section>
           <section aria-labelledby="lunar-method">
             <div class="lunar-copy">
-              <h2 id="lunar-method">Create landmarks where the work happens.</h2>
-              <p>Known reference points can help a rover correct its position. But physical markers and beacons require equipment to be deployed and registered.</p>
-              <p>We instead project identifiable points directly onto the work surface, without installing a physical marker at every reference location.</p>
-              <p class="lunar-transition">The challenge is knowing exactly where each projected point lands.</p>
+              <h2 id="lunar-method">Project landmarks instead of installing them.</h2>
+              <p>Physical markers and beacons can provide known reference locations, but they must be deployed and registered. Our method instead uses identifiable points of light projected onto the terrain.</p>
             </div>
             <figure class="lunar-workflow">
               <a href="/projects/lunar-construction/projects/lunar-construction/media/projected-landmarks-overview.png" target="_blank" rel="noopener" aria-label="Enlarge the complete Offline and Online research workflow (opens original image)">
                 <img src="/projects/lunar-construction/projects/lunar-construction/media/projected-landmarks-overview.png" alt="Complete research workflow. Offline: calibrated projector rays intersect the terrain to build a map from point identities to 3D coordinates. Online: the rover camera detects and decodes projected points, then a PnP solver estimates six-degree-of-freedom pose." width="1273" height="706" />
               </a>
-              <figcaption class="lunar-enlarge">Tap or click the figure to view the original.</figcaption>
             </figure>
             <div class="lunar-copy lunar-method-explanation">
-              <p>Offline, calibrated projector rays are intersected with a registered 3D terrain model to determine the coordinates of the projected points.</p>
-              <p>Online, the rover's camera detects the points, decodes their identities, and matches them to known 3D coordinates to estimate its position and orientation.</p>
+              <p>A calibrated projector and registered 3D terrain model determine where the projected points land. The rover's camera then identifies those points and matches them to known 3D coordinates to estimate its position and orientation.</p>
             </div>
           </section>
           <section aria-labelledby="lunar-results">
             <div class="lunar-copy">
               <h2 id="lunar-results">How accurately can the rover locate itself?</h2>
-              <p>We evaluated the method in controlled simulations with flat and uneven terrain.</p>
-              <p>Under nominal conditions, mean translation error ranged from 3.0 to 5.2 mm, with successful localization across all baseline test settings.</p>
-              <p>The terrain model also matters: on uneven ground, using the actual 3D terrain geometry produced much lower localization error than treating the surface as flat.</p>
+              <p>We evaluated the method in simulations on flat and uneven terrain. The results show how accurately the rover can locate itself and why using the terrain's actual 3D geometry matters.</p>
             </div>
             <dl class="lunar-highlights">
-              <div><dt>Mean translation error · nominal simulation</dt><dd>3.0–5.2 <span>mm</span></dd></div>
-              <div><dt>Localization success · baseline simulation settings</dt><dd>100<span>%</span></dd></div>
+              <div><dt>Mean translation error · Nominal simulation</dt><dd>3.0–5.2 <span>mm</span></dd></div>
+              <div><dt>Localization success · Baseline simulation settings</dt><dd>100<span>%</span></dd></div>
             </dl>
             <figure class="lunar-chart">
               <h3>Why terrain geometry matters</h3>
@@ -165,22 +156,20 @@
                 <div class="lunar-bar-row" aria-hidden="true"><span class="lunar-bar-label">DEM-based ray intersection</span><div class="lunar-bar-track"><span class="lunar-bar lunar-bar-dem"></span></div><span class="lunar-bar-value">4.8 mm</span></div>
                 <div class="lunar-bar-axis" aria-hidden="true"><span>0</span><span>35</span><span>70 mm</span></div>
               </div>
-              <figcaption>Curved-terrain simulation, nine matched viewpoints. Lower error is better.</figcaption>
+              <figcaption>Mean translation error on curved terrain · Nine matched simulation viewpoints</figcaption>
             </figure>
           </section>
           <section aria-labelledby="lunar-future">
             <div class="lunar-copy">
-              <h2 id="lunar-future">When the ground changes, the reference must change.</h2>
-              <p>Excavation and grading change the terrain. Even when the projector remains fixed, the same projected light can land at a different position on the ground.</p>
-              <p>Future work will focus on updating the terrain model and recalculating landmark positions as construction progresses.</p>
-              <p>This could eventually help multiple construction robots use a consistent spatial reference while working in the same area.</p>
+              <h2 id="lunar-future">Can projected landmarks stay accurate as the terrain changes?</h2>
+              <p>Excavation and grading change where projected light meets the surface. Future work will investigate updating terrain models and recalculating landmark positions as construction progresses. This could allow multiple robots to use a shared spatial reference across a changing worksite.</p>
             </div>
             <figure class="lunar-excavation">
               <video muted loop playsinline preload="auto" width="1920" height="1080" aria-label="NASA RASSOR excavating lunar regolith simulant in an Earth-based test facility" data-motion>
                 <source src="/projects/lunar-construction/projects/lunar-construction/media/rassor-excavation.mp4" type="video/mp4" />
               </video>
               <p class="lunar-media-error" hidden>This browser cannot play the supplied RASSOR video. <a href="/projects/lunar-construction/projects/lunar-construction/media/rassor-excavation.mp4">Open the original clip</a>.</p>
-              <figcaption><a href="https://commons.wikimedia.org/wiki/File:RASSOR_Excavation_Testing_Timelapse_(KSC-20250616-RV-FMX01-WON-M14153).webm">NASA RASSOR excavation testing</a> with lunar regolith simulant. Earth-based test footage.</figcaption>
+              <figcaption><a href="https://commons.wikimedia.org/wiki/File:RASSOR_Excavation_Testing_Timelapse_(KSC-20250616-RV-FMX01-WON-M14153).webm">NASA RASSOR excavation testing</a> · Earth-based lunar regolith simulant</figcaption>
             </figure>
           </section>
         </div>
