@@ -18,15 +18,18 @@
   };
 
   videos.forEach(video => {
-    const showError = () => {
-      video.parentElement.querySelector('.lunar-media-error').hidden = false;
-    };
+    const notice = video.parentElement.querySelector('.lunar-media-error');
+    const clearError = () => { notice.hidden = true; };
+    const showError = () => { notice.hidden = video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA; };
+    // A transient source event can be followed by successful decoding.
+    video.addEventListener('canplay', clearError);
     video.addEventListener('error', showError);
     video.querySelector('source').addEventListener('error', showError);
     // A cached or fast source failure can precede this deferred script.
     if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) showError();
     // In reduced-motion mode, show a decoded still frame instead of a black player.
     video.addEventListener('loadeddata', () => {
+      clearError();
       if (paused) video.pause();
     });
   });

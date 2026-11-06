@@ -52,7 +52,8 @@
   --hero-scrim: linear-gradient(#0004,transparent 28%,#0003 47%,#000c 90%,#000d);
 }
 @media (max-width:600px) {
-  .research-page .project-hero--academic .hero-overlay { --hero-height: 0px; --hero-clearance: 220px; padding-block: 32px; }
+  .research-page .project-hero--academic .hero-overlay { --hero-clearance: 220px; padding-block: 32px; }
+  .research-page .project-hero--academic { --hero-video-height: 320px; }
   .research-page .project-hero--academic .hero-media-primary { bottom: auto; top: 105px; height: 320px; }
   .research-page .project-hero--academic .hero-media-primary :is(img,video) { object-position: center; mask-image: linear-gradient(transparent,#000 16%,#000 80%,transparent); }
   .research-page .project-hero--academic .hero-media-background { opacity: .18; }
@@ -60,33 +61,40 @@
   .research-page .project-hero--academic h1 br { display: none; }
 }
 /* Keep the horizontal feather on the actual video edges, including ultrawide. */
-.research-page .project-hero--academic .hero-media-primary { display: grid; place-items: center; }
-.research-page .project-hero--academic .hero-media-primary video { width: auto; max-width: 100%; height: 100%; }
+.research-page .project-hero--academic .hero-media-primary { display: grid; place-items: center; grid-template: minmax(0,1fr) / minmax(0,1fr); }
+.research-page .project-hero--academic .hero-media-primary video {
+  width: min(100%,calc(var(--hero-video-height,var(--hero-height)) * 1.7777778));
+  max-width: 100%; height: auto; min-width: 0; min-height: 0;
+}
 
 /* Page settings describe the safe text region and framing for each source. */
 .research-page[data-project="mobile-sar-copilot"] .project-hero {
   --hero-scene: #84847e; --hero-ink: #15191b;
   --hero-poster: url('/projects/mobile-sar-copilot/media/hero_mobile_copilot.webp');
   --hero-height: clamp(640px,53vw,940px); --hero-focal: 50% 100%;
+  --hero-media-top: clamp(125px,9vw,180px); --hero-aspect: 1.333;
   --hero-scrim: linear-gradient(#d8d8d0c9,transparent 38%,transparent 80%,#17191c38);
 }
 .research-page .project-hero--scene .hero-overlay { gap: 0; min-height: var(--hero-height); padding-top: clamp(40px,4vw,76px); }
-.research-page .project-hero--scene .hero-media-primary { display: grid; place-items: end center; }
+.research-page .project-hero--scene .hero-media-primary {
+  display: grid; place-items: end center; top: var(--hero-media-top);
+  grid-template: minmax(0,1fr) / minmax(0,1fr);
+}
+/* Resolve the media width from the available height and its original ratio.
+   This bounds intrinsic grid sizing and feathers the actual image edges. */
 .research-page .project-hero--scene .hero-media-primary img {
-  width: auto; max-width: 100%; height: 100%; object-fit: contain;
-  mask-image: linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);
+  width: min(100%,calc((var(--hero-height) - var(--hero-media-top)) * var(--hero-aspect)));
+  height: auto; max-width: 100%; max-height: none; min-width: 0; min-height: 0;
+  mask-image: linear-gradient(90deg,transparent,#000 7%,#000 96%,transparent),linear-gradient(transparent,#000 9%,#000 98%,transparent);
+  mask-composite: intersect;
 }
 .research-page .sar-story > .hero-byline { padding-block: var(--section-space); }
 .research-page[data-project="lunar-construction"] .project-hero {
   --hero-scene: #090d13; --hero-ink: #edf1f5;
   --hero-poster: url('/projects/lunar-construction/projects/lunar-construction/media/lunar-simulation-scene.png');
   --hero-height: clamp(760px,57vw,1040px); --hero-fill-opacity: .32;
-  --hero-scrim: linear-gradient(#090d13e6,transparent 36%,transparent 80%,#090d13);
-}
-.research-page .lunar-hero .hero-media-primary { top: 180px; }
-.research-page .lunar-hero .hero-media-primary img {
-  max-width: 100%; height: 100%; opacity: 1;
-  mask-image: linear-gradient(90deg,transparent,#000 7%,#000 96%,transparent);
+  --hero-media-top: clamp(240px,calc(15vw + 100px),360px); --hero-aspect: 1.665;
+  --hero-scrim: linear-gradient(#090d13d9,transparent 36%,transparent 90%,#090d1366);
 }
 .research-page .lunar-page .project-hero h1 { max-width: 24ch; margin-inline: auto; font-size: clamp(36px,4.3vw,76px); }
 .research-page .lunar-hero .lunar-identity { margin: 0 0 16px !important; }
@@ -95,9 +103,9 @@
   --hero-scene: #282824; --hero-ink: #fff;
   --hero-poster: url('/projects/fire-investigation/projects/fire-investigation/postfire_scene.png');
   --hero-height: clamp(620px,47vw,880px); --hero-fill-opacity: .65;
+  --hero-media-top: 80px; --hero-aspect: 2.006;
   --hero-scrim: linear-gradient(#181918d9,transparent 52%,#18191850);
 }
-.research-page[data-project="fire-investigation"] .project-hero .hero-media-primary { top: 80px; }
 .research-page[data-project="fire-investigation"] .project-hero h1 { font-size: clamp(36px,4.1vw,72px); }
 .research-page .project-hero .hero-eyebrow { margin: 0 0 20px; color: #ede8dc; font-size: 12px; letter-spacing: .16em; }
 .research-page .hero-scene-caption { display: flex; justify-content: space-between; gap: 20px; padding-top: 16px; color: var(--research-secondary); font-size: 13px; line-height: 1.6; }
@@ -108,34 +116,25 @@
 /* Preserve the reference Hero's original 1200px foreground and all focal rules. */
 .research-page .ss .ss-hero .ss-wrap { width: min(calc(100% - 2 * var(--page-gutter)),1200px); }
 @media (max-width: 700px) {
-  .research-page[data-project="mobile-sar-copilot"] .project-hero { --hero-height: clamp(500px,110vw,720px); --hero-scrim: linear-gradient(#d8d8d0e6,transparent 54%); }
-  .research-page[data-project="mobile-sar-copilot"] .project-hero .hero-media-primary { top: 125px; }
-  .research-page[data-project="mobile-sar-copilot"] .project-hero .hero-media-primary img { width: 100%; height: 100%; object-position: center bottom; mask-image: linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent); }
-  .research-page[data-project="lunar-construction"] .project-hero { --hero-height: clamp(580px,110vw,760px); }
-  .research-page .lunar-hero .hero-media-primary { top: 240px; }
-  .research-page .lunar-hero .hero-media-primary img { width: 100%; height: 100%; object-position: center; }
+  .research-page[data-project="mobile-sar-copilot"] .project-hero {
+    --hero-height: clamp(500px,91.43vw,640px);
+    --hero-scrim: linear-gradient(#d8d8d0e6,transparent 54%);
+  }
+  .research-page[data-project="lunar-construction"] .project-hero {
+    --hero-height: clamp(580px,110vw,760px); --hero-media-top: 260px;
+  }
   .research-page .lunar-hero .lunar-subtitle { margin-top: 16px; }
-  .research-page[data-project="fire-investigation"] .project-hero { --hero-height: clamp(490px,95vw,650px); --hero-scrim: linear-gradient(#181918ed,transparent 70%); }
-  .research-page[data-project="fire-investigation"] .project-hero .hero-media-primary { top: 160px; }
-  .research-page[data-project="fire-investigation"] .project-hero .hero-media-primary img { width: 100%; height: 100%; object-position: center; }
+  .research-page[data-project="fire-investigation"] .project-hero {
+    --hero-height: clamp(490px,88.57vw,620px); --hero-media-top: 160px;
+    --hero-scrim: linear-gradient(#181918ed,transparent 70%);
+  }
   .research-page .hero-scene-caption { display: block; }
   .research-page .hero-scene-caption span { display: block; }
 }
-/* Bound intrinsic grid sizing explicitly: the complete source must fit even
-   when its natural dimensions exceed the viewport. Masks follow its own edges. */
-.research-page .project-hero--scene { --hero-media-top: 0px; --hero-aspect: 1.333; }
-.research-page .project-hero--scene .hero-media-primary { top: var(--hero-media-top); grid-template: minmax(0,1fr) / minmax(0,1fr); }
-.research-page .project-hero--scene .hero-media-primary img {
-  width: min(100%,calc((var(--hero-height) - var(--hero-media-top)) * var(--hero-aspect)));
-  height: auto; max-height: none; min-width: 0; min-height: 0;
-  mask-image: linear-gradient(90deg,transparent,#000 7%,#000 96%,transparent),linear-gradient(transparent,#000 9%,#000 98%,transparent);
-  mask-composite: intersect;
+
+/* Keep phone-height negative space proportional to the smaller native scene. */
+@media (max-width:390px) {
+  .research-page[data-project="mobile-sar-copilot"] .project-hero { --hero-height: calc(100vw + 110px); }
+  .research-page[data-project="lunar-construction"] .project-hero { --hero-height: calc(85.714vw + 245.714px); }
+  .research-page[data-project="fire-investigation"] .project-hero { --hero-height: calc(57.143vw + 267.143px); }
 }
-.research-page[data-project="lunar-construction"] .project-hero { --hero-media-top: clamp(240px,16vw,310px); --hero-aspect: 1.665; --hero-scrim: linear-gradient(#090d13d9,transparent 36%,transparent 90%,#090d1366); }
-.research-page[data-project="fire-investigation"] .project-hero { --hero-media-top: 80px; --hero-aspect: 2.006; }
-@media (max-width:700px) {
-  .research-page[data-project="mobile-sar-copilot"] .project-hero { --hero-media-top: 125px; }
-  .research-page[data-project="lunar-construction"] .project-hero { --hero-media-top: 260px; }
-  .research-page[data-project="fire-investigation"] .project-hero { --hero-media-top: 160px; }
-}
-.research-page[data-project="mobile-sar-copilot"] .project-hero { --hero-media-top: clamp(125px,9vw,180px); }

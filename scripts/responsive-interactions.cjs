@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8766';
 const selected=process.env.RESPONSIVE_SITES?.split(',');
-const priorFile='docs/responsive/interactions.json';
+const priorFile=(process.env.RESPONSIVE_EVIDENCE || 'docs/responsive')+'/interactions.json';
 const results=selected && fs.existsSync(priorFile) ? JSON.parse(fs.readFileSync(priorFile,'utf8')).filter(x=>!selected.includes(x.site)) : [];
 const check = (condition, message) => assert(condition, message);
 
@@ -75,7 +75,10 @@ async function advancing(page, video) {
           await advancing(page,page.locator('main video').nth(1));
         }
         if(site==='lunar-construction') {
-          for(const video of await page.locator('video').all()) await advancing(page,video);
+          for(const video of await page.locator('video').all()) {
+            await advancing(page,video);
+            check(await video.evaluate(v=>v.parentElement.querySelector('.lunar-media-error').hidden),'Decoded Lunar video shows an error notice');
+          }
           const toggle=page.locator('.lunar-motion-toggle');await toggle.scrollIntoViewIfNeeded();
           if(await toggle.isVisible()) {await toggle.click();await page.waitForTimeout(200);await toggle.click();}
           check(await page.locator('.lunar-workflow a').getAttribute('target')==='_blank','Workflow enlargement link changed');
@@ -102,5 +105,5 @@ async function advancing(page, video) {
       }
       check(errors.length===0,errors.join('\n'));await page.close();
     }
-  } finally {fs.writeFileSync('docs/responsive/interactions.json',JSON.stringify(results,null,2)+'\n');await browser.close();}
+  } finally {fs.writeFileSync(priorFile,JSON.stringify(results,null,2)+'\n');await browser.close();}
 })();
