@@ -1,0 +1,2461 @@
+{
+  "base": "http://127.0.0.1:8793",
+  "results": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "wrap": {
+        "x": 170,
+        "y": 0,
+        "w": 1100,
+        "h": 780,
+        "right": 1270,
+        "bottom": 780
+      },
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 780,
+        "right": 1440,
+        "bottom": 780
+      },
+      "heroImage": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 780,
+        "right": 1440,
+        "bottom": 780
+      },
+      "heroText": [
+        {
+          "x": 270,
+          "y": 96,
+          "w": 900,
+          "h": 240.375,
+          "right": 1170,
+          "bottom": 336.375
+        },
+        {
+          "x": 360,
+          "y": 366.375,
+          "w": 720,
+          "h": 61.1875,
+          "right": 1080,
+          "bottom": 427.5625
+        }
+      ],
+      "h1": 76.32,
+      "sections": [
+        {
+          "heading": {
+            "x": 230,
+            "y": 852,
+            "w": 980,
+            "h": 43.421875,
+            "right": 1210,
+            "bottom": 895.421875
+          },
+          "text": {
+            "x": 230,
+            "y": 852,
+            "w": 980,
+            "h": 120.609375,
+            "right": 1210,
+            "bottom": 972.609375
+          },
+          "paragraph": {
+            "x": 230,
+            "y": 911.421875,
+            "w": 980,
+            "h": 61.1875,
+            "right": 1210,
+            "bottom": 972.609375
+          },
+          "figure": {
+            "x": 230,
+            "y": 1004.609375,
+            "w": 980,
+            "h": 654.140625,
+            "right": 1210,
+            "bottom": 1658.75
+          },
+          "h2": 37.44,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "72px"
+        },
+        {
+          "heading": {
+            "x": 230,
+            "y": 1803.75,
+            "w": 980,
+            "h": 43.421875,
+            "right": 1210,
+            "bottom": 1847.171875
+          },
+          "text": {
+            "x": 230,
+            "y": 1803.75,
+            "w": 980,
+            "h": 120.609375,
+            "right": 1210,
+            "bottom": 1924.359375
+          },
+          "paragraph": {
+            "x": 230,
+            "y": 1863.171875,
+            "w": 980,
+            "h": 61.1875,
+            "right": 1210,
+            "bottom": 1924.359375
+          },
+          "figure": {
+            "x": 230,
+            "y": 1956.359375,
+            "w": 474,
+            "h": 326.890625,
+            "right": 704,
+            "bottom": 2283.25
+          },
+          "h2": 37.44,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "72px"
+        },
+        {
+          "heading": {
+            "x": 230,
+            "y": 2428.25,
+            "w": 980,
+            "h": 43.421875,
+            "right": 1210,
+            "bottom": 2471.671875
+          },
+          "text": {
+            "x": 230,
+            "y": 2428.25,
+            "w": 980,
+            "h": 120.609375,
+            "right": 1210,
+            "bottom": 2548.859375
+          },
+          "paragraph": {
+            "x": 230,
+            "y": 2487.671875,
+            "w": 980,
+            "h": 61.1875,
+            "right": 1210,
+            "bottom": 2548.859375
+          },
+          "figure": {
+            "x": 230,
+            "y": 2580.859375,
+            "w": 980,
+            "h": 653.328125,
+            "right": 1210,
+            "bottom": 3234.1875
+          },
+          "h2": 37.44,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "72px"
+        },
+        {
+          "heading": {
+            "x": 230,
+            "y": 3378.1875,
+            "w": 980,
+            "h": 43.421875,
+            "right": 1210,
+            "bottom": 3421.609375
+          },
+          "text": {
+            "x": 230,
+            "y": 3378.1875,
+            "w": 980,
+            "h": 151.203125,
+            "right": 1210,
+            "bottom": 3529.390625
+          },
+          "paragraph": {
+            "x": 230,
+            "y": 3437.609375,
+            "w": 980,
+            "h": 91.78125,
+            "right": 1210,
+            "bottom": 3529.390625
+          },
+          "figure": {
+            "x": 230,
+            "y": 3561.390625,
+            "w": 474,
+            "h": 326.890625,
+            "right": 704,
+            "bottom": 3888.28125
+          },
+          "h2": 37.44,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "72px"
+        },
+        {
+          "heading": {
+            "x": 230,
+            "y": 4032.28125,
+            "w": 980,
+            "h": 43.421875,
+            "right": 1210,
+            "bottom": 4075.703125
+          },
+          "text": {
+            "x": 230,
+            "y": 4032.28125,
+            "w": 980,
+            "h": 120.609375,
+            "right": 1210,
+            "bottom": 4152.890625
+          },
+          "paragraph": {
+            "x": 230,
+            "y": 4091.703125,
+            "w": 980,
+            "h": 61.1875,
+            "right": 1210,
+            "bottom": 4152.890625
+          },
+          "figure": {
+            "x": 230,
+            "y": 4362.078125,
+            "w": 980,
+            "h": 563.5,
+            "right": 1210,
+            "bottom": 4925.578125
+          },
+          "h2": 37.44,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "72px"
+        }
+      ],
+      "images": [
+        {
+          "name": "hero_belief_concept.webp",
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 780,
+          "right": 1440,
+          "bottom": 780,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "cover"
+        },
+        {
+          "name": "disaster_rubble_aerial.jpg",
+          "x": 230,
+          "y": 1004.609375,
+          "w": 980,
+          "h": 654.140625,
+          "right": 1210,
+          "bottom": 1658.75,
+          "naturalWidth": 2000,
+          "naturalHeight": 1335,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_drone_gpr.webp",
+          "x": 254,
+          "y": 1980.359375,
+          "w": 426,
+          "h": 278.890625,
+          "right": 680,
+          "bottom": 2259.25,
+          "naturalWidth": 1920,
+          "naturalHeight": 1253,
+          "fit": "contain"
+        },
+        {
+          "name": "gpr_waveform.webp",
+          "x": 760,
+          "y": 1980.359375,
+          "w": 426,
+          "h": 278.890625,
+          "right": 1186,
+          "bottom": 2259.25,
+          "naturalWidth": 1369,
+          "naturalHeight": 799,
+          "fit": "contain"
+        },
+        {
+          "name": "concept_void_ar.webp",
+          "x": 230,
+          "y": 2580.859375,
+          "w": 980,
+          "h": 653.328125,
+          "right": 1210,
+          "bottom": 3234.1875,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_quadruped.webp",
+          "x": 254,
+          "y": 3585.390625,
+          "w": 426,
+          "h": 278.890625,
+          "right": 680,
+          "bottom": 3864.28125,
+          "naturalWidth": 2600,
+          "naturalHeight": 1950,
+          "fit": "contain"
+        },
+        {
+          "name": "robot_laser_ar.webp",
+          "x": 760,
+          "y": 3585.390625,
+          "w": 426,
+          "h": 278.890625,
+          "right": 1186,
+          "bottom": 3864.28125,
+          "naturalWidth": 585,
+          "naturalHeight": 400,
+          "fit": "contain"
+        }
+      ],
+      "sensors": [
+        {
+          "x": 230,
+          "y": 1956.359375,
+          "w": 474,
+          "h": 326.890625,
+          "right": 704,
+          "bottom": 2283.25
+        },
+        {
+          "x": 736,
+          "y": 1956.359375,
+          "w": 474,
+          "h": 326.890625,
+          "right": 1210,
+          "bottom": 2283.25
+        }
+      ],
+      "columnWidth": 980,
+      "columnLeft": 230,
+      "groups": [
+        {
+          "x": 230,
+          "y": 1956.359375,
+          "w": 980,
+          "h": 326.890625,
+          "right": 1210,
+          "frames": [
+            {
+              "x": 230,
+              "y": 1956.359375,
+              "w": 474,
+              "h": 326.890625,
+              "right": 704
+            },
+            {
+              "x": 736,
+              "y": 1956.359375,
+              "w": 474,
+              "h": 326.890625,
+              "right": 1210
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        },
+        {
+          "x": 230,
+          "y": 3561.390625,
+          "w": 980,
+          "h": 326.890625,
+          "right": 1210,
+          "frames": [
+            {
+              "x": 230,
+              "y": 3561.390625,
+              "w": 474,
+              "h": 326.890625,
+              "right": 704
+            },
+            {
+              "x": 736,
+              "y": 3561.390625,
+              "w": 474,
+              "h": 326.890625,
+              "right": 1210
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 599.966064453125,
+              "right": 835.950439453125,
+              "top": 4480.99462890625,
+              "bottom": 4510.99462890625,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Hazard",
+              "left": 969.1926879882812,
+              "right": 1054.723876953125,
+              "top": 4403.41162109375,
+              "bottom": 4433.41162109375,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 854.9219970703125,
+              "right": 1100.474365234375,
+              "top": 4872.99462890625,
+              "bottom": 4902.99462890625,
+              "size": 26.541666666666668
+            }
+          ],
+          "map": {
+            "left": 230,
+            "right": 1210,
+            "top": 4362.078125,
+            "bottom": 4925.578125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection.\n                  An orange route leads to a proposed measurement near the connection.\n                  This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 599.966064453125,
+              "right": 835.950439453125,
+              "top": 767.9948120117188,
+              "bottom": 797.9947509765625,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Hazard",
+              "left": 969.1926879882812,
+              "right": 1054.723876953125,
+              "top": 690.4114379882812,
+              "bottom": 720.4114379882812,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 854.9219970703125,
+              "right": 1100.474365234375,
+              "top": 1159.994873046875,
+              "bottom": 1189.994873046875,
+              "size": 26.541666666666668
+            }
+          ],
+          "map": {
+            "left": 230,
+            "right": 1210,
+            "top": 649.078125,
+            "bottom": 1212.578125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 599.966064453125,
+              "right": 835.950439453125,
+              "top": 520.9948120117188,
+              "bottom": 550.9947509765625,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Hazard",
+              "left": 969.1926879882812,
+              "right": 1054.723876953125,
+              "top": 443.41143798828125,
+              "bottom": 473.41143798828125,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 854.9219970703125,
+              "right": 1100.474365234375,
+              "top": 912.9948120117188,
+              "bottom": 942.9948120117188,
+              "size": 26.541666666666668
+            }
+          ],
+          "map": {
+            "left": 230,
+            "right": 1210,
+            "top": 402.078125,
+            "bottom": 965.578125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 599.966064453125,
+              "right": 835.950439453125,
+              "top": 520.9948120117188,
+              "bottom": 550.9947509765625,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Hazard",
+              "left": 969.1926879882812,
+              "right": 1054.723876953125,
+              "top": 443.41143798828125,
+              "bottom": 473.41143798828125,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 854.9219970703125,
+              "right": 1100.474365234375,
+              "top": 912.9948120117188,
+              "bottom": 942.9948120117188,
+              "size": 26.541666666666668
+            }
+          ],
+          "map": {
+            "left": 230,
+            "right": 1210,
+            "top": 402.078125,
+            "bottom": 965.578125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 599.966064453125,
+              "right": 835.950439453125,
+              "top": 520.9948120117188,
+              "bottom": 550.9947509765625,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Hazard",
+              "left": 969.1926879882812,
+              "right": 1054.723876953125,
+              "top": 443.41143798828125,
+              "bottom": 473.41143798828125,
+              "size": 26.541666666666668
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 854.9219970703125,
+              "right": 1100.474365234375,
+              "top": 912.9948120117188,
+              "bottom": 942.9948120117188,
+              "size": 26.541666666666668
+            }
+          ],
+          "map": {
+            "left": 230,
+            "right": 1210,
+            "top": 402.078125,
+            "bottom": 965.578125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "wrap": {
+        "x": 40,
+        "y": 0,
+        "w": 944,
+        "h": 780,
+        "right": 984,
+        "bottom": 780
+      },
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 780,
+        "right": 1024,
+        "bottom": 780
+      },
+      "heroImage": {
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 780,
+        "right": 1024,
+        "bottom": 780
+      },
+      "heroText": [
+        {
+          "x": 62,
+          "y": 96,
+          "w": 900,
+          "h": 134.375,
+          "right": 962,
+          "bottom": 230.375
+        },
+        {
+          "x": 152,
+          "y": 260.375,
+          "w": 720,
+          "h": 61.1875,
+          "right": 872,
+          "bottom": 321.5625
+        }
+      ],
+      "h1": 64,
+      "sections": [
+        {
+          "heading": {
+            "x": 34.8125,
+            "y": 836,
+            "w": 954.359375,
+            "h": 37.109375,
+            "right": 989.171875,
+            "bottom": 873.109375
+          },
+          "text": {
+            "x": 34.8125,
+            "y": 836,
+            "w": 954.359375,
+            "h": 114.296875,
+            "right": 989.171875,
+            "bottom": 950.296875
+          },
+          "paragraph": {
+            "x": 34.8125,
+            "y": 889.109375,
+            "w": 954.359375,
+            "h": 61.1875,
+            "right": 989.171875,
+            "bottom": 950.296875
+          },
+          "figure": {
+            "x": 34.8125,
+            "y": 982.296875,
+            "w": 954.359375,
+            "h": 637.03125,
+            "right": 989.171875,
+            "bottom": 1619.328125
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 34.8125,
+            "y": 1732.328125,
+            "w": 954.359375,
+            "h": 37.109375,
+            "right": 989.171875,
+            "bottom": 1769.4375
+          },
+          "text": {
+            "x": 34.8125,
+            "y": 1732.328125,
+            "w": 954.359375,
+            "h": 114.296875,
+            "right": 989.171875,
+            "bottom": 1846.625
+          },
+          "paragraph": {
+            "x": 34.8125,
+            "y": 1785.4375,
+            "w": 954.359375,
+            "h": 61.1875,
+            "right": 989.171875,
+            "bottom": 1846.625
+          },
+          "figure": {
+            "x": 34.8125,
+            "y": 1878.625,
+            "w": 461.171875,
+            "h": 318.046875,
+            "right": 495.984375,
+            "bottom": 2196.671875
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 34.8125,
+            "y": 2309.671875,
+            "w": 954.359375,
+            "h": 37.109375,
+            "right": 989.171875,
+            "bottom": 2346.78125
+          },
+          "text": {
+            "x": 34.8125,
+            "y": 2309.671875,
+            "w": 954.359375,
+            "h": 114.296875,
+            "right": 989.171875,
+            "bottom": 2423.96875
+          },
+          "paragraph": {
+            "x": 34.8125,
+            "y": 2362.78125,
+            "w": 954.359375,
+            "h": 61.1875,
+            "right": 989.171875,
+            "bottom": 2423.96875
+          },
+          "figure": {
+            "x": 34.8125,
+            "y": 2455.96875,
+            "w": 954.359375,
+            "h": 636.234375,
+            "right": 989.171875,
+            "bottom": 3092.203125
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 34.8125,
+            "y": 3204.203125,
+            "w": 954.359375,
+            "h": 37.109375,
+            "right": 989.171875,
+            "bottom": 3241.3125
+          },
+          "text": {
+            "x": 34.8125,
+            "y": 3204.203125,
+            "w": 954.359375,
+            "h": 144.890625,
+            "right": 989.171875,
+            "bottom": 3349.09375
+          },
+          "paragraph": {
+            "x": 34.8125,
+            "y": 3257.3125,
+            "w": 954.359375,
+            "h": 91.78125,
+            "right": 989.171875,
+            "bottom": 3349.09375
+          },
+          "figure": {
+            "x": 34.8125,
+            "y": 3381.09375,
+            "w": 461.171875,
+            "h": 318.046875,
+            "right": 495.984375,
+            "bottom": 3699.140625
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 34.8125,
+            "y": 3811.140625,
+            "w": 954.359375,
+            "h": 37.109375,
+            "right": 989.171875,
+            "bottom": 3848.25
+          },
+          "text": {
+            "x": 34.8125,
+            "y": 3811.140625,
+            "w": 954.359375,
+            "h": 114.296875,
+            "right": 989.171875,
+            "bottom": 3925.4375
+          },
+          "paragraph": {
+            "x": 34.8125,
+            "y": 3864.25,
+            "w": 954.359375,
+            "h": 61.1875,
+            "right": 989.171875,
+            "bottom": 3925.4375
+          },
+          "figure": {
+            "x": 34.8125,
+            "y": 4134.625,
+            "w": 954.359375,
+            "h": 548.75,
+            "right": 989.171875,
+            "bottom": 4683.375
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        }
+      ],
+      "images": [
+        {
+          "name": "hero_belief_concept.webp",
+          "x": 0,
+          "y": 0,
+          "w": 1024,
+          "h": 780,
+          "right": 1024,
+          "bottom": 780,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "cover"
+        },
+        {
+          "name": "disaster_rubble_aerial.jpg",
+          "x": 34.8125,
+          "y": 982.296875,
+          "w": 954.359375,
+          "h": 637.03125,
+          "right": 989.171875,
+          "bottom": 1619.328125,
+          "naturalWidth": 2000,
+          "naturalHeight": 1335,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_drone_gpr.webp",
+          "x": 58.8125,
+          "y": 1902.625,
+          "w": 413.171875,
+          "h": 270.046875,
+          "right": 471.984375,
+          "bottom": 2172.671875,
+          "naturalWidth": 1920,
+          "naturalHeight": 1253,
+          "fit": "contain"
+        },
+        {
+          "name": "gpr_waveform.webp",
+          "x": 551.984375,
+          "y": 1902.625,
+          "w": 413.1875,
+          "h": 270.046875,
+          "right": 965.171875,
+          "bottom": 2172.671875,
+          "naturalWidth": 1369,
+          "naturalHeight": 799,
+          "fit": "contain"
+        },
+        {
+          "name": "concept_void_ar.webp",
+          "x": 34.8125,
+          "y": 2455.96875,
+          "w": 954.359375,
+          "h": 636.234375,
+          "right": 989.171875,
+          "bottom": 3092.203125,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_quadruped.webp",
+          "x": 58.8125,
+          "y": 3405.09375,
+          "w": 413.171875,
+          "h": 270.046875,
+          "right": 471.984375,
+          "bottom": 3675.140625,
+          "naturalWidth": 2600,
+          "naturalHeight": 1950,
+          "fit": "contain"
+        },
+        {
+          "name": "robot_laser_ar.webp",
+          "x": 551.984375,
+          "y": 3405.09375,
+          "w": 413.1875,
+          "h": 270.046875,
+          "right": 965.171875,
+          "bottom": 3675.140625,
+          "naturalWidth": 585,
+          "naturalHeight": 400,
+          "fit": "contain"
+        }
+      ],
+      "sensors": [
+        {
+          "x": 34.8125,
+          "y": 1878.625,
+          "w": 461.171875,
+          "h": 318.046875,
+          "right": 495.984375,
+          "bottom": 2196.671875
+        },
+        {
+          "x": 527.984375,
+          "y": 1878.625,
+          "w": 461.1875,
+          "h": 318.046875,
+          "right": 989.171875,
+          "bottom": 2196.671875
+        }
+      ],
+      "columnWidth": 954.3679999999999,
+      "columnLeft": 34.81600000000003,
+      "groups": [
+        {
+          "x": 34.8125,
+          "y": 1878.625,
+          "w": 954.359375,
+          "h": 318.046875,
+          "right": 989.171875,
+          "frames": [
+            {
+              "x": 34.8125,
+              "y": 1878.625,
+              "w": 461.171875,
+              "h": 318.046875,
+              "right": 495.984375
+            },
+            {
+              "x": 527.984375,
+              "y": 1878.625,
+              "w": 461.1875,
+              "h": 318.046875,
+              "right": 989.171875
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        },
+        {
+          "x": 34.8125,
+          "y": 3381.09375,
+          "w": 954.359375,
+          "h": 318.046875,
+          "right": 989.171875,
+          "frames": [
+            {
+              "x": 34.8125,
+              "y": 3381.09375,
+              "w": 461.171875,
+              "h": 318.046875,
+              "right": 495.984375
+            },
+            {
+              "x": 527.984375,
+              "y": 3381.09375,
+              "w": 461.1875,
+              "h": 318.046875,
+              "right": 989.171875
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 395.1368103027344,
+              "right": 624.8712158203125,
+              "top": 4250.80078125,
+              "bottom": 4278.80078125,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Hazard",
+              "left": 754.6754760742188,
+              "right": 837.941162109375,
+              "top": 4175.248046875,
+              "bottom": 4203.248046875,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 643.458251953125,
+              "right": 881.8743286132812,
+              "top": 4632.5400390625,
+              "bottom": 4660.5400390625,
+              "size": 25.847233072916666
+            }
+          ],
+          "map": {
+            "left": 34.8125,
+            "right": 989.171875,
+            "top": 4134.625,
+            "bottom": 4683.375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection.\n                  An orange route leads to a proposed measurement near the connection.\n                  This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 395.1368103027344,
+              "right": 624.8712158203125,
+              "top": 765.8007202148438,
+              "bottom": 793.8007202148438,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Hazard",
+              "left": 754.6754760742188,
+              "right": 837.941162109375,
+              "top": 690.2481689453125,
+              "bottom": 718.2481689453125,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 643.458251953125,
+              "right": 881.8743286132812,
+              "top": 1147.5399169921875,
+              "bottom": 1175.5399169921875,
+              "size": 25.847233072916666
+            }
+          ],
+          "map": {
+            "left": 34.8125,
+            "right": 989.171875,
+            "top": 649.625,
+            "bottom": 1198.375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 395.1368103027344,
+              "right": 624.8712158203125,
+              "top": 511.80072021484375,
+              "bottom": 539.8007202148438,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Hazard",
+              "left": 754.6754760742188,
+              "right": 837.941162109375,
+              "top": 436.2481689453125,
+              "bottom": 464.2481689453125,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 643.458251953125,
+              "right": 881.8743286132812,
+              "top": 893.5399169921875,
+              "bottom": 921.5399169921875,
+              "size": 25.847233072916666
+            }
+          ],
+          "map": {
+            "left": 34.8125,
+            "right": 989.171875,
+            "top": 395.625,
+            "bottom": 944.375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 395.1368103027344,
+              "right": 624.8712158203125,
+              "top": 511.80072021484375,
+              "bottom": 539.8007202148438,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Hazard",
+              "left": 754.6754760742188,
+              "right": 837.941162109375,
+              "top": 436.2481689453125,
+              "bottom": 464.2481689453125,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 643.458251953125,
+              "right": 881.8743286132812,
+              "top": 893.5399169921875,
+              "bottom": 921.5399169921875,
+              "size": 25.847233072916666
+            }
+          ],
+          "map": {
+            "left": 34.8125,
+            "right": 989.171875,
+            "top": 395.625,
+            "bottom": 944.375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 395.1368103027344,
+              "right": 624.8712158203125,
+              "top": 511.80072021484375,
+              "bottom": 539.8007202148438,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Hazard",
+              "left": 754.6754760742188,
+              "right": 837.941162109375,
+              "top": 436.2481689453125,
+              "bottom": 464.2481689453125,
+              "size": 25.847233072916666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 643.458251953125,
+              "right": 881.8743286132812,
+              "top": 893.5399169921875,
+              "bottom": 921.5399169921875,
+              "size": 25.847233072916666
+            }
+          ],
+          "map": {
+            "left": 34.8125,
+            "right": 989.171875,
+            "top": 395.625,
+            "bottom": 944.375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "wrap": {
+        "x": 32,
+        "y": 0,
+        "w": 704,
+        "h": 780,
+        "right": 736,
+        "bottom": 780
+      },
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 780,
+        "right": 768,
+        "bottom": 780
+      },
+      "heroImage": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 780,
+        "right": 768,
+        "bottom": 780
+      },
+      "heroText": [
+        {
+          "x": 32,
+          "y": 96,
+          "w": 704,
+          "h": 201.5625,
+          "right": 736,
+          "bottom": 297.5625
+        },
+        {
+          "x": 32,
+          "y": 327.5625,
+          "w": 704,
+          "h": 61.1875,
+          "right": 736,
+          "bottom": 388.75
+        }
+      ],
+      "h1": 64,
+      "sections": [
+        {
+          "heading": {
+            "x": 26.109375,
+            "y": 836,
+            "w": 715.765625,
+            "h": 74.21875,
+            "right": 741.875,
+            "bottom": 910.21875
+          },
+          "text": {
+            "x": 26.109375,
+            "y": 836,
+            "w": 715.765625,
+            "h": 182,
+            "right": 741.875,
+            "bottom": 1018
+          },
+          "paragraph": {
+            "x": 26.109375,
+            "y": 926.21875,
+            "w": 715.765625,
+            "h": 91.78125,
+            "right": 741.875,
+            "bottom": 1018
+          },
+          "figure": {
+            "x": 26.109375,
+            "y": 1050,
+            "w": 715.765625,
+            "h": 477.765625,
+            "right": 741.875,
+            "bottom": 1527.765625
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 26.109375,
+            "y": 1640.765625,
+            "w": 715.765625,
+            "h": 37.109375,
+            "right": 741.875,
+            "bottom": 1677.875
+          },
+          "text": {
+            "x": 26.109375,
+            "y": 1640.765625,
+            "w": 715.765625,
+            "h": 114.296875,
+            "right": 741.875,
+            "bottom": 1755.0625
+          },
+          "paragraph": {
+            "x": 26.109375,
+            "y": 1693.875,
+            "w": 715.765625,
+            "h": 61.1875,
+            "right": 741.875,
+            "bottom": 1755.0625
+          },
+          "figure": {
+            "x": 26.109375,
+            "y": 1787.0625,
+            "w": 341.875,
+            "h": 235.78125,
+            "right": 367.984375,
+            "bottom": 2022.84375
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 26.109375,
+            "y": 2135.84375,
+            "w": 715.765625,
+            "h": 74.21875,
+            "right": 741.875,
+            "bottom": 2210.0625
+          },
+          "text": {
+            "x": 26.109375,
+            "y": 2135.84375,
+            "w": 715.765625,
+            "h": 182,
+            "right": 741.875,
+            "bottom": 2317.84375
+          },
+          "paragraph": {
+            "x": 26.109375,
+            "y": 2226.0625,
+            "w": 715.765625,
+            "h": 91.78125,
+            "right": 741.875,
+            "bottom": 2317.84375
+          },
+          "figure": {
+            "x": 26.109375,
+            "y": 2349.84375,
+            "w": 715.765625,
+            "h": 477.171875,
+            "right": 741.875,
+            "bottom": 2827.015625
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 26.109375,
+            "y": 2939.015625,
+            "w": 715.765625,
+            "h": 37.109375,
+            "right": 741.875,
+            "bottom": 2976.125
+          },
+          "text": {
+            "x": 26.109375,
+            "y": 2939.015625,
+            "w": 715.765625,
+            "h": 175.484375,
+            "right": 741.875,
+            "bottom": 3114.5
+          },
+          "paragraph": {
+            "x": 26.109375,
+            "y": 2992.125,
+            "w": 715.765625,
+            "h": 122.375,
+            "right": 741.875,
+            "bottom": 3114.5
+          },
+          "figure": {
+            "x": 26.109375,
+            "y": 3146.5,
+            "w": 341.875,
+            "h": 235.78125,
+            "right": 367.984375,
+            "bottom": 3382.28125
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 26.109375,
+            "y": 3494.28125,
+            "w": 715.765625,
+            "h": 37.109375,
+            "right": 741.875,
+            "bottom": 3531.390625
+          },
+          "text": {
+            "x": 26.109375,
+            "y": 3494.28125,
+            "w": 715.765625,
+            "h": 114.296875,
+            "right": 741.875,
+            "bottom": 3608.578125
+          },
+          "paragraph": {
+            "x": 26.109375,
+            "y": 3547.390625,
+            "w": 715.765625,
+            "h": 61.1875,
+            "right": 741.875,
+            "bottom": 3608.578125
+          },
+          "figure": {
+            "x": 26.109375,
+            "y": 3817.765625,
+            "w": 715.765625,
+            "h": 411.5625,
+            "right": 741.875,
+            "bottom": 4229.328125
+          },
+          "h2": 32,
+          "body": 18,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        }
+      ],
+      "images": [
+        {
+          "name": "hero_belief_concept.webp",
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 780,
+          "right": 768,
+          "bottom": 780,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "cover"
+        },
+        {
+          "name": "disaster_rubble_aerial.jpg",
+          "x": 26.109375,
+          "y": 1050,
+          "w": 715.765625,
+          "h": 477.765625,
+          "right": 741.875,
+          "bottom": 1527.765625,
+          "naturalWidth": 2000,
+          "naturalHeight": 1335,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_drone_gpr.webp",
+          "x": 50.109375,
+          "y": 1811.0625,
+          "w": 293.875,
+          "h": 187.78125,
+          "right": 343.984375,
+          "bottom": 1998.84375,
+          "naturalWidth": 1920,
+          "naturalHeight": 1253,
+          "fit": "contain"
+        },
+        {
+          "name": "gpr_waveform.webp",
+          "x": 423.984375,
+          "y": 1811.0625,
+          "w": 293.890625,
+          "h": 187.78125,
+          "right": 717.875,
+          "bottom": 1998.84375,
+          "naturalWidth": 1369,
+          "naturalHeight": 799,
+          "fit": "contain"
+        },
+        {
+          "name": "concept_void_ar.webp",
+          "x": 26.109375,
+          "y": 2349.84375,
+          "w": 715.765625,
+          "h": 477.171875,
+          "right": 741.875,
+          "bottom": 2827.015625,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_quadruped.webp",
+          "x": 50.109375,
+          "y": 3170.5,
+          "w": 293.875,
+          "h": 187.78125,
+          "right": 343.984375,
+          "bottom": 3358.28125,
+          "naturalWidth": 2600,
+          "naturalHeight": 1950,
+          "fit": "contain"
+        },
+        {
+          "name": "robot_laser_ar.webp",
+          "x": 423.984375,
+          "y": 3170.5,
+          "w": 293.890625,
+          "h": 187.78125,
+          "right": 717.875,
+          "bottom": 3358.28125,
+          "naturalWidth": 585,
+          "naturalHeight": 400,
+          "fit": "contain"
+        }
+      ],
+      "sensors": [
+        {
+          "x": 26.109375,
+          "y": 1787.0625,
+          "w": 341.875,
+          "h": 235.78125,
+          "right": 367.984375,
+          "bottom": 2022.84375
+        },
+        {
+          "x": 399.984375,
+          "y": 1787.0625,
+          "w": 341.890625,
+          "h": 235.78125,
+          "right": 741.875,
+          "bottom": 2022.84375
+        }
+      ],
+      "columnWidth": 715.776,
+      "columnLeft": 26.112000000000023,
+      "groups": [
+        {
+          "x": 26.109375,
+          "y": 1787.0625,
+          "w": 715.765625,
+          "h": 235.78125,
+          "right": 741.875,
+          "frames": [
+            {
+              "x": 26.109375,
+              "y": 1787.0625,
+              "w": 341.875,
+              "h": 235.78125,
+              "right": 367.984375
+            },
+            {
+              "x": 399.984375,
+              "y": 1787.0625,
+              "w": 341.890625,
+              "h": 235.78125,
+              "right": 741.875
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        },
+        {
+          "x": 26.109375,
+          "y": 3146.5,
+          "w": 715.765625,
+          "h": 235.78125,
+          "right": 741.875,
+          "frames": [
+            {
+              "x": 26.109375,
+              "y": 3146.5,
+              "w": 341.875,
+              "h": 235.78125,
+              "right": 367.984375
+            },
+            {
+              "x": 399.984375,
+              "y": 3146.5,
+              "w": 341.890625,
+              "h": 235.78125,
+              "right": 741.875
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 296.32916259765625,
+              "right": 468.6728820800781,
+              "top": 3904.1474609375,
+              "bottom": 3926.1474609375,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Hazard",
+              "left": 565.9949340820312,
+              "right": 628.4636840820312,
+              "top": 3847.48291015625,
+              "bottom": 3869.48291015625,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 482.5526428222656,
+              "right": 661.6487426757812,
+              "top": 4190.45166015625,
+              "bottom": 4212.45166015625,
+              "size": 19.385319010416666
+            }
+          ],
+          "map": {
+            "left": 26.109375,
+            "right": 741.875,
+            "top": 3817.765625,
+            "bottom": 4229.328125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection.\n                  An orange route leads to a proposed measurement near the connection.\n                  This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 296.32916259765625,
+              "right": 468.6728820800781,
+              "top": 735.1473999023438,
+              "bottom": 757.1473999023438,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Hazard",
+              "left": 565.9949340820312,
+              "right": 628.4636840820312,
+              "top": 678.4830322265625,
+              "bottom": 700.4830322265625,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 482.5526428222656,
+              "right": 661.6487426757812,
+              "top": 1021.4517822265625,
+              "bottom": 1043.4517822265625,
+              "size": 19.385319010416666
+            }
+          ],
+          "map": {
+            "left": 26.109375,
+            "right": 741.875,
+            "top": 648.765625,
+            "bottom": 1060.328125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 296.32916259765625,
+              "right": 468.6728820800781,
+              "top": 619.1473999023438,
+              "bottom": 641.1473999023438,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Hazard",
+              "left": 565.9949340820312,
+              "right": 628.4636840820312,
+              "top": 562.4830322265625,
+              "bottom": 584.4830322265625,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 482.5526428222656,
+              "right": 661.6487426757812,
+              "top": 905.4517822265625,
+              "bottom": 927.4517822265625,
+              "size": 19.385319010416666
+            }
+          ],
+          "map": {
+            "left": 26.109375,
+            "right": 741.875,
+            "top": 532.765625,
+            "bottom": 944.328125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 296.32916259765625,
+              "right": 468.6728820800781,
+              "top": 619.1473999023438,
+              "bottom": 641.1473999023438,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Hazard",
+              "left": 565.9949340820312,
+              "right": 628.4636840820312,
+              "top": 562.4830322265625,
+              "bottom": 584.4830322265625,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 482.5526428222656,
+              "right": 661.6487426757812,
+              "top": 905.4517822265625,
+              "bottom": 927.4517822265625,
+              "size": 19.385319010416666
+            }
+          ],
+          "map": {
+            "left": 26.109375,
+            "right": 741.875,
+            "top": 532.765625,
+            "bottom": 944.328125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 296.32916259765625,
+              "right": 468.6728820800781,
+              "top": 619.1473999023438,
+              "bottom": 641.1473999023438,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Hazard",
+              "left": 565.9949340820312,
+              "right": 628.4636840820312,
+              "top": 562.4830322265625,
+              "bottom": 584.4830322265625,
+              "size": 19.385319010416666
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 482.5526428222656,
+              "right": 661.6487426757812,
+              "top": 905.4517822265625,
+              "bottom": 927.4517822265625,
+              "size": 19.385319010416666
+            }
+          ],
+          "map": {
+            "left": 26.109375,
+            "right": 741.875,
+            "top": 532.765625,
+            "bottom": 944.328125
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "wrap": {
+        "x": 20,
+        "y": 0,
+        "w": 350,
+        "h": 740,
+        "right": 370,
+        "bottom": 740
+      },
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 740,
+        "right": 390,
+        "bottom": 740
+      },
+      "heroImage": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 740,
+        "right": 390,
+        "bottom": 740
+      },
+      "heroText": [
+        {
+          "x": 20,
+          "y": 54,
+          "w": 350,
+          "h": 190.0625,
+          "right": 370,
+          "bottom": 244.0625
+        },
+        {
+          "x": 20,
+          "y": 268.0625,
+          "w": 350,
+          "h": 105.5625,
+          "right": 370,
+          "bottom": 373.625
+        }
+      ],
+      "h1": 44,
+      "sections": [
+        {
+          "heading": {
+            "x": 20,
+            "y": 796,
+            "w": 350,
+            "h": 113.25,
+            "right": 370,
+            "bottom": 909.25
+          },
+          "text": {
+            "x": 20,
+            "y": 796,
+            "w": 350,
+            "h": 265.1875,
+            "right": 370,
+            "bottom": 1061.1875
+          },
+          "paragraph": {
+            "x": 20,
+            "y": 925.25,
+            "w": 350,
+            "h": 135.9375,
+            "right": 370,
+            "bottom": 1061.1875
+          },
+          "figure": {
+            "x": 20,
+            "y": 1093.1875,
+            "w": 350,
+            "h": 233.625,
+            "right": 370,
+            "bottom": 1326.8125
+          },
+          "h2": 32,
+          "body": 16,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 20,
+            "y": 1439.8125,
+            "w": 350,
+            "h": 75.5,
+            "right": 370,
+            "bottom": 1515.3125
+          },
+          "text": {
+            "x": 20,
+            "y": 1439.8125,
+            "w": 350,
+            "h": 200.25,
+            "right": 370,
+            "bottom": 1640.0625
+          },
+          "paragraph": {
+            "x": 20,
+            "y": 1531.3125,
+            "w": 350,
+            "h": 108.75,
+            "right": 370,
+            "bottom": 1640.0625
+          },
+          "figure": {
+            "x": 20,
+            "y": 1672.0625,
+            "w": 350,
+            "h": 241.375,
+            "right": 370,
+            "bottom": 1913.4375
+          },
+          "h2": 32,
+          "body": 16,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 20,
+            "y": 2291.8125,
+            "w": 350,
+            "h": 113.25,
+            "right": 370,
+            "bottom": 2405.0625
+          },
+          "text": {
+            "x": 20,
+            "y": 2291.8125,
+            "w": 350,
+            "h": 265.1875,
+            "right": 370,
+            "bottom": 2557
+          },
+          "paragraph": {
+            "x": 20,
+            "y": 2421.0625,
+            "w": 350,
+            "h": 135.9375,
+            "right": 370,
+            "bottom": 2557
+          },
+          "figure": {
+            "x": 20,
+            "y": 2589,
+            "w": 350,
+            "h": 233.328125,
+            "right": 370,
+            "bottom": 2822.328125
+          },
+          "h2": 32,
+          "body": 16,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 20,
+            "y": 2934.328125,
+            "w": 350,
+            "h": 75.5,
+            "right": 370,
+            "bottom": 3009.828125
+          },
+          "text": {
+            "x": 20,
+            "y": 2934.328125,
+            "w": 350,
+            "h": 281.8125,
+            "right": 370,
+            "bottom": 3216.140625
+          },
+          "paragraph": {
+            "x": 20,
+            "y": 3025.828125,
+            "w": 350,
+            "h": 190.3125,
+            "right": 370,
+            "bottom": 3216.140625
+          },
+          "figure": {
+            "x": 20,
+            "y": 3248.140625,
+            "w": 350,
+            "h": 241.375,
+            "right": 370,
+            "bottom": 3489.515625
+          },
+          "h2": 32,
+          "body": 16,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        },
+        {
+          "heading": {
+            "x": 20,
+            "y": 3866.890625,
+            "w": 350,
+            "h": 75.5,
+            "right": 370,
+            "bottom": 3942.390625
+          },
+          "text": {
+            "x": 20,
+            "y": 3866.890625,
+            "w": 350,
+            "h": 200.25,
+            "right": 370,
+            "bottom": 4067.140625
+          },
+          "paragraph": {
+            "x": 20,
+            "y": 3958.390625,
+            "w": 350,
+            "h": 108.75,
+            "right": 370,
+            "bottom": 4067.140625
+          },
+          "figure": {
+            "x": 20,
+            "y": 4311.484375,
+            "w": 350,
+            "h": 201.25,
+            "right": 370,
+            "bottom": 4512.734375
+          },
+          "h2": 32,
+          "body": 16,
+          "gap": 32,
+          "copyGap": 16,
+          "padding": "56px"
+        }
+      ],
+      "images": [
+        {
+          "name": "hero_belief_concept.webp",
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 740,
+          "right": 390,
+          "bottom": 740,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "cover"
+        },
+        {
+          "name": "disaster_rubble_aerial.jpg",
+          "x": 20,
+          "y": 1093.1875,
+          "w": 350,
+          "h": 233.625,
+          "right": 370,
+          "bottom": 1326.8125,
+          "naturalWidth": 2000,
+          "naturalHeight": 1335,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_drone_gpr.webp",
+          "x": 40,
+          "y": 1692.0625,
+          "w": 310,
+          "h": 201.375,
+          "right": 350,
+          "bottom": 1893.4375,
+          "naturalWidth": 1920,
+          "naturalHeight": 1253,
+          "fit": "contain"
+        },
+        {
+          "name": "gpr_waveform.webp",
+          "x": 40,
+          "y": 1957.4375,
+          "w": 310,
+          "h": 201.375,
+          "right": 350,
+          "bottom": 2158.8125,
+          "naturalWidth": 1369,
+          "naturalHeight": 799,
+          "fit": "contain"
+        },
+        {
+          "name": "concept_void_ar.webp",
+          "x": 20,
+          "y": 2589,
+          "w": 350,
+          "h": 233.328125,
+          "right": 370,
+          "bottom": 2822.328125,
+          "naturalWidth": 1200,
+          "naturalHeight": 800,
+          "fit": "fill"
+        },
+        {
+          "name": "robot_quadruped.webp",
+          "x": 40,
+          "y": 3268.140625,
+          "w": 310,
+          "h": 201.375,
+          "right": 350,
+          "bottom": 3469.515625,
+          "naturalWidth": 2600,
+          "naturalHeight": 1950,
+          "fit": "contain"
+        },
+        {
+          "name": "robot_laser_ar.webp",
+          "x": 40,
+          "y": 3533.515625,
+          "w": 310,
+          "h": 201.375,
+          "right": 350,
+          "bottom": 3734.890625,
+          "naturalWidth": 585,
+          "naturalHeight": 400,
+          "fit": "contain"
+        }
+      ],
+      "sensors": [
+        {
+          "x": 20,
+          "y": 1672.0625,
+          "w": 350,
+          "h": 241.375,
+          "right": 370,
+          "bottom": 1913.4375
+        },
+        {
+          "x": 20,
+          "y": 1937.4375,
+          "w": 350,
+          "h": 241.375,
+          "right": 370,
+          "bottom": 2178.8125
+        }
+      ],
+      "columnWidth": 350,
+      "columnLeft": 20,
+      "groups": [
+        {
+          "x": 20,
+          "y": 1672.0625,
+          "w": 350,
+          "h": 506.75,
+          "right": 370,
+          "frames": [
+            {
+              "x": 20,
+              "y": 1672.0625,
+              "w": 350,
+              "h": 241.375,
+              "right": 370
+            },
+            {
+              "x": 20,
+              "y": 1937.4375,
+              "w": 350,
+              "h": 241.375,
+              "right": 370
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        },
+        {
+          "x": 20,
+          "y": 3248.140625,
+          "w": 350,
+          "h": 506.75,
+          "right": 370,
+          "frames": [
+            {
+              "x": 20,
+              "y": 3248.140625,
+              "w": 350,
+              "h": 241.375,
+              "right": 370
+            },
+            {
+              "x": 20,
+              "y": 3513.515625,
+              "w": 350,
+              "h": 241.375,
+              "right": 370
+            }
+          ],
+          "fits": [
+            "contain",
+            "contain"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 135.96615600585938,
+              "right": 252.57550048828125,
+              "top": 4350.52587890625,
+              "bottom": 4365.52587890625,
+              "size": 13.125
+            },
+            {
+              "text": "Hazard",
+              "left": 278.1380310058594,
+              "right": 320.4036560058594,
+              "top": 4322.81787109375,
+              "bottom": 4337.81787109375,
+              "size": 13.125
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 209.65623474121094,
+              "right": 331.0688781738281,
+              "top": 4490.52587890625,
+              "bottom": 4505.52587890625,
+              "size": 13.125
+            }
+          ],
+          "map": {
+            "left": 20,
+            "right": 370,
+            "top": 4311.484375,
+            "bottom": 4512.734375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection.\n                  An orange route leads to a proposed measurement near the connection.\n                  This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 135.96615600585938,
+              "right": 252.57550048828125,
+              "top": 742.7135620117188,
+              "bottom": 757.7135620117188,
+              "size": 13.125
+            },
+            {
+              "text": "Hazard",
+              "left": 278.1380310058594,
+              "right": 320.4036560058594,
+              "top": 715.0051879882812,
+              "bottom": 730.0051879882812,
+              "size": 13.125
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 209.65623474121094,
+              "right": 331.0688781738281,
+              "top": 882.7135009765625,
+              "bottom": 897.7135009765625,
+              "size": 13.125
+            }
+          ],
+          "map": {
+            "left": 20,
+            "right": 370,
+            "top": 703.671875,
+            "bottom": 904.921875
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 135.96615600585938,
+              "right": 252.57550048828125,
+              "top": 715.5260620117188,
+              "bottom": 730.5260620117188,
+              "size": 13.125
+            },
+            {
+              "text": "Hazard",
+              "left": 278.1380310058594,
+              "right": 320.4036560058594,
+              "top": 687.8176879882812,
+              "bottom": 702.8176879882812,
+              "size": 13.125
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 209.65623474121094,
+              "right": 331.0688781738281,
+              "top": 855.5260009765625,
+              "bottom": 870.5260009765625,
+              "size": 13.125
+            }
+          ],
+          "map": {
+            "left": 20,
+            "right": 370,
+            "top": 676.484375,
+            "bottom": 877.734375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "avoid",
+          "route": "M82 247q7-25 36-37",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(35, 101, 130)",
+          "hazardOpacity": "0.3",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 135.96615600585938,
+              "right": 252.57550048828125,
+              "top": 742.7135620117188,
+              "bottom": 757.7135620117188,
+              "size": 13.125
+            },
+            {
+              "text": "Hazard",
+              "left": 278.1380310058594,
+              "right": 320.4036560058594,
+              "top": 715.0051879882812,
+              "bottom": 730.0051879882812,
+              "size": 13.125
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 209.65623474121094,
+              "right": 331.0688781738281,
+              "top": 882.7135009765625,
+              "bottom": 897.7135009765625,
+              "size": 13.125
+            }
+          ],
+          "map": {
+            "left": 20,
+            "right": 370,
+            "top": 703.671875,
+            "bottom": 904.921875
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: the hazardous region at the upper right is highlighted and crossed out. A changed route stays outside it and leads to an alternative accessible scanning position at the left boundary. This shared-control pipeline has not been validated."
+        },
+        {
+          "intent": "connection",
+          "route": "M83 252q73 7 165-10",
+          "routeDisplay": "inline",
+          "markerColor": "rgb(179, 112, 55)",
+          "hazardOpacity": "0.1",
+          "labels": [
+            {
+              "text": "Possible connection",
+              "left": 135.96615600585938,
+              "right": 252.57550048828125,
+              "top": 715.5260620117188,
+              "bottom": 730.5260620117188,
+              "size": 13.125
+            },
+            {
+              "text": "Hazard",
+              "left": 278.1380310058594,
+              "right": 320.4036560058594,
+              "top": 687.8176879882812,
+              "bottom": 702.8176879882812,
+              "size": 13.125
+            },
+            {
+              "text": "Accessible boundary",
+              "left": 209.65623474121094,
+              "right": 331.0688781738281,
+              "top": 855.5260009765625,
+              "bottom": 870.5260009765625,
+              "size": 13.125
+            }
+          ],
+          "map": {
+            "left": 20,
+            "right": 370,
+            "top": 676.484375,
+            "bottom": 877.734375
+          },
+          "status": "polite",
+          "description": "Illustrative proposed sensing: two possible hidden voids have an uncertain connection, highlighted by a dashed circle. An orange route leads from the robot to a proposed measurement near the connection. This shared-control pipeline has not been validated."
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

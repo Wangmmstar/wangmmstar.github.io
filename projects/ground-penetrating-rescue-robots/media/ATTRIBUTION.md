@@ -74,3 +74,16 @@ The final SVG interaction is recovered from the project HTML and CSS at
 and target positions illustrate proposed follow-up measurements. They are
 not a tested planning system or verified safe paths. The standalone targeted
 measurement SVG is retained as an unused source asset, not rendered.
+
+## Shared-column correction — November 6, 2026
+
+The current page uses one 980px content column. The problem section now renders
+only the disaster photograph; the training diagram and original training slide
+remain preserved as unused repository assets with the provenance above.
+Sensing retains the aerial-platform graphic and radargram, and inference retains
+the explicitly conceptual inferred-void visualization. Laser Guidance now pairs
+`robot_quadruped.webp` (slide 1, image 4) with `robot_laser_ar.webp` (slide 8,
+image 4), in equal-height contained frames. The platform graphic is not evidence
+of a validated integrated rescue laser system. All original image files remain
+unchanged; the earlier layout measurements above describe previous revisions.
+The footer retains the proposed status and original source limitations.
