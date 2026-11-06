@@ -1,0 +1,419 @@
+{
+  "url": "http://127.0.0.1:8792",
+  "results": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 780,
+        "right": 1440,
+        "bottom": 780
+      },
+      "heroImage": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 780,
+        "right": 1440,
+        "bottom": 780
+      },
+      "heroText": [
+        {
+          "x": 170,
+          "y": 208.921875,
+          "w": 810,
+          "h": 240.375,
+          "right": 980,
+          "bottom": 449.296875
+        },
+        {
+          "x": 170,
+          "y": 479.296875,
+          "w": 615,
+          "h": 91.78125,
+          "right": 785,
+          "bottom": 571.078125
+        }
+      ],
+      "h1Size": 76.32,
+      "h2Sizes": [
+        42,
+        42,
+        42,
+        42,
+        42
+      ],
+      "images": [
+        {
+          "file": "hero_belief_concept.webp",
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 780,
+          "right": 1440,
+          "bottom": 780,
+          "naturalWidth": 1200,
+          "naturalHeight": 800
+        },
+        {
+          "file": "disaster_rubble_aerial.jpg",
+          "x": 170,
+          "y": 1084.625,
+          "w": 1100,
+          "h": 734.25,
+          "right": 1270,
+          "bottom": 1818.875,
+          "naturalWidth": 2000,
+          "naturalHeight": 1335
+        },
+        {
+          "file": "pancake_void_diagram.webp",
+          "x": 410,
+          "y": 1850.875,
+          "w": 620,
+          "h": 373.3125,
+          "right": 1030,
+          "bottom": 2224.1875,
+          "naturalWidth": 749,
+          "naturalHeight": 451
+        },
+        {
+          "file": "robot_drone_gpr.webp",
+          "x": 170,
+          "y": 2569.09375,
+          "w": 530,
+          "h": 345.875,
+          "right": 700,
+          "bottom": 2914.96875,
+          "naturalWidth": 1920,
+          "naturalHeight": 1253
+        },
+        {
+          "file": "gpr_waveform.webp",
+          "x": 740,
+          "y": 2587.375,
+          "w": 530,
+          "h": 309.3125,
+          "right": 1270,
+          "bottom": 2896.6875,
+          "naturalWidth": 1369,
+          "naturalHeight": 799
+        },
+        {
+          "file": "concept_void_ar.webp",
+          "x": 170,
+          "y": 3339.1875,
+          "w": 1100,
+          "h": 733.328125,
+          "right": 1270,
+          "bottom": 4072.515625,
+          "naturalWidth": 1200,
+          "naturalHeight": 800
+        },
+        {
+          "file": "robot_laser_ar.webp",
+          "x": 310,
+          "y": 4491.40625,
+          "w": 820,
+          "h": 560.671875,
+          "right": 1130,
+          "bottom": 5052.078125,
+          "naturalWidth": 585,
+          "naturalHeight": 400
+        },
+        {
+          "file": "uncertainty_targeted_measurement.svg",
+          "x": 170,
+          "y": 5464.96875,
+          "w": 1100,
+          "h": 406.578125,
+          "right": 1270,
+          "bottom": 5871.546875,
+          "naturalWidth": 1488,
+          "naturalHeight": 550
+        }
+      ],
+      "smallText": [],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 780,
+        "right": 768,
+        "bottom": 780
+      },
+      "heroImage": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 780,
+        "right": 768,
+        "bottom": 780
+      },
+      "heroText": [
+        {
+          "x": 32,
+          "y": 228.328125,
+          "w": 680,
+          "h": 201.5625,
+          "right": 712,
+          "bottom": 429.890625
+        },
+        {
+          "x": 32,
+          "y": 459.890625,
+          "w": 615,
+          "h": 91.78125,
+          "right": 647,
+          "bottom": 551.671875
+        }
+      ],
+      "h1Size": 64,
+      "h2Sizes": [
+        38,
+        38,
+        38,
+        38,
+        38
+      ],
+      "images": [
+        {
+          "file": "hero_belief_concept.webp",
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 780,
+          "right": 768,
+          "bottom": 780,
+          "naturalWidth": 1200,
+          "naturalHeight": 800
+        },
+        {
+          "file": "disaster_rubble_aerial.jpg",
+          "x": 32,
+          "y": 1081.9375,
+          "w": 704,
+          "h": 469.90625,
+          "right": 736,
+          "bottom": 1551.84375,
+          "naturalWidth": 2000,
+          "naturalHeight": 1335
+        },
+        {
+          "file": "pancake_void_diagram.webp",
+          "x": 74,
+          "y": 1583.84375,
+          "w": 620,
+          "h": 373.3125,
+          "right": 694,
+          "bottom": 1957.15625,
+          "naturalWidth": 749,
+          "naturalHeight": 451
+        },
+        {
+          "file": "robot_drone_gpr.webp",
+          "x": 32,
+          "y": 2249.421875,
+          "w": 338,
+          "h": 220.578125,
+          "right": 370,
+          "bottom": 2470,
+          "naturalWidth": 1920,
+          "naturalHeight": 1253
+        },
+        {
+          "file": "gpr_waveform.webp",
+          "x": 398,
+          "y": 2261.078125,
+          "w": 338,
+          "h": 197.265625,
+          "right": 736,
+          "bottom": 2458.34375,
+          "naturalWidth": 1369,
+          "naturalHeight": 799
+        },
+        {
+          "file": "concept_void_ar.webp",
+          "x": 32,
+          "y": 2836.9375,
+          "w": 704,
+          "h": 469.328125,
+          "right": 736,
+          "bottom": 3306.265625,
+          "naturalWidth": 1200,
+          "naturalHeight": 800
+        },
+        {
+          "file": "robot_laser_ar.webp",
+          "x": 32,
+          "y": 3747.1875,
+          "w": 704,
+          "h": 481.359375,
+          "right": 736,
+          "bottom": 4228.546875,
+          "naturalWidth": 585,
+          "naturalHeight": 400
+        },
+        {
+          "file": "uncertainty_targeted_measurement.svg",
+          "x": 32,
+          "y": 4619.390625,
+          "w": 704,
+          "h": 260.203125,
+          "right": 736,
+          "bottom": 4879.59375,
+          "naturalWidth": 1488,
+          "naturalHeight": 550
+        }
+      ],
+      "smallText": [],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 740,
+        "right": 390,
+        "bottom": 740
+      },
+      "heroImage": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 740,
+        "right": 390,
+        "bottom": 740
+      },
+      "heroText": [
+        {
+          "x": 20,
+          "y": 54,
+          "w": 350,
+          "h": 190.0625,
+          "right": 370,
+          "bottom": 244.0625
+        },
+        {
+          "x": 20,
+          "y": 268.0625,
+          "w": 350,
+          "h": 105.5625,
+          "right": 370,
+          "bottom": 373.625
+        }
+      ],
+      "h1Size": 44,
+      "h2Sizes": [
+        32,
+        32,
+        32,
+        32,
+        32
+      ],
+      "images": [
+        {
+          "file": "hero_belief_concept.webp",
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 740,
+          "right": 390,
+          "bottom": 740,
+          "naturalWidth": 1200,
+          "naturalHeight": 800
+        },
+        {
+          "file": "disaster_rubble_aerial.jpg",
+          "x": 20,
+          "y": 1089.1875,
+          "w": 350,
+          "h": 233.625,
+          "right": 370,
+          "bottom": 1322.8125,
+          "naturalWidth": 2000,
+          "naturalHeight": 1335
+        },
+        {
+          "file": "pancake_void_diagram.webp",
+          "x": 20,
+          "y": 1346.8125,
+          "w": 350,
+          "h": 210.734375,
+          "right": 370,
+          "bottom": 1557.546875,
+          "naturalWidth": 749,
+          "naturalHeight": 451
+        },
+        {
+          "file": "robot_drone_gpr.webp",
+          "x": 20,
+          "y": 1894.796875,
+          "w": 350,
+          "h": 228.40625,
+          "right": 370,
+          "bottom": 2123.203125,
+          "naturalWidth": 1920,
+          "naturalHeight": 1253
+        },
+        {
+          "file": "gpr_waveform.webp",
+          "x": 20,
+          "y": 2151.203125,
+          "w": 350,
+          "h": 204.265625,
+          "right": 370,
+          "bottom": 2355.46875,
+          "naturalWidth": 1369,
+          "naturalHeight": 799
+        },
+        {
+          "file": "concept_void_ar.webp",
+          "x": 20,
+          "y": 2757.65625,
+          "w": 350,
+          "h": 233.328125,
+          "right": 370,
+          "bottom": 2990.984375,
+          "naturalWidth": 1200,
+          "naturalHeight": 800
+        },
+        {
+          "file": "robot_laser_ar.webp",
+          "x": 20,
+          "y": 3441.203125,
+          "w": 350,
+          "h": 239.3125,
+          "right": 370,
+          "bottom": 3680.515625,
+          "naturalWidth": 585,
+          "naturalHeight": 400
+        },
+        {
+          "file": "uncertainty_targeted_measurement.svg",
+          "x": 20,
+          "y": 4128.734375,
+          "w": 350,
+          "h": 129.359375,
+          "right": 370,
+          "bottom": 4258.09375,
+          "naturalWidth": 1488,
+          "naturalHeight": 550
+        }
+      ],
+      "smallText": [],
+      "errors": []
+    }
+  ]
+}

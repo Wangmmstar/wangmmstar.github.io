@@ -10,7 +10,7 @@ platform graphics, and prior research. A proposal slide number establishes the
 supplied image's immediate source, not its original publication or validation.
 
 - `hero_belief_concept.webp`: proposal slide 1, image 6. Concept rendering,
-  visibly labeled on the page; not a measured interior or deployed rescue system.
+  identified as a concept in image alt text and footer provenance; not a measured interior or deployed rescue system.
 - `concept_void_ar.webp`: proposal slide 1, image 1. Concept rendering. Geometry,
   volume, depth, and confidence readouts are illustrative, not measured results.
 - `robot_drone_gpr.webp`: proposal slide 1, image 2, aerial-platform graphic.
@@ -38,6 +38,23 @@ supplied image's immediate source, not its original publication or validation.
   labeled as future research. It illustrates a proposed measurement near an
   uncertain region, not a completed or validated adaptive-sensing capability.
 
-The six retained proposal WebPs, the aerial photograph, and the targeted-sensing
+The retained proposal WebPs, the aerial photograph, and the targeted-sensing
 SVG were compared byte-for-byte with their author-supplied package counterparts.
 The page's expandable image credits preserve the source limitations above.
+
+## Laser-guidance reconstruction — November 6, 2026
+
+`robot_laser_ar.webp` is retained from Figures PPT slide 8, image 4. The
+original 100,043,951-byte `/home/mwang5/Downloads/Figures.pptx` embeds that scene
+as `ppt/media/image60.png`, at 585 × 400 pixels. The original slide relationships
+and all similarly proportioned PPT images were inspected: there is no larger
+copy of the same scene. `image58.png` and `image61.png` depict a different red
+CHECK/VLM illustration and are not substitutes. The existing WebP remains
+unchanged; its maximum desktop display is 820 × 561 CSS pixels. No synthetic
+upscaling or replacement image was generated.
+
+The laser illustration's embedded “Optimal Path & Target” label is not a claim
+of verified safe passage. Its visible caption identifies cues as investigation
+references, not verified safe paths or excavation points. The page describes
+the integrated sensing/inference/projection/follow-up pipeline as a proposed
+research vision built on prior work, not a completed rescue deployment.
