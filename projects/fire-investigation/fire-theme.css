@@ -1,0 +1,189 @@
+/* Fire Investigation only. Keep this after the shared research styles. */
+html.research-page[data-project="fire-investigation"] {
+  color-scheme: dark;
+  --research-background: #0b0d12;
+  --research-primary: #f5f5f5;
+  --research-secondary: #b8bec8;
+  --research-rule: rgba(255, 255, 255, .12);
+  --research-blue: #dfb18e;
+  --fire-accent: #dfb18e;
+  --fire-charcoal: #151820;
+  background: var(--research-background);
+  color: var(--research-secondary);
+}
+
+/* Set prose tokens as well as explicit colors for the retained template. */
+html.research-page[data-project="fire-investigation"] body {
+  --tw-prose-body: var(--research-secondary);
+  --tw-prose-headings: var(--research-primary);
+  --tw-prose-bold: var(--research-primary);
+  --tw-prose-links: var(--fire-accent);
+  background: var(--research-background);
+  color: var(--research-secondary);
+}
+html.research-page[data-project="fire-investigation"] :is(h1, h2, h3, strong) { color: var(--research-primary); }
+html.research-page[data-project="fire-investigation"] a { color: var(--fire-accent); }
+html.research-page[data-project="fire-investigation"] :is(a, button):focus-visible {
+  outline: 2px solid var(--fire-accent);
+  outline-offset: 5px;
+}
+html.research-page[data-project="fire-investigation"] .fire-skip {
+  background: var(--fire-charcoal);
+  color: var(--research-primary);
+}
+html.research-page[data-project="fire-investigation"] .fire-navigation {
+  background: var(--research-background);
+  color: var(--research-secondary);
+  border-bottom-color: var(--research-rule);
+}
+html.research-page[data-project="fire-investigation"] .fire-navigation > div { min-height: 64px; }
+html.research-page[data-project="fire-investigation"] .fire-navigation a { color: var(--research-primary); }
+
+/* One unfiltered photograph fills the Hero; the scrim protects only the copy. */
+html.research-page[data-project="fire-investigation"] .project-hero {
+  --hero-height: clamp(560px, 49.85vw, 850px);
+  --hero-media-top: 0px;
+  background: var(--research-background);
+  color: var(--research-primary);
+}
+html.research-page[data-project="fire-investigation"] .project-hero .hero-media-primary {
+  display: block;
+  inset: 0;
+}
+html.research-page[data-project="fire-investigation"] .project-hero .hero-media-primary img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 50%;
+  mask-image: none;
+}
+html.research-page[data-project="fire-investigation"] .project-hero .hero-overlay {
+  min-height: var(--hero-height);
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: clamp(32px, 5vw, 76px) max(var(--page-gutter), calc((100% - 1200px) / 2));
+  background: linear-gradient(90deg, rgba(11, 13, 18, .38), transparent 76%),
+    linear-gradient(0deg, rgba(11, 13, 18, .9), rgba(11, 13, 18, .12) 44%, transparent 66%);
+  text-align: left;
+}
+html.research-page[data-project="fire-investigation"] .project-hero .hero-headline { width: min(100%, 960px); }
+html.research-page[data-project="fire-investigation"] .project-hero .hero-eyebrow {
+  margin: 0 0 20px;
+  color: #e3c5ae;
+  font-size: clamp(10px, .85vw, 12px);
+  line-height: 1.6;
+  letter-spacing: .17em;
+  font-weight: 600;
+}
+html.research-page[data-project="fire-investigation"] .project-hero h1 {
+  margin: 0;
+  font-size: clamp(48px, 5.5vw, 88px);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  font-weight: 550;
+  text-wrap: pretty;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .2);
+}
+
+/* Compact introduction immediately under the image. */
+html.research-page[data-project="fire-investigation"] .hero-scene-note {
+  padding-block: 22px 36px;
+  background: var(--research-background);
+}
+html.research-page[data-project="fire-investigation"] .hero-scene-caption {
+  padding-top: 0;
+  gap: 12px 32px;
+  color: var(--research-secondary);
+}
+html.research-page[data-project="fire-investigation"] .hero-scene-caption span:first-child {
+  color: var(--research-primary);
+  font-size: 16px;
+}
+html.research-page[data-project="fire-investigation"] .hero-scene-caption span:last-child { font-size: 12px; }
+html.research-page[data-project="fire-investigation"] .hero-scene-note > .hero-byline {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 20px 48px;
+  padding: 22px 0 0;
+  text-align: left;
+}
+html.research-page[data-project="fire-investigation"] .hero-byline::before { content: none; }
+html.research-page[data-project="fire-investigation"] .hero-scene-note .hero-paper-title {
+  max-width: 660px;
+  color: var(--research-secondary);
+  font-size: clamp(17px, 1.4vw, 20px);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0;
+  text-wrap: pretty;
+}
+html.research-page[data-project="fire-investigation"] .hero-scene-note .header-authors { justify-content: flex-start; }
+html.research-page[data-project="fire-investigation"] .hero-scene-note .header-authors > div { align-items: flex-start; text-align: left; }
+html.research-page[data-project="fire-investigation"] .hero-scene-note .header-authors > div > div { color: var(--research-primary); font-size: 15px; }
+html.research-page[data-project="fire-investigation"] .hero-scene-note .header-authors > div > div + div { color: var(--research-secondary); font-size: 13px; }
+
+/* Research surfaces and diagrams preserve their existing layout and content. */
+html.research-page[data-project="fire-investigation"] :is(.fire-small-label, figcaption, .fire-media-label > span, .fire-trace-heading > span:last-child) {
+  color: var(--research-secondary);
+}
+html.research-page[data-project="fire-investigation"] .fire-approach {
+  background: var(--fire-charcoal);
+  border: 1px solid var(--research-rule);
+}
+html.research-page[data-project="fire-investigation"] .fire-approach-flow li { border-top-color: var(--research-rule); }
+html.research-page[data-project="fire-investigation"] .fire-approach-flow li::after { color: var(--research-secondary); }
+html.research-page[data-project="fire-investigation"] .fire-simulation-band { background: var(--fire-charcoal); }
+html.research-page[data-project="fire-investigation"] .fire-scene-controls {
+  background: var(--fire-charcoal);
+  border-color: var(--research-rule);
+}
+html.research-page[data-project="fire-investigation"] .fire-scene-controls button {
+  color: var(--research-secondary);
+  cursor: pointer;
+}
+html.research-page[data-project="fire-investigation"] .fire-scene-controls button[aria-pressed="true"] {
+  background: #dfb18e;
+  color: #151820;
+  box-shadow: none;
+}
+html.research-page[data-project="fire-investigation"] .fire-scene-controls button:hover { border-color: var(--fire-accent); }
+html.research-page[data-project="fire-investigation"] :is(.fire-scene-stage, .fire-video-figure video) {
+  background: var(--fire-charcoal);
+  border: 1px solid var(--research-rule);
+  box-shadow: none;
+}
+html.research-page[data-project="fire-investigation"] .fire-trace {
+  /* The published component sets a light background with !important. */
+  background: var(--fire-charcoal) !important;
+  border-color: var(--research-rule);
+}
+html.research-page[data-project="fire-investigation"] .fire-trace-node {
+  background: var(--research-background);
+  border-color: rgba(223, 177, 142, .4);
+}
+html.research-page[data-project="fire-investigation"] footer {
+  margin-top: 24px;
+  border-top: 1px solid var(--research-rule);
+  color: var(--research-secondary);
+}
+
+@media (max-width: 900px) {
+  html.research-page[data-project="fire-investigation"] .hero-scene-note > .hero-byline { gap: 20px 32px; }
+}
+@media (max-width: 700px) {
+  html.research-page[data-project="fire-investigation"] .project-hero { --hero-height: clamp(460px, 84vw, 580px); }
+  html.research-page[data-project="fire-investigation"] .project-hero .hero-media-primary img { object-position: 46% 50%; }
+  html.research-page[data-project="fire-investigation"] .project-hero .hero-overlay {
+    padding: 32px var(--page-gutter);
+    background: linear-gradient(0deg, rgba(11, 13, 18, .94), rgba(11, 13, 18, .48) 34%, transparent 70%);
+  }
+  html.research-page[data-project="fire-investigation"] .project-hero .hero-headline { max-width: 540px; }
+  html.research-page[data-project="fire-investigation"] .project-hero .hero-eyebrow { margin-bottom: 16px; font-size: 10px; letter-spacing: .12em; }
+  html.research-page[data-project="fire-investigation"] .project-hero h1 { font-size: clamp(38px, 7.6vw, 52px); }
+  html.research-page[data-project="fire-investigation"] .hero-scene-note { padding-block: 20px 24px; }
+  html.research-page[data-project="fire-investigation"] .hero-scene-caption span:last-child { margin-top: 8px; }
+  html.research-page[data-project="fire-investigation"] .hero-scene-note > .hero-byline { grid-template-columns: minmax(0, 1fr); gap: 20px; padding-top: 16px; }
+  html.research-page[data-project="fire-investigation"] .hero-scene-caption span:first-child { max-width: 32ch; }
+}

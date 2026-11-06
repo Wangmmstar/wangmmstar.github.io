@@ -56,7 +56,10 @@ for site in SITES:
     assert not removed, f"An original link or media reference was removed: {site}"
     assert sum(tag == "h1" for tag, _ in page.tags) == 1, f"Expected one Hero title: {site}"
     styles = [a["href"] for tag, a in page.tags if tag == "link" and a.get("rel") == "stylesheet"]
-    hero_style = "/projects/lunar-construction/lunar-hero.css" if site == "lunar-construction" else "/projects/research-heroes.css"
+    hero_style = {
+        "lunar-construction": "/projects/lunar-construction/lunar-hero.css",
+        "fire-investigation": "/projects/fire-investigation/fire-theme.css",
+    }.get(site, "/projects/research-heroes.css")
     assert styles[-1] == hero_style, f"Hero CSS must load last: {site}"
     assert "/projects/research-heroes.css" in styles
     assert "/projects/research-layout.css" in styles

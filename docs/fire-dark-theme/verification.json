@@ -1,0 +1,507 @@
+[
+  {
+    "width": 1440,
+    "scrollWidth": 1440,
+    "hero": {
+      "x": 0,
+      "y": 65,
+      "width": 1440,
+      "height": 717.828125,
+      "right": 1440,
+      "bottom": 782.828125
+    },
+    "image": {
+      "x": 0,
+      "y": 65,
+      "width": 1440,
+      "height": 717.828125,
+      "right": 1440,
+      "bottom": 782.828125
+    },
+    "imageFit": "cover",
+    "title": {
+      "x": 120,
+      "y": 539.765625,
+      "width": 960,
+      "height": 171.0625,
+      "right": 1080,
+      "bottom": 710.828125
+    },
+    "eyebrow": {
+      "x": 120,
+      "y": 500.578125,
+      "width": 960,
+      "height": 19.1875,
+      "right": 1080,
+      "bottom": 519.765625
+    },
+    "intro": {
+      "x": 0,
+      "y": 782.828125,
+      "width": 1440,
+      "height": 171.59375,
+      "right": 1440,
+      "bottom": 954.421875
+    },
+    "bodyBackground": "rgb(11, 13, 18)",
+    "sectionColors": [
+      {
+        "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "An Interactive Environment for Investigative Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Explore What Remains.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Turn Observations Into Evidence.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Test Explanations Against Fire Development.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Make the Investigation Process Visible.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Toward Reasoning-Aware AI Assistance.",
+        "color": "rgb(245, 245, 245)"
+      }
+    ],
+    "whiteSurfaces": [],
+    "mediaStyles": [
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      }
+    ],
+    "imagesLoaded": true,
+    "browserErrors": []
+  },
+  {
+    "width": 1024,
+    "scrollWidth": 1024,
+    "hero": {
+      "x": 0,
+      "y": 65,
+      "width": 1024,
+      "height": 560,
+      "right": 1024,
+      "bottom": 625
+    },
+    "image": {
+      "x": 0,
+      "y": 65,
+      "width": 1024,
+      "height": 560,
+      "right": 1024,
+      "bottom": 625
+    },
+    "imageFit": "cover",
+    "title": {
+      "x": 34.8125,
+      "y": 452.1875,
+      "width": 954.375,
+      "height": 121.625,
+      "right": 989.1875,
+      "bottom": 573.8125
+    },
+    "eyebrow": {
+      "x": 34.8125,
+      "y": 416.1875,
+      "width": 954.375,
+      "height": 16,
+      "right": 989.1875,
+      "bottom": 432.1875
+    },
+    "intro": {
+      "x": 0,
+      "y": 625,
+      "width": 1024,
+      "height": 161.6875,
+      "right": 1024,
+      "bottom": 786.6875
+    },
+    "bodyBackground": "rgb(11, 13, 18)",
+    "sectionColors": [
+      {
+        "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "An Interactive Environment for Investigative Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Explore What Remains.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Turn Observations Into Evidence.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Test Explanations Against Fire Development.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Make the Investigation Process Visible.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Toward Reasoning-Aware AI Assistance.",
+        "color": "rgb(245, 245, 245)"
+      }
+    ],
+    "whiteSurfaces": [],
+    "mediaStyles": [
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      }
+    ],
+    "imagesLoaded": true,
+    "browserErrors": []
+  },
+  {
+    "width": 768,
+    "scrollWidth": 768,
+    "hero": {
+      "x": 0,
+      "y": 65,
+      "width": 768,
+      "height": 560,
+      "right": 768,
+      "bottom": 625
+    },
+    "image": {
+      "x": 0,
+      "y": 65,
+      "width": 768,
+      "height": 560,
+      "right": 768,
+      "bottom": 625
+    },
+    "imageFit": "cover",
+    "title": {
+      "x": 26.109375,
+      "y": 482.953125,
+      "width": 715.78125,
+      "height": 103.65625,
+      "right": 741.890625,
+      "bottom": 586.609375
+    },
+    "eyebrow": {
+      "x": 26.109375,
+      "y": 446.953125,
+      "width": 715.78125,
+      "height": 16,
+      "right": 741.890625,
+      "bottom": 462.953125
+    },
+    "intro": {
+      "x": 0,
+      "y": 625,
+      "width": 768,
+      "height": 161.6875,
+      "right": 768,
+      "bottom": 786.6875
+    },
+    "bodyBackground": "rgb(11, 13, 18)",
+    "sectionColors": [
+      {
+        "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "An Interactive Environment for Investigative Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Explore What Remains.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Turn Observations Into Evidence.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Test Explanations Against Fire Development.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Make the Investigation Process Visible.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Toward Reasoning-Aware AI Assistance.",
+        "color": "rgb(245, 245, 245)"
+      }
+    ],
+    "whiteSurfaces": [],
+    "mediaStyles": [
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      }
+    ],
+    "imagesLoaded": true,
+    "browserErrors": []
+  },
+  {
+    "width": 390,
+    "scrollWidth": 390,
+    "hero": {
+      "x": 0,
+      "y": 65,
+      "width": 390,
+      "height": 460,
+      "right": 390,
+      "bottom": 525
+    },
+    "image": {
+      "x": 0,
+      "y": 65,
+      "width": 390,
+      "height": 460,
+      "right": 390,
+      "bottom": 525
+    },
+    "imageFit": "cover",
+    "title": {
+      "x": 20,
+      "y": 369.90625,
+      "width": 350,
+      "height": 123.09375,
+      "right": 370,
+      "bottom": 493
+    },
+    "eyebrow": {
+      "x": 20,
+      "y": 337.90625,
+      "width": 350,
+      "height": 16,
+      "right": 370,
+      "bottom": 353.90625
+    },
+    "intro": {
+      "x": 0,
+      "y": 525,
+      "width": 390,
+      "height": 314.953125,
+      "right": 390,
+      "bottom": 839.953125
+    },
+    "bodyBackground": "rgb(11, 13, 18)",
+    "sectionColors": [
+      {
+        "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "An Interactive Environment for Investigative Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Explore What Remains.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Turn Observations Into Evidence.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Test Explanations Against Fire Development.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Make the Investigation Process Visible.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Toward Reasoning-Aware AI Assistance.",
+        "color": "rgb(245, 245, 245)"
+      }
+    ],
+    "whiteSurfaces": [],
+    "mediaStyles": [
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      }
+    ],
+    "imagesLoaded": true,
+    "browserErrors": []
+  },
+  {
+    "width": 375,
+    "scrollWidth": 375,
+    "hero": {
+      "x": 0,
+      "y": 65,
+      "width": 375,
+      "height": 460,
+      "right": 375,
+      "bottom": 525
+    },
+    "image": {
+      "x": 0,
+      "y": 65,
+      "width": 375,
+      "height": 460,
+      "right": 375,
+      "bottom": 525
+    },
+    "imageFit": "cover",
+    "title": {
+      "x": 20,
+      "y": 369.90625,
+      "width": 335,
+      "height": 123.09375,
+      "right": 355,
+      "bottom": 493
+    },
+    "eyebrow": {
+      "x": 20,
+      "y": 337.90625,
+      "width": 335,
+      "height": 16,
+      "right": 355,
+      "bottom": 353.90625
+    },
+    "intro": {
+      "x": 0,
+      "y": 525,
+      "width": 375,
+      "height": 314.953125,
+      "right": 375,
+      "bottom": 839.953125
+    },
+    "bodyBackground": "rgb(11, 13, 18)",
+    "sectionColors": [
+      {
+        "text": "A Conclusion Doesn’t Reveal the Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "An Interactive Environment for Investigative Reasoning.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Explore What Remains.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Turn Observations Into Evidence.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Test Explanations Against Fire Development.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Make the Investigation Process Visible.",
+        "color": "rgb(245, 245, 245)"
+      },
+      {
+        "text": "Toward Reasoning-Aware AI Assistance.",
+        "color": "rgb(245, 245, 245)"
+      }
+    ],
+    "whiteSurfaces": [],
+    "mediaStyles": [
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      },
+      {
+        "filter": "none",
+        "mask": "none"
+      }
+    ],
+    "imagesLoaded": true,
+    "browserErrors": []
+  }
+]
