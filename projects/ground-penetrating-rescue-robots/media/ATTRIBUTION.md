@@ -50,11 +50,27 @@ as `ppt/media/image60.png`, at 585 × 400 pixels. The original slide relationshi
 and all similarly proportioned PPT images were inspected: there is no larger
 copy of the same scene. `image58.png` and `image61.png` depict a different red
 CHECK/VLM illustration and are not substitutes. The existing WebP remains
-unchanged; its maximum desktop display is 820 × 561 CSS pixels. No synthetic
+unchanged; its maximum desktop display is its native 585 × 400 CSS pixels, left aligned. No synthetic
 upscaling or replacement image was generated.
 
 The laser illustration's embedded “Optimal Path & Target” label is not a claim
-of verified safe passage. Its visible caption identifies cues as investigation
+of verified safe passage. The footer disclosure identifies cues as investigation
 references, not verified safe paths or excavation points. The page describes
 the integrated sensing/inference/projection/follow-up pipeline as a proposed
 research vision built on prior work, not a completed rescue deployment.
+
+## Alignment and interaction revision — November 6, 2026
+
+The aerial photograph and pancake-void diagram share a left-aligned 900px
+maximum width, preserving their original proportions. The diagram is a
+749 × 451 crop of the supplied 1024 × 768 training-slide JPEG. All embedded
+media in the original Figures PPT were inspected: that training diagram is
+not present there, and the supplied materials contain no higher-resolution
+copy. The existing diagram remains unchanged; no synthetic enlargement
+or invented source detail was introduced.
+
+The final SVG interaction is recovered from the project HTML and CSS at
+`ba179f3563b41637e3a6f5f3b19911dfc8f23c6a`. Its two routes, hazard exclusion,
+and target positions illustrate proposed follow-up measurements. They are
+not a tested planning system or verified safe paths. The standalone targeted
+measurement SVG is retained as an unused source asset, not rendered.
