@@ -1,4 +1,4 @@
-/* This page keeps the complete publication group centered over one image. */
+/* Keep the headline and bottom-anchored publication in separate image regions. */
 .research-page[data-project="mobile-sar-copilot"] .project-hero {
   display: grid;
   --hero-height: clamp(720px, 56.25vw, 960px);
@@ -24,27 +24,34 @@
 }
 
 .research-page[data-project="mobile-sar-copilot"] .project-hero .hero-overlay {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-area: 1 / 1;
   z-index: 1;
   min-height: 0;
-  justify-content: center;
-  padding: clamp(24px, 5vw, 72px);
+  align-items: stretch;
+  padding: clamp(24px, 5vw, 72px) clamp(24px, 5vw, 72px) 48px;
   background: linear-gradient(#0005, #0007 50%, #0005);
   text-align: center;
   text-shadow: 0 2px 12px #0009;
 }
 
 .research-page[data-project="mobile-sar-copilot"] .sar-hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: clamp(20px, 2.2vw, 32px);
+  display: grid;
+  /* Flexible space above and below the headline; publication stays at the foot. */
+  grid-template-rows: minmax(48px, 2fr) auto minmax(48px, 1fr) auto;
+  justify-items: center;
   width: 100%;
   max-width: 1050px;
   margin-inline: auto;
 }
 
+.research-page[data-project="mobile-sar-copilot"] .sar-hero-content > .hero-headline {
+  grid-row: 2;
+}
+
 .research-page[data-project="mobile-sar-copilot"] .project-hero .research-publication {
+  grid-row: 4;
   gap: clamp(14px, 1.4vw, 20px);
   text-shadow: inherit;
 }
@@ -66,4 +73,10 @@
 .research-page[data-project="mobile-sar-copilot"] .project-hero .research-publication > .text-sm {
   font-size: clamp(11.5px, 1vw, 13.5px);
   line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .research-page[data-project="mobile-sar-copilot"] .project-hero .hero-overlay {
+    padding-bottom: 24px;
+  }
 }
