@@ -1,0 +1,19 @@
+/* Local adjustments for the approved copy and three research metrics. */
+.research-page[data-project="mobile-sar-copilot"] .project-hero h1 {
+  font-size: clamp(28px, 3.2vw, 48px);
+}
+
+.research-page .sar-story .sar-results {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 2rem;
+}
+
+.research-page .sar-story .sar-results .stat-value {
+  font-size: clamp(28px, 2.8vw, 40px);
+}
+
+@media (max-width: 600px) {
+  .research-page .sar-story .sar-results {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
