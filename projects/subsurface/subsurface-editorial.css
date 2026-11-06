@@ -5,7 +5,18 @@ html[data-project="subsurface"] .ss .ss-hero h1 {
   line-height: 1.1;
   text-wrap: balance;
 }
-html[data-project="subsurface"] .ss .ss-hero-subtitle { max-width: 39rem; }
+html[data-project="subsurface"] .ss .ss-hero-foot { justify-content: flex-end; }
+html[data-project="subsurface"] .ss .ss-motion {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+html[data-project="subsurface"] .ss .ss-motion:not([hidden]) { display: inline-flex; }
+html[data-project="subsurface"] .ss .ss-motion[aria-pressed="false"] .ss-play-icon,
+html[data-project="subsurface"] .ss .ss-motion[aria-pressed="true"] .ss-pause-icon { display: none; }
 html[data-project="subsurface"] .ss .ss-problem-grid,
 html[data-project="subsurface"] .ss .ss-research-copy,
 html[data-project="subsurface"] .ss .ss-evidence-grid {
