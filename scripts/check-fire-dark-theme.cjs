@@ -3,8 +3,8 @@
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
-const output = 'docs/fire-dark-theme';
-const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8771';
+const output = '.codex-qa/fire-editorial';
+const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8772';
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({
@@ -13,7 +13,7 @@ const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8771';
   });
   const results = [];
   try {
-    for (const width of [1440, 1024, 768, 390, 375]) {
+    for (const width of [1920, 1440, 1024, 768, 390, 375, 320]) {
       const context = await browser.newContext({
         viewport: { width, height: width < 700 ? 844 : 1000 },
         isMobile: width < 700, hasTouch: width < 700,
@@ -44,8 +44,12 @@ const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8771';
         return {
           width: innerWidth, scrollWidth: document.documentElement.scrollWidth,
           hero: box(hero), image: box(image), imageFit: getComputedStyle(image).objectFit,
-          title: box(hero.querySelector('h1')), eyebrow: box(hero.querySelector('.hero-eyebrow')),
-          intro: box(document.querySelector('.hero-scene-note')),
+          title: box(hero.querySelector('h1')),
+          description: box(hero.querySelector('.fire-hero-description')),
+          author: box(hero.querySelector('.fire-author')),
+          demonstrations: [...document.querySelectorAll('.fire-demonstration')].map(e => ({
+            heading: box(e.querySelector('h2')), body: box(e.querySelector('p')), visual: box(e.querySelector('figure')),
+          })),
           bodyBackground: getComputedStyle(document.body).backgroundColor,
           sectionColors: [...document.querySelectorAll('h2')].map(e => ({ text: e.textContent.trim(), color: getComputedStyle(e).color })),
           whiteSurfaces,
@@ -58,10 +62,13 @@ const base = process.env.RESPONSIVE_URL || 'http://127.0.0.1:8771';
       assert.equal(metrics.hero.width, width, 'Full viewport width Hero');
       assert.deepEqual(metrics.image, metrics.hero, 'Photo fills Hero completely');
       assert.equal(metrics.imageFit, 'cover');
-      for (const text of [metrics.title, metrics.eyebrow]) {
+      for (const text of [metrics.title, metrics.description, metrics.author]) {
         assert(text.x >= 0 && text.right <= width && text.y >= metrics.hero.y && text.bottom <= metrics.hero.bottom, 'Copy stays on photo');
       }
-      assert.equal(metrics.intro.y, metrics.hero.bottom, 'Intro immediately follows Hero');
+      for (const demo of metrics.demonstrations) {
+        assert(demo.heading.bottom <= demo.body.y && demo.body.bottom < demo.visual.y, 'Copy precedes the demonstration');
+        assert(demo.visual.width >= Math.min(980, width - 96), 'Demonstration uses full content width');
+      }
       assert.equal(metrics.bodyBackground, 'rgb(11, 13, 18)');
       assert(metrics.sectionColors.every(e => e.color === 'rgb(245, 245, 245)'), 'Section heading contrast');
       assert.deepEqual(metrics.whiteSurfaces, [], 'No accidental white surfaces');
