@@ -1,6 +1,8 @@
 # Lunar Construction video Hero verification
 
-The Hero now uses the supplied lunar localization recording with the existing title and subtitle over its sky. The headline group is horizontally centered at every width, and the subtitle uses font weight 700. Only the Lunar page loads `lunar-hero.css`. The media covers the entire Hero with no side margins, feathering, or blurred extension. The phone crop favors the projected landmarks and worker; the full recording remains in the asset. The existing motion control also pauses the Hero.
+The Hero uses the supplied lunar localization recording in a unified video-and-typography composition modeled on BIM-Laser. The dominant headline sits above the scene; the smaller paper title, authors with affiliation superscripts, and journal/year sit together near the bottom. The previous introductory sentence and separate paper information section have been removed. Affiliations remain accessible in a keyboard-operable native disclosure inside the Hero. The next section is “On the Moon, position estimates can drift.”
+
+Only the Lunar page loads `lunar-hero.css`. The media covers the entire Hero with no side margins, feathering, blurred extension, cards, or video controls. Flexible spacing separates the headline and publication group while leaving the worker and projected landmarks visible. The phone crop favors this activity as the camera moves. The existing motion control also pauses the Hero.
 
 ## Optimized media
 
@@ -23,19 +25,19 @@ ffmpeg -i /home/mwang5/Videos/Screencasts/lunar_localization.webm \
 
 ## Browser and visual checks
 
-Passed at **1440, 1024, 768, 390, and 375 CSS pixels** in installed Chrome. The two phone widths use mobile/touch emulation. Screenshots at every requested width were inspected, including beginning, middle, and end frames at desktop and phone sizes. All text remains inside the video; the foreground landmarks stay below the text; the next section begins directly after the Hero. No horizontal overflow or script errors occurred. Laptop text was lifted into the sky after visual inspection, and the phone crop was moved left to retain the localization activity.
+Passed at **1440, 1024, 768, 390, and 375 CSS pixels** in installed Chrome. The two phone widths use mobile/touch emulation. Actual screenshots at all five widths were inspected, including beginning, middle, and end frames at desktop and phone sizes. All four text levels remain inside the video without overlapping each other. No introductory subtitle or duplicate paper block remains. The narrative begins directly after the Hero. No horizontal overflow or script errors occurred.
 
 The browser checks cover:
 
-- Full viewport width and full Hero height, with text containment and no horizontal overflow.
-- Muted autoplay with inline playback; playback time advancing on desktop and emulated phones.
-- Looping, and the existing motion control pausing/resuming the Hero and demonstrations.
+- Full viewport width and full Hero height, text containment, no horizontal overflow, and the dominant title being larger than the paper title.
+- Paper title appearing exactly once, all three author superscripts retained, and the expected first narrative heading following the Hero.
+- Native affiliation disclosure opening and closing with the keyboard, both affiliations retained, and video covering the full Hero even while expanded.
+- Muted autoplay with inline playback; playback time advancing on desktop and emulated phones, plus looping and pause/resume through the existing motion control.
 - The reduced-motion poster without a Hero-video request, plus runtime preference changes.
-- Exact adjacency of the unchanged paper metadata section.
 
-[Desktop Hero](hero-1440.jpg), [laptop Hero](hero-1024.jpg), [tablet Hero](hero-768.jpg), [390px Hero](hero-390.jpg), [375px Hero](hero-375.jpg), [mobile reduced motion](reduced-motion-390.jpg). `viewport-*.jpg` includes the start of the following section; `hero-*-time-*.jpg` samples camera motion. Numeric results are in `verification.json`.
+[Desktop Hero](hero-1440.jpg), [laptop Hero](hero-1024.jpg), [tablet Hero](hero-768.jpg), [390px Hero](hero-390.jpg), [375px Hero](hero-375.jpg), [mobile reduced motion](reduced-motion-390.jpg), [expanded affiliations](affiliations-open-390.jpg). `viewport-*.jpg` includes the start of the following section; `hero-*-time-*.jpg` samples camera motion. Numeric results are in `verification.json`.
 
-Other research pages passed desktop/phone smoke checks. `scripts/validate-research.py` passed for all six pages. The Lunar HTML after `</header>` is byte-for-byte identical to pre-change commit `a3badb9`. Existing videos, figures, captions, paper metadata, narrative sections, shared CSS, and other project pages were not edited. `git diff --check` passed.
+BIM-Laser's actual rendered Hero was also inspected for hierarchy and composition. Other research pages passed desktop/phone smoke checks. `scripts/validate-research.py` passed for all six pages, allowing only the explicitly removed Hero introduction and the new affiliation disclosure label. The Lunar research story and everything following it are byte-for-byte identical to pre-redesign commit `9e5c8fc`. Existing demonstration videos, figures, captions, research results, future directions, paper information, shared CSS, and other project pages were not edited. The existing optimized Hero video and poster are reused unchanged. `git diff --check` passed.
 
 These checks use Chrome mobile emulation, not physical iOS/Android hardware or Safari.
 

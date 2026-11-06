@@ -6,55 +6,84 @@
       "x": 0,
       "y": 0,
       "width": 1440,
-      "height": 788.28125,
+      "height": 900,
       "right": 1440,
-      "bottom": 788.28125
+      "bottom": 900
     },
     "video": {
       "x": 0,
       "y": 0,
       "width": 1440,
-      "height": 788.28125,
+      "height": 900,
       "right": 1440,
-      "bottom": 788.28125
+      "bottom": 900
     },
     "text": [
       {
         "text": "ROBOTIC SPACE CONSTRUCTION",
-        "x": 390,
+        "x": 310,
         "y": 43.1875,
-        "width": 660,
-        "height": 31.5,
-        "right": 1050,
-        "bottom": 74.6875
+        "width": 820,
+        "height": 21,
+        "right": 1130,
+        "bottom": 64.1875
       },
       {
         "text": "Projecting landmarks for lunar robots.",
-        "x": 390,
-        "y": 90.6875,
-        "width": 660,
+        "x": 310,
+        "y": 80.1875,
+        "width": 820,
         "height": 139.9375,
-        "right": 1050,
-        "bottom": 230.625
+        "right": 1130,
+        "bottom": 220.125
       },
       {
-        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
-        "x": 435,
-        "y": 250.625,
-        "width": 570,
-        "height": 57.59375,
-        "right": 1005,
-        "bottom": 308.21875
+        "text": "\n            Robotic Localization via Active Projected Fiducials for Space Construction\n          ",
+        "x": 325.546875,
+        "y": 735.234375,
+        "width": 788.90625,
+        "height": 32.078125,
+        "right": 1114.453125,
+        "bottom": 767.3125
+      },
+      {
+        "text": "\n            Mengjun Wang1 · Shuai Li1 · Yunlan Zhang2\n          ",
+        "x": 559.40625,
+        "y": 777.3125,
+        "width": 321.1875,
+        "height": 24,
+        "right": 880.59375,
+        "bottom": 801.3125
+      },
+      {
+        "text": "\n            Journal of Computing in Civil Engineering · 2026\n          ",
+        "x": 574.296875,
+        "y": 811.3125,
+        "width": 291.40625,
+        "height": 19.5,
+        "right": 865.703125,
+        "bottom": 830.8125
+      },
+      {
+        "text": "Affiliations",
+        "x": 683.75,
+        "y": 840.8125,
+        "width": 72.5,
+        "height": 19.1875,
+        "right": 756.25,
+        "bottom": 860
       }
     ],
-    "paper": {
+    "nextSection": {
       "x": 230,
-      "y": 788.28125,
+      "y": 900,
       "width": 980,
-      "height": 398.625,
+      "height": 4017.984375,
       "right": 1210,
-      "bottom": 1186.90625
+      "bottom": 4917.984375
     },
+    "titleSize": 61.92,
+    "paperSize": 23.76,
     "currentTime": 10,
     "videoWidth": 1856,
     "videoHeight": 1016,
@@ -70,55 +99,84 @@
       "x": 0,
       "y": 0,
       "width": 1024,
-      "height": 600,
+      "height": 760,
       "right": 1024,
-      "bottom": 600
+      "bottom": 760
     },
     "video": {
       "x": 0,
       "y": 0,
       "width": 1024,
-      "height": 600,
+      "height": 760,
       "right": 1024,
-      "bottom": 600
+      "bottom": 760
     },
     "text": [
       {
         "text": "ROBOTIC SPACE CONSTRUCTION",
-        "x": 182,
+        "x": 102,
         "y": 30.71875,
-        "width": 660,
-        "height": 28,
-        "right": 842,
-        "bottom": 58.71875
+        "width": 820,
+        "height": 21,
+        "right": 922,
+        "bottom": 51.71875
       },
       {
         "text": "Projecting landmarks for lunar robots.",
         "x": 209.875,
-        "y": 74.71875,
+        "y": 67.71875,
         "width": 604.234375,
         "height": 99.5,
         "right": 814.109375,
-        "bottom": 174.21875
+        "bottom": 167.21875
       },
       {
-        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
-        "x": 227,
-        "y": 194.21875,
-        "width": 570,
-        "height": 51.1875,
-        "right": 797,
-        "bottom": 245.40625
+        "text": "\n            Robotic Localization via Active Projected Fiducials for Space Construction\n          ",
+        "x": 179.828125,
+        "y": 611.640625,
+        "width": 664.34375,
+        "height": 27,
+        "right": 844.171875,
+        "bottom": 638.640625
+      },
+      {
+        "text": "\n            Mengjun Wang1 · Shuai Li1 · Yunlan Zhang2\n          ",
+        "x": 351.40625,
+        "y": 648.640625,
+        "width": 321.1875,
+        "height": 24,
+        "right": 672.59375,
+        "bottom": 672.640625
+      },
+      {
+        "text": "\n            Journal of Computing in Civil Engineering · 2026\n          ",
+        "x": 366.296875,
+        "y": 682.640625,
+        "width": 291.40625,
+        "height": 19.5,
+        "right": 657.703125,
+        "bottom": 702.140625
+      },
+      {
+        "text": "Affiliations",
+        "x": 475.75,
+        "y": 712.140625,
+        "width": 72.5,
+        "height": 19.1875,
+        "right": 548.25,
+        "bottom": 731.328125
       }
     ],
-    "paper": {
+    "nextSection": {
       "x": 34.8125,
-      "y": 600,
+      "y": 760,
       "width": 954.359375,
-      "height": 300.71875,
+      "height": 3540.234375,
       "right": 989.171875,
-      "bottom": 900.71875
+      "bottom": 4300.234375
     },
+    "titleSize": 44.032,
+    "paperSize": 20,
     "currentTime": 10,
     "videoWidth": 1856,
     "videoHeight": 1016,
@@ -134,55 +192,84 @@
       "x": 0,
       "y": 0,
       "width": 768,
-      "height": 600,
+      "height": 760,
       "right": 768,
-      "bottom": 600
+      "bottom": 760
     },
     "video": {
       "x": 0,
       "y": 0,
       "width": 768,
-      "height": 600,
+      "height": 760,
       "right": 768,
-      "bottom": 600
+      "bottom": 760
     },
     "text": [
       {
         "text": "ROBOTIC SPACE CONSTRUCTION",
-        "x": 54,
+        "x": 26.109375,
         "y": 24,
-        "width": 660,
-        "height": 28,
-        "right": 714,
-        "bottom": 52
+        "width": 715.78125,
+        "height": 21,
+        "right": 741.890625,
+        "bottom": 45
       },
       {
         "text": "Projecting landmarks for lunar robots.",
         "x": 136.890625,
-        "y": 68,
+        "y": 61,
         "width": 494.203125,
         "height": 81.34375,
         "right": 631.09375,
-        "bottom": 149.34375
+        "bottom": 142.34375
       },
       {
-        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
-        "x": 99,
-        "y": 169.34375,
-        "width": 570,
-        "height": 51.1875,
-        "right": 669,
-        "bottom": 220.53125
+        "text": "\n            Robotic Localization via Active Projected Fiducials for Space Construction\n          ",
+        "x": 51.828125,
+        "y": 616.3125,
+        "width": 664.34375,
+        "height": 27,
+        "right": 716.171875,
+        "bottom": 643.3125
+      },
+      {
+        "text": "\n            Mengjun Wang1 · Shuai Li1 · Yunlan Zhang2\n          ",
+        "x": 223.40625,
+        "y": 653.3125,
+        "width": 321.1875,
+        "height": 24,
+        "right": 544.59375,
+        "bottom": 677.3125
+      },
+      {
+        "text": "\n            Journal of Computing in Civil Engineering · 2026\n          ",
+        "x": 238.296875,
+        "y": 687.3125,
+        "width": 291.40625,
+        "height": 19.5,
+        "right": 529.703125,
+        "bottom": 706.8125
+      },
+      {
+        "text": "Affiliations",
+        "x": 347.75,
+        "y": 716.8125,
+        "width": 72.5,
+        "height": 19.1875,
+        "right": 420.25,
+        "bottom": 736
       }
     ],
-    "paper": {
+    "nextSection": {
       "x": 26.109375,
-      "y": 600,
+      "y": 760,
       "width": 715.765625,
-      "height": 337.9375,
+      "height": 3111.75,
       "right": 741.875,
-      "bottom": 937.9375
+      "bottom": 3871.75
     },
+    "titleSize": 36,
+    "paperSize": 20,
     "currentTime": 10,
     "videoWidth": 1856,
     "videoHeight": 1016,
@@ -198,17 +285,17 @@
       "x": 0,
       "y": 0,
       "width": 390,
-      "height": 560,
+      "height": 720,
       "right": 390,
-      "bottom": 560
+      "bottom": 720
     },
     "video": {
       "x": 0,
       "y": 0,
       "width": 390,
-      "height": 560,
+      "height": 720,
       "right": 390,
-      "bottom": 560
+      "bottom": 720
     },
     "text": [
       {
@@ -230,23 +317,52 @@
         "bottom": 137.6875
       },
       {
-        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
+        "text": "\n            Robotic Localization via Active Projected Fiducials for Space Construction\n          ",
         "x": 20,
-        "y": 153.6875,
+        "y": 565.21875,
         "width": 350,
-        "height": 76.78125,
+        "height": 48.59375,
         "right": 370,
-        "bottom": 230.46875
+        "bottom": 613.8125
+      },
+      {
+        "text": "\n            Mengjun Wang1 · Shuai Li1 · Yunlan Zhang2\n          ",
+        "x": 54.484375,
+        "y": 621.8125,
+        "width": 281.03125,
+        "height": 21,
+        "right": 335.515625,
+        "bottom": 642.8125
+      },
+      {
+        "text": "\n            Journal of Computing in Civil Engineering · 2026\n          ",
+        "x": 60.5,
+        "y": 650.8125,
+        "width": 268.984375,
+        "height": 18,
+        "right": 329.484375,
+        "bottom": 668.8125
+      },
+      {
+        "text": "Affiliations",
+        "x": 158.75,
+        "y": 676.8125,
+        "width": 72.5,
+        "height": 19.1875,
+        "right": 231.25,
+        "bottom": 696
       }
     ],
-    "paper": {
+    "nextSection": {
       "x": 20,
-      "y": 560,
+      "y": 720,
       "width": 350,
-      "height": 422.03125,
+      "height": 3864.21875,
       "right": 370,
-      "bottom": 982.03125
+      "bottom": 4584.21875
     },
+    "titleSize": 33.93,
+    "paperSize": 18,
     "currentTime": 10,
     "videoWidth": 1856,
     "videoHeight": 1016,
@@ -262,17 +378,17 @@
       "x": 0,
       "y": 0,
       "width": 375,
-      "height": 560,
+      "height": 720,
       "right": 375,
-      "bottom": 560
+      "bottom": 720
     },
     "video": {
       "x": 0,
       "y": 0,
       "width": 375,
-      "height": 560,
+      "height": 720,
       "right": 375,
-      "bottom": 560
+      "bottom": 720
     },
     "text": [
       {
@@ -294,23 +410,52 @@
         "bottom": 134.71875
       },
       {
-        "text": "We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself.",
+        "text": "\n            Robotic Localization via Active Projected Fiducials for Space Construction\n          ",
         "x": 20,
-        "y": 150.71875,
+        "y": 565.21875,
         "width": 335,
-        "height": 76.78125,
+        "height": 48.59375,
         "right": 355,
-        "bottom": 227.5
+        "bottom": 613.8125
+      },
+      {
+        "text": "\n            Mengjun Wang1 · Shuai Li1 · Yunlan Zhang2\n          ",
+        "x": 46.984375,
+        "y": 621.8125,
+        "width": 281.03125,
+        "height": 21,
+        "right": 328.015625,
+        "bottom": 642.8125
+      },
+      {
+        "text": "\n            Journal of Computing in Civil Engineering · 2026\n          ",
+        "x": 53,
+        "y": 650.8125,
+        "width": 268.984375,
+        "height": 18,
+        "right": 321.984375,
+        "bottom": 668.8125
+      },
+      {
+        "text": "Affiliations",
+        "x": 151.25,
+        "y": 676.8125,
+        "width": 72.5,
+        "height": 19.1875,
+        "right": 223.75,
+        "bottom": 696
       }
     ],
-    "paper": {
+    "nextSection": {
       "x": 20,
-      "y": 560,
+      "y": 720,
       "width": 335,
-      "height": 451.78125,
+      "height": 3892.75,
       "right": 355,
-      "bottom": 1011.78125
+      "bottom": 4612.75
     },
+    "titleSize": 32.625,
+    "paperSize": 18,
     "currentTime": 10,
     "videoWidth": 1856,
     "videoHeight": 1016,

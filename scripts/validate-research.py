@@ -40,7 +40,12 @@ for site in SITES:
     source = (ROOT / relative).read_text()
     page = Page(source)
     old = Page(subprocess.check_output(["git", "show", f"{BASE}:{relative}"], cwd=ROOT, text=True))
-    assert Counter(old.text) == Counter(page.text), f"Research text changed: {site}"
+    expected_text = Counter(old.text)
+    if site == "lunar-construction":
+        # The revised Hero replaces the introduction with the existing paper metadata.
+        expected_text.subtract(["We project identifiable points onto uneven terrain and use their known 3D positions to help a robot locate itself."])
+        expected_text.update(["Affiliations"])
+    assert +expected_text == Counter(page.text), f"Research text changed: {site}"
     removed = old.references() - page.references()
     if site == "lunar-construction":
         # The original simulation image is intentionally replaced only in the Hero.

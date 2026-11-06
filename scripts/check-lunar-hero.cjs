@@ -31,14 +31,21 @@ const assert = require('node:assert/strict');
    const m=await page.evaluate(()=>{
     const box=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom}};
     const hero=document.querySelector('.lunar-hero');const v=hero.querySelector('video');
-    return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,hero:box(hero),video:box(v),text:[...hero.querySelectorAll('.lunar-identity,h1,.lunar-subtitle')].map(e=>({text:e.textContent,...box(e)})),paper:box(document.querySelector('.lunar-paper')),currentTime:v.currentTime,videoWidth:v.videoWidth,videoHeight:v.videoHeight,muted:v.muted,inline:v.playsInline,autoplay:v.autoplay,loop:v.loop,error:v.error?.message};
+    return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,hero:box(hero),video:box(v),text:[...hero.querySelectorAll('.lunar-identity,h1,.lunar-hero-paper-title,.lunar-authors,.lunar-journal,summary')].map(e=>({text:e.textContent,...box(e)})),nextSection:box(document.querySelector('.lunar-story')),titleSize:parseFloat(getComputedStyle(hero.querySelector('h1')).fontSize),paperSize:parseFloat(getComputedStyle(hero.querySelector('h2')).fontSize),currentTime:v.currentTime,videoWidth:v.videoWidth,videoHeight:v.videoHeight,muted:v.muted,inline:v.playsInline,autoplay:v.autoplay,loop:v.loop,error:v.error?.message};
    });
    assert.equal(m.scrollWidth,width,'Horizontal overflow');
    assert.equal(m.hero.width,width,'Full width Hero');
    assert.equal(m.video.height,m.hero.height,'Full height video');
    assert.equal(m.video.width,m.hero.width,'Full width video');
    for(const t of m.text) assert(t.x>=0&&t.right<=width&&t.y>=m.hero.y&&t.bottom<=m.hero.bottom,'Text contained in video');
-   assert.equal(m.paper.y,m.hero.bottom,'Clean next section');
+   assert.equal(m.nextSection.y,m.hero.bottom,'Research story follows Hero directly');
+   assert(m.titleSize>m.paperSize*1.5,'Main title remains dominant');
+   assert.equal(await page.locator('.lunar-paper,.lunar-subtitle').count(),0,'No separate metadata section or introductory subtitle');
+   assert.equal(await page.getByRole('heading',{name:'Robotic Localization via Active Projected Fiducials for Space Construction',exact:true}).count(),1,'Paper title appears once');
+   assert.equal(await page.locator('.lunar-hero .lunar-authors sup').count(),3,'Author affiliation superscripts preserved');
+   assert.equal(await page.locator('.lunar-hero-video').evaluate(v=>v.controls),false,'No video controls');
+   assert.equal(await page.locator('.lunar-story h2').first().textContent(),'On the Moon, position estimates can drift.');
+   for(let i=1;i<m.text.length;i++) assert(m.text[i].y>=m.text[i-1].bottom-1,'Hero text levels do not overlap');
    assert(m.muted&&m.inline&&m.autoplay&&m.loop&&!m.error,'Video configuration');
    assert.equal(errors.length,0,JSON.stringify(errors));
    await page.screenshot({path:`docs/lunar-video-hero/viewport-${width}.jpg`,type:'jpeg',quality:88});
@@ -54,6 +61,16 @@ const assert = require('node:assert/strict');
     await page.getByRole('button',{name:'Play motion'}).click();
     await page.waitForFunction(()=>!document.querySelector('.lunar-hero-video').paused);
    }
+   // Native disclosure keeps affiliations accessible without a large metadata block.
+   const disclosure=page.locator('.lunar-hero-affiliations');
+   await disclosure.locator('summary').focus();
+   await page.keyboard.press('Enter');
+   assert(await disclosure.evaluate(e=>e.open),'Affiliations open with keyboard');
+   assert.equal(await disclosure.locator('p').count(),2,'Both affiliations retained');
+   assert(await disclosure.evaluate(e=>e.getBoundingClientRect().bottom<=e.closest('header').getBoundingClientRect().bottom),'Expanded affiliations remain inside video');
+   assert(await page.locator('.lunar-hero-video').evaluate(v=>v.getBoundingClientRect().height===v.closest('header').getBoundingClientRect().height),'Video covers expanded Hero');
+   if(width===390) await page.locator('.lunar-hero').screenshot({path:'docs/lunar-video-hero/affiliations-open-390.jpg',type:'jpeg',quality:90});
+   await page.keyboard.press('Enter');
    results.push(m);
    await context.close();
   }
