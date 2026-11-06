@@ -183,3 +183,50 @@ image is relabeled as a point cloud. The original annotated `aboveground.jpg`
 and `real.png` are retained together in an expandable Technical details panel.
 Future research now uses large editorial images with one research question and
 one short sentence, all labeled as concept illustrations.
+
+## Editorial research narrative — 2026-11-06
+
+This entry supersedes earlier page-placement notes. All original scientific,
+concept, animation, and intermediate time-domain assets remain unchanged.
+
+- Inversion: Fig. 12(a), the three-pipe real-data case, uses the complete existing
+  `panels/real-radargram.png` (670 × 640) and
+  `panels/real-prediction-depth.png` (780 × 640). These were verified as exact
+  RGBA pixel matches to `real.png` rectangles (0, 0, 670, 640) and
+  (1469, 0, 2249, 640). Axes, units, color scale and orange pipe references are
+  intact. The accepted-manuscript Fig. 12 caption identifies the orange dots as
+  real pipes; the page identifies them as reference locations, not detections.
+- Spatial mapping: the complete, unchanged author-supplied Fig. 14,
+  `aboveground.jpg` (2126 × 1090), is displayed once. Its SHA-256 remains
+  `6436499e5f52cec147409352eb9136dc9776a6cc0310ca94dc08722a0021d0f1`.
+  The figure retains the system diagram, aboveground observations, SLAM point
+  clouds and GPR trajectory, and all four underground radargram/reconstruction
+  examples. It has a full-resolution link for small annotations on phones.
+  The conceptual system diagram embedded within the published figure is not
+  presented as an additional field photograph or a measured accuracy result.
+- The existing hero animation is visibly labeled conceptual. The separate
+  10.715-second GPR sensing animation is retained as a compact principle
+  illustration, with its illustrative-data caption restored. Neither is
+  presented as experimental evidence.
+- Metrics: accepted-manuscript §4.2.3/Table 6 reports 304 true positives,
+  84 false negatives and 12 false positives in 100 randomly selected validation
+  reconstructions containing 388 simulated pipelines. Thus precision is
+  304/316 = 96.2% and recall is 304/388 = 78.4% (rounded). The page explicitly
+  labels these controlled simulated validation results, separate from the
+  outdoor demonstration in §4.4/Fig. 14. The optional R² metric is omitted to
+  keep the results compact.
+
+Verification sources:
+
+- Publisher/DOI: https://doi.org/10.1016/j.autcon.2023.105004
+- University metadata and published abstract:
+  https://hub.hku.hk/handle/10722/348177
+- Original accepted manuscript, publicly readable mirror (Table 6, Fig. 12,
+  §4.4 and Fig. 14):
+  https://www.scribd.com/document/898758870/1-s2-0-S0926580523002649-am
+
+The publisher's full-text endpoint returned HTTP 403. The university record
+provides no downloadable paper. Therefore numerical context and marker meaning
+were checked against the original accepted manuscript available at the mirror;
+the published title, authors, journal, year, DOI and abstract were cross-checked
+against the university record. No paper PDF or new field photograph was added.

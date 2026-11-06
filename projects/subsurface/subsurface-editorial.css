@@ -1,0 +1,75 @@
+/* Editorial structure for Subsurface only; shared and generated styles stay intact. */
+html[data-project="subsurface"] .ss .ss-hero h1 {
+  max-width: 56rem;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+html[data-project="subsurface"] .ss .ss-hero-subtitle { max-width: 39rem; }
+html[data-project="subsurface"] .ss .ss-problem-grid,
+html[data-project="subsurface"] .ss .ss-research-copy,
+html[data-project="subsurface"] .ss .ss-evidence-grid {
+  display: block;
+}
+html[data-project="subsurface"] .ss :is(.ss-problem-copy,.ss-research-copy) {
+  max-width: var(--reading-width);
+  margin-inline: auto;
+}
+html[data-project="subsurface"] .ss .ss-body { max-width: var(--reading-width); }
+html[data-project="subsurface"] .ss .ss-research-copy h2 { margin-bottom: 24px; }
+html[data-project="subsurface"] .ss .ss-sensing-film {
+  width: 100%;
+  max-width: 520px;
+  margin: var(--media-space) auto 0 !important;
+}
+html[data-project="subsurface"] .ss .ss-inversion-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 670fr) minmax(0, 780fr);
+  gap: clamp(16px, 3vw, 32px);
+  padding: clamp(12px, 2.5vw, 28px);
+  border: 1px solid var(--ss-rule);
+  border-radius: 4px;
+  background: #fff;
+}
+html[data-project="subsurface"] .ss .ss-inversion-pair figure { min-width: 0; }
+html[data-project="subsurface"] .ss .ss-figure-link { display: block; cursor: zoom-in; }
+html[data-project="subsurface"] .ss .ss-figure-link img {
+  width: 100%; height: auto; max-height: none; object-fit: contain;
+}
+html[data-project="subsurface"] .ss .ss-figure-note {
+  margin-top: 16px; color: var(--ss-muted); font-size: 14px; line-height: 1.65;
+}
+html[data-project="subsurface"] .ss .ss-site-visual { max-width: none; }
+html[data-project="subsurface"] .ss .ss-resolution-link {
+  display: inline-block; margin-top: 8px; font-size: 14px;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+html[data-project="subsurface"] .ss .ss-controlled-results {
+  max-width: var(--reading-width); margin-inline: auto;
+}
+html[data-project="subsurface"] .ss .ss-evaluation-label { color: var(--ss-muted); font-size: 14px; }
+html[data-project="subsurface"] .ss .ss-detection-metrics { margin-top: 16px; }
+html[data-project="subsurface"] .ss .ss-field-outcome {
+  display: block; max-width: var(--reading-width); margin: 40px auto 0;
+  padding: 32px 0 0 !important; border-left: 0; border-top: 1px solid var(--ss-rule);
+}
+html[data-project="subsurface"] .ss .ss-field-outcome h3 { font-size: 22px; }
+html[data-project="subsurface"] .ss .ss-field-outcome p {
+  max-width: none; margin-top: 16px; font-size: var(--body-size); line-height: 1.75;
+}
+html[data-project="subsurface"] .ss-future .ss-wrap,
+html[data-project="subsurface"] .ss-publication .ss-wrap { max-width: var(--reading-width); }
+html[data-project="subsurface"] .ss .ss-publication { padding-block: 32px; }
+html[data-project="subsurface"] .ss :is(.ss-citation,.ss-contact) { font-size: 14px; line-height: 1.75; }
+html[data-project="subsurface"] .ss .ss-citation { color: var(--ss-muted); }
+html[data-project="subsurface"] .ss .ss-contact { margin-top: 16px; }
+html[data-project="subsurface"] .ss :is(.ss-citation,.ss-contact) a {
+  text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  html[data-project="subsurface"] .ss .ss-inversion-pair { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  html[data-project="subsurface"] .ss .ss-hero-inner { padding-block: 4rem 7rem; }
+  html[data-project="subsurface"] .ss .ss-hero:after {
+    background: linear-gradient(90deg, #05181aeb, #05181ab3 65%, #05181a66), linear-gradient(0deg, #05181ab3, transparent 35%);
+  }
+}

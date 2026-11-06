@@ -9,7 +9,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="GPR inversion and camera-based localization for detecting buried utilities and relating them to a surveyed site. Published research and open research questions."
+      content="We combine ground-penetrating radar, deep learning, and visual mapping to detect buried pipes and locate them within the physical site."
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content="Astro v6.3.5" />
@@ -24,11 +24,11 @@
     />
     <meta
       property="og:title"
-      content="Subsurface Intelligence — Mapping what lies beneath."
+      content="How can we map buried pipes without digging?"
     />
     <meta
       property="og:description"
-      content="GPR inversion and camera-based localization for detecting buried utilities and relating them to a surveyed site. Published research and open research questions."
+      content="We combine ground-penetrating radar, deep learning, and visual mapping to detect buried pipes and locate them within the physical site."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -49,7 +49,7 @@
       type="font/woff2"
       crossorigin
     />
-    <title>Subsurface Intelligence — Mapping what lies beneath.</title>
+    <title>How can we map buried pipes without digging?</title>
     <link
       rel="stylesheet"
       href="/projects/subsurface/_astro/index.BZy6XKfi.css"
@@ -79,6 +79,7 @@
     />
   <link rel="stylesheet" href="/projects/research-layout.css">
 <link rel="stylesheet" href="/projects/research-heroes.css"/>
+<link rel="stylesheet" href="/projects/subsurface/subsurface-editorial.css" />
 </head>
   <body
     class="prose prose-lg prose-zinc dark:prose-invert prose-a:text-blue-600 prose-a:hover:text-blue-900 prose-a:dark:text-blue-200 prose-a:dark:hover:text-blue-100 prose-a:underline prose-a:decoration-dashed prose-a:underline-offset-4 prose-a:hover:decoration-solid prose-a:font-normal prose-code:bg-zinc-200 prose-code:dark:bg-zinc-800 prose-code:text-zinc-800 prose-code:dark:text-zinc-200 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-medium prose-code:before:content-none prose-code:after:content-none max-w-none pt-16 pb-6 font-(family-name:--font-noto-sans)"
@@ -91,7 +92,7 @@
             <a href="https://wangmmstar.github.io/">← Research projects</a>
             <div class="ss-nav-links">
               <a href="#research">Research</a><a href="#frontiers">Directions</a
-              ><a href="#collab">Collaborate</a>
+              ><a href="#publication">Publication</a>
             </div>
           </div>
         </nav>
@@ -118,24 +119,20 @@
             ></video>
           </div>
           <div class="ss-wrap ss-hero-inner">
-            <p class="ss-eyebrow">
-              <span class="ss-dot" aria-hidden="true"></span> Subsurface
-              Intelligence
-            </p>
-            <h1 id="ss-title">Mapping what<br />lies beneath.</h1>
+            <h1 id="ss-title">How can we map buried pipes without digging?</h1>
             <p class="ss-hero-subtitle">
-              We use ground-penetrating radar and camera-based localization to
-              find buried utilities and relate them to the site above.
+              We combine ground-penetrating radar, deep learning, and visual mapping to detect buried pipes and locate them within the physical site.
             </p>
             <div class="ss-actions">
-              <a class="ss-button ss-button-primary" href="#research"
+              <a class="ss-button ss-button-primary" href="#sensing"
                 >Explore the research <span aria-hidden="true">↓</span></a
-              ><a class="ss-button ss-button-outline" href="#collab"
-                >Collaborate <span aria-hidden="true">↗</span></a
+              ><a class="ss-button ss-button-outline" href="https://doi.org/10.1016/j.autcon.2023.105004" target="_blank" rel="noopener noreferrer"
+                >Read the paper <span aria-hidden="true">↗</span></a
               >
             </div>
           </div>
           <div class="ss-wrap ss-hero-foot">
+            <span>Conceptual animation</span>
             <button
               class="ss-motion"
               type="button"
@@ -147,34 +144,6 @@
             </button>
           </div>
         </header>
-        <section class="ss-publication" aria-labelledby="ss-publication-title">
-          <div class="ss-wrap ss-publication-grid">
-            <div>
-              <p class="ss-eyebrow">
-                Featured publication <span aria-hidden="true">/</span> 2023
-              </p>
-              <h2 id="ss-publication-title">
-                Underground infrastructure detection and localization using deep
-                learning enabled radargram inversion and vision based mapping
-              </h2>
-              <p class="ss-authors">
-                Mengjun Wang <span>·</span> Da Hu <span>·</span> Junjie Chen
-                <span>·</span> Shuai Li
-              </p>
-              <p class="ss-journal">
-                <cite>Automation in Construction</cite> <span>·</span> DOI:
-                10.1016/j.autcon.2023.105004
-              </p>
-            </div>
-            <a
-              class="ss-button ss-button-ink"
-              href="https://doi.org/10.1016/j.autcon.2023.105004"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Read the Paper <span aria-hidden="true">↗</span></a
-            >
-          </div>
-        </section>
         <section
           class="ss-section ss-problem"
           id="sensing"
@@ -183,13 +152,8 @@
           <div class="ss-wrap ss-problem-grid">
             <div class="ss-problem-copy">
               <p class="ss-eyebrow">The problem</p>
-              <h2 id="ss-problem-title">
-                We need to know what’s buried before we dig.
-              </h2>
-              <p class="ss-body">
-                GPR can detect underground reflections. But a signal alone does
-                not tell us what is buried—or where it belongs on the site.
-              </p>
+              <h2 id="ss-problem-title">GPR records reflections, not a map.</h2>
+              <p class="ss-body">Ground-penetrating radar can scan below the surface, but its measurements do not directly reveal pipe geometry or show where detected pipes lie on a site map. Both interpretation and spatial localization are needed.</p>
             </div>
             <figure class="ss-sensing-film">
               <video
@@ -220,10 +184,7 @@
                 GPR transmitter and receiver surveying a buried pipe and
                 recording a curved reflection.
               </video>
-              <!-- <figcaption id="ss-sensing-caption">
-Principle illustration · Supplied InfraSono PPT animation. The
-          radargram in this sequence is illustrative, not experimental data.
-</figcaption> -->
+              <figcaption id="ss-sensing-caption">Principle illustration · The radargram in this animation is illustrative, not experimental data.</figcaption>
             </figure>
           </div>
         </section>
@@ -235,307 +196,77 @@ Principle illustration · Supplied InfraSono PPT animation. The
           <div class="ss-wrap">
             <article class="ss-research-row" aria-labelledby="ss-what-title">
               <div class="ss-research-copy">
-                <div>
-                  <p class="ss-eyebrow">What is buried?</p>
-                  <h3 id="ss-what-title">Reading the radar.</h3>
-                </div>
-                <p class="ss-body">
-                  AI-based inversion estimates subsurface permittivity from GPR
-                  measurements, helping identify buried utilities.
-                </p>
+                <h2 id="ss-what-title">From radar reflections to buried pipes.</h2>
+                <p class="ss-body">Instead of detecting pipe-shaped reflections directly, we use deep learning to reconstruct subsurface permittivity maps from GPR scans. GAN-enhanced simulated radargrams provide training data for estimating pipe locations and dimensions.</p>
               </div>
-              <div class="ss-comparison" data-ss-comparison>
-                <div
-                  class="ss-stage-status"
-                  aria-live="polite"
-                  aria-atomic="true"
-                >
-                  <p class="ss-label">
-                    One real-data experiment <span aria-hidden="true">/</span>
-                    <span data-stage-count>01 of 03</span>
-                  </p>
-                  <h3 data-stage-heading>Measured radargram</h3>
-                </div>
-                <div class="ss-stage-images" id="ss-stage-image">
-                  <figure class="ss-stage" data-stage="0">
-                    <div class="ss-stage-surface">
-                      <img
-                        src="/projects/subsurface/assets/subsurface/panels/display/real-radargram.png"
-                        width="651"
-                        height="640"
-                        alt="Measured radargram from the real-data experiment, including the complete distance and time axes."
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <figcaption data-stage-caption>
-                      Measured GPR data. The axes show distance (m) and travel
-                      time (ns).
-                    </figcaption>
-                  </figure>
-                  <figure class="ss-stage" data-stage="1">
-                    <div class="ss-stage-surface">
-                      <img
-                        src="/projects/subsurface/assets/subsurface/panels/display/real-prediction-time.png"
-                        width="740"
-                        height="640"
-                        alt="Predicted time-domain permittivity for the same experiment, including distance in metres, time in nanoseconds, and the full color scale."
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <figcaption data-stage-caption>
-                      Permittivity estimated from the same measurement, in
-                      travel-time coordinates (ns).
-                    </figcaption>
-                  </figure>
-                  <figure class="ss-stage" data-stage="2">
-                    <div class="ss-stage-surface">
-                      <img
-                        src="/projects/subsurface/assets/subsurface/panels/display/real-prediction-depth.png"
-                        width="730"
-                        height="640"
-                        alt="Predicted depth-domain permittivity for the same experiment, including orange reference pipe markers, distance and depth in metres, and the full color scale."
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <figcaption data-stage-caption>
-                      The depth estimate (m); orange circles mark reference
-                      pipes. Time and depth views use different coordinates.
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="ss-stage-controls" data-stage-controls hidden>
-                  <label class="ss-range-label" for="ss-stage-range"
-                    >Select a stage or move the slider</label
-                  >
-                  <input
-                    id="ss-stage-range"
-                    type="range"
-                    min="0"
-                    max="2"
-                    step="1"
-                    value="0"
-                    aria-label="Radargram reconstruction stage"
-                    aria-controls="ss-stage-image"
-                    aria-valuetext="Measured radargram"
-                  />
-                  <div class="ss-stage-labels">
-                    <button
-                      type="button"
-                      data-select-stage="0"
-                      aria-pressed="true"
-                      aria-label="Show Measured radargram"
-                    >
-                      <span class="ss-stage-index">01</span>
-                      <span>
-                        Measured radargram <small>Recorded reflections</small>
-                      </span></button
-                    ><button
-                      type="button"
-                      data-select-stage="1"
-                      aria-pressed="false"
-                      aria-label="Show Predicted permittivity (time domain)"
-                    >
-                      <span class="ss-stage-index">02</span>
-                      <span>
-                        Predicted permittivity <small>Time domain</small>
-                      </span></button
-                    ><button
-                      type="button"
-                      data-select-stage="2"
-                      aria-pressed="false"
-                      aria-label="Show Predicted permittivity (depth domain)"
-                    >
-                      <span class="ss-stage-index">03</span>
-                      <span>
-                        Predicted permittivity <small>Depth domain</small>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <noscript
-                  ><p>
-                    All three stages are shown above. JavaScript enables the
-                    interactive scrubber.
-                  </p></noscript
-                >
+              <div class="ss-inversion-pair">
+                <figure>
+                  <a class="ss-figure-link" href="/projects/subsurface/assets/subsurface/panels/real-radargram.png" target="_blank" rel="noopener noreferrer" aria-label="View measured GPR radargram at full resolution">
+                    <img src="/projects/subsurface/assets/subsurface/panels/real-radargram.png" width="670" height="640" alt="Measured GPR radargram from Fig. 12(a), with complete distance (m) and time (ns) axes." loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>Measured GPR radargram</figcaption>
+                </figure>
+                <figure>
+                  <a class="ss-figure-link" href="/projects/subsurface/assets/subsurface/panels/real-prediction-depth.png" target="_blank" rel="noopener noreferrer" aria-label="View reconstructed depth-domain permittivity at full resolution">
+                    <img src="/projects/subsurface/assets/subsurface/panels/real-prediction-depth.png" width="780" height="640" alt="Reconstructed depth-domain permittivity for the same Fig. 12(a) measurement, with complete distance (m), depth (m), color scale, and three orange reference pipe locations." loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>Reconstructed subsurface permittivity (depth domain)</figcaption>
+                </figure>
               </div>
-              <script type="module">
-                document.querySelectorAll("[data-ss-comparison]").forEach(t=>{const l=[...t.querySelectorAll("[data-stage]")],a=t.querySelector('input[type="range"]'),i=[...t.querySelectorAll("[data-select-stage]")],u=t.querySelector("[data-stage-heading]"),o=t.querySelector("[data-stage-count]"),s=["Measured radargram","Predicted permittivity (time domain)","Predicted permittivity (depth domain)"];function r(n){const e=Math.max(0,Math.min(2,n));l.forEach((d,c)=>{d.hidden=c!==e}),i.forEach((d,c)=>{d.setAttribute("aria-pressed",String(c===e))}),a.value=String(e),a.setAttribute("aria-valuetext",s[e]),u.textContent=s[e],o.textContent=`0${e+1} of 03`}a.addEventListener("input",()=>r(Number(a.value))),a.addEventListener("change",()=>r(Number(a.value))),i.forEach((n,e)=>n.addEventListener("click",()=>r(e))),t.querySelector("[data-stage-controls]").hidden=!1,r(0)});
-              </script>
+              <p class="ss-figure-note">Orange circles indicate the actual pipe locations used as references, not additional detections.</p>
             </article>
-            <article
-              class="ss-research-row ss-where"
-              aria-labelledby="ss-where-title"
-            >
+            <article class="ss-research-row ss-where" aria-labelledby="ss-where-title">
               <div class="ss-research-copy">
-                <div>
-                  <p class="ss-eyebrow">Where was it detected?</p>
-                  <h3 id="ss-where-title">Putting the detection on the map.</h3>
-                </div>
-                <p class="ss-body">
-                  Camera-based localization connects GPR survey measurements to
-                  positions in the physical site.
-                </p>
+                <h2 id="ss-where-title">Locating buried pipes on the site.</h2>
+                <p class="ss-body">Camera-based SLAM tracks the GPR survey path, allowing detected pipe positions to be placed within a reconstructed aboveground environment.</p>
               </div>
               <figure class="ss-site-visual">
-                <img
-                  src="/projects/subsurface/assets/subsurface/hero_utility_map.png"
-                  width="540"
-                  height="545"
-                  alt="Composite conceptual visualization showing the aboveground street, estimated GPR survey trajectory, colored underground utility pipes, and inset survey map."
-                  loading="lazy"
-                  decoding="async"
-                />
+                <a class="ss-figure-link" href="/projects/subsurface/assets/subsurface/aboveground.jpg" target="_blank" rel="noopener noreferrer" aria-label="View complete research paper Figure 14 at full resolution">
+                  <img src="/projects/subsurface/assets/subsurface/aboveground.jpg" width="2126" height="1090" alt="Complete paper Fig. 14: camera and GPR system diagram, aboveground camera and depth observations, SLAM point-cloud reconstruction with GPR trajectory, and four measured radargrams with corresponding reconstructed subsurface maps and marked pipeline detections." loading="lazy" decoding="async" />
+                </a>
+                <figcaption>Integrating GPR-derived pipe detections with camera-based mapping.</figcaption>
+                <a class="ss-resolution-link" href="/projects/subsurface/assets/subsurface/aboveground.jpg" target="_blank" rel="noopener noreferrer">View full-resolution figure ↗</a>
               </figure>
             </article>
           </div>
         </section>
         <section class="ss-evidence" aria-labelledby="ss-evidence-title">
           <div class="ss-wrap">
-            <h2 id="ss-evidence-title">What we demonstrated.</h2>
+            <h2 id="ss-evidence-title">What the experiments showed.</h2>
             <div class="ss-evidence-grid">
               <div class="ss-controlled-results">
                 <p class="ss-evaluation-label">
-                  PIPELINE DETECTION · CONTROLLED EVALUATION
+                  Controlled detection evaluation · 100 simulated validation cases (388 pipes)
                 </p>
                 <div class="ss-detection-metrics">
                   <div class="ss-metric">
                     <strong>96.2<span>%</span></strong>
-                    <p>Precision</p>
+                    <p>Pipeline detection precision</p>
                   </div>
                   <div class="ss-metric">
                     <strong>78.4<span>%</span></strong>
-                    <p>Recall</p>
+                    <p>Pipeline detection recall</p>
                   </div>
                 </div>
               </div>
               <div class="ss-field-outcome">
-                <h3>OUTDOOR FIELD STUDY</h3>
-                <p>
-                  Combined GPR-derived detections with camera-based localization
-                  during an outdoor survey.
-                </p>
+                <h3>Outdoor field demonstration</h3>
+                <p>An outdoor GPR survey demonstrated how subsurface detections can be combined with camera-based localization to position buried pipes relative to the reconstructed site.</p>
               </div>
             </div>
           </div>
         </section>
-        <section
-          class="ss-section ss-future"
-          id="frontiers"
-          aria-labelledby="ss-future-title"
-        >
+        <section class="ss-section ss-future" id="frontiers" aria-labelledby="ss-future-title">
           <div class="ss-wrap">
-            <div class="ss-future-intro">
-              <p class="ss-eyebrow">Research directions</p>
-              <h2 id="ss-future-title">Where this research could go next.</h2>
-              <p class="ss-body">
-                Our current work establishes a starting point: detect buried
-                utilities and link them to a site. Several bigger questions
-                remain.
-              </p>
-            </div>
-            <div class="ss-directions">
-              <article class="ss-direction">
-                <figure>
-                  <img
-                    src="/projects/subsurface/assets/subsurface/v3/direction_01_uncertainty_CONCEPT.webp"
-                    width="1672"
-                    height="941"
-                    alt="Future research concept: a clearly located pipe becomes uncertain ghosted candidate shapes, with soil variations and a translucent uncertainty region; not a measured reconstruction."
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <div class="ss-direction-copy">
-                  <p class="ss-eyebrow">01</p>
-                  <h3>Beyond locating buried pipes.</h3>
-                  <p class="ss-direction-question">
-                    Can GPR reveal more than location—such as geometry, material
-                    properties, or potential defects? How reliable could these
-                    estimates be?
-                  </p>
-                </div>
-              </article>
-              <article class="ss-direction">
-                <figure>
-                  <img
-                    src="/projects/subsurface/assets/subsurface/v3/direction_02_site_decisions.webp"
-                    width="1672"
-                    height="941"
-                    alt="Concept illustration of an excavator and work area above mapped underground utilities, suggesting how a map could inform site decisions."
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <div class="ss-direction-copy">
-                  <p class="ss-eyebrow">02</p>
-                  <h3>Using underground maps to plan work above.</h3>
-                  <p class="ss-direction-question">
-                    How can buried-utility information be combined with surface
-                    conditions and construction plans to support excavation,
-                    inspection, and other operations?
-                  </p>
-                </div>
-              </article>
-              <article class="ss-direction">
-                <figure>
-                  <img
-                    src="/projects/subsurface/assets/subsurface/v3/direction_03_utility_landmarks.webp"
-                    width="1672"
-                    height="941"
-                    alt="Proposed research concept: a ground robot uses subsurface sensing to compare buried pipe observations with a prior underground map."
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <div class="ss-direction-copy">
-                  <p class="ss-eyebrow">03</p>
-                  <h3>Can buried utilities become landmarks for robots?</h3>
-                  <p class="ss-direction-question">
-                    A mobile robot with subsurface sensing could compare
-                    observed pipe features with an existing underground
-                    map—adding a reference when surface landmarks are
-                    unreliable.
-                  </p>
-                </div>
-              </article>
-            </div>
+            <h2 id="ss-future-title">Toward infrastructure-aware construction.</h2>
+            <p class="ss-body">Future research could bring surface and subsurface mapping together to support excavation planning and robotic operations, while addressing uncertainty in underground detection and localization.</p>
           </div>
         </section>
-        <section
-          class="ss-section ss-collab"
-          id="collab"
-          aria-labelledby="ss-collab-title"
-        >
+        <section class="ss-publication" id="publication" aria-labelledby="ss-publication-title">
           <div class="ss-wrap">
-            <p class="ss-eyebrow">Collaboration</p>
-            <h2 id="ss-collab-title">Interested in testing these ideas?</h2>
-            <p class="ss-body">
-              We welcome collaboration on GPR data, infrastructure sites,
-              spatial mapping, field robotics, and autonomous localization.
-            </p>
-            <div class="ss-actions">
-              <a
-                class="ss-button ss-button-primary"
-                href="mailto:mwang5@ufl.edu"
-                >Get in touch <span aria-hidden="true">↗</span></a
-              >
-              <a
-                class="ss-text-link"
-                href="https://doi.org/10.1016/j.autcon.2023.105004"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Read the Paper <span aria-hidden="true">↗</span></a
-              >
-            </div>
-            <div class="ss-collab-foot">
-              <a href="https://wangmmstar.github.io/"
-                >← Back to Research Projects</a
-              ><span>Subsurface Intelligence</span>
-            </div>
+            <p class="ss-eyebrow" id="ss-publication-title">Publication</p>
+            <p class="ss-citation">Mengjun Wang, Da Hu, Junjie Chen, Shuai Li. <a href="https://doi.org/10.1016/j.autcon.2023.105004" target="_blank" rel="noopener noreferrer">Underground infrastructure detection and localization using deep learning enabled radargram inversion and vision based mapping</a>. <cite>Automation in Construction</cite>, 154, 105004 (2023). DOI: <a href="https://doi.org/10.1016/j.autcon.2023.105004" target="_blank" rel="noopener noreferrer">10.1016/j.autcon.2023.105004</a>.</p>
+            <p class="ss-contact"><a href="mailto:mwang5@ufl.edu">mwang5@ufl.edu</a></p>
           </div>
         </section>
       </div>
